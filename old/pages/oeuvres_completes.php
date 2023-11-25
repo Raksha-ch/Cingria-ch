@@ -1,23 +1,23 @@
 <div id="main" class="eightcol">
  		
 				<h1><span>Nouvelle édition des <em>Œuvres complètes</em></span></h1>
-                
+
                 <p>
 				<strong><?php print $txts[0]['writing_content'];?></strong>
 				<!-- <img src="img/test.jpg" style="float:left; width: 120px; padding: 2% 2% 2% 0"> -->
 			    </p>
-				<br/> 
+				<br/>
 				
 				<div id="main_oc">
 				<?php print $txts[1]['writing_content'];?>
 			    </div>
-			    
+			
 			    </p>
 			     <br/><br/>
 			   <h1><span>Les <em>Récits</em></span></h1>
-                
-           
-				 
+
+
+				
 				
 				<div id="main_oc_2">
 					<p>
@@ -32,29 +32,29 @@
 			
 			
 			
-			</div> 
-	                 		 <div id="intro" class="fourcol last">  
+			</div>
+	                 		 <div id="intro" class="fourcol last">
 								<div id="yellow_box_top_left">
 									<span style="font-style: italic; margin-bottom: 12px; display: block;">Les deux volumes de <span style="font-style: normal;  nt">Récits</span>, L’Age d’Homme, Lausanne, 2012</span>
-								  
+								
 									 La première édition critique de l’œuvre de Charles-Albert Cingria, entreprise par un collectif de chercheurs suisses et français dirigé par Maryke de Courten et Daniel Maggetti, arrive à son terme, et les deux volumes de Récits ont paru en ce début d’année 2012.
 								</div>
 							 </div>
 							
-				   
+				
 
 
 							
 							   	
 					   <div class="fourcol" id="order_box"> 	
 				
-		  
+		
 					<h2><span>Commande des volumes</span></h2>
 				   <br/>
 				<div id="bulletin">
 				Commandez votre copie des <em>Œuvres Complètes</em> de Charles-Albert Cingria auprès des Editions de l'Age d'Homme.
 				Les deux tomes des récits sont à votre disposition séparément ou réunis en un volume.
-				<br/><br/> 
+				<br/><br/>
 			        <span style="float:left;">
 				<a href="http://www.lagedhomme.com/boutique/fiche_produit.cfm?ref=9782825118894&type=47&code_lg=lg_fr&num=0" onclick="window.open(this.href, '_blank'); return false;">
 					<img src="img/oc_1.jpg" alt="œuvres complètes 1" />
@@ -67,5 +67,5 @@
 					<a href="http://www.lagedhomme.com/boutique/fiche_produit.cfm?ref=9782825118894&type=47&code_lg=lg_fr&num=0" class="pink_link"  onclick="window.open(this.href, '_blank'); return false;">Commander les volumes</a>
 		                                                       </span>
 					</div>
-                
+
 				</div>

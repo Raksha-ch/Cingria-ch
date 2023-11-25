@@ -45,7 +45,7 @@ class Cruder {
 		
 		try {
 			
-			if ( $this->crud->insert( $this->getTable() , $this->crud->getMatchingFields( $this->getTable() ) ) ) { 
+			if ( $this->crud->insert( $this->getTable() , $this->crud->getMatchingFields( $this->getTable() ) ) ) {
 			
 				$this->setErrorFlag(0);
 				$serialized_info = serialize( $this->getInfoArray() );	
@@ -75,7 +75,7 @@ class Cruder {
 
 		try {
 
-			if ( $this->crud->insert( $this->getTable() , $this->crud->getMatchingFields( $this->getTable() ) ) ) { 
+			if ( $this->crud->insert( $this->getTable() , $this->crud->getMatchingFields( $this->getTable() ) ) ) {
 
 
 				return $this->crud->getLastInsertedId();
@@ -105,7 +105,7 @@ class Cruder {
 		
 		try {
 				
-			if ( $this->crud->update( $this->getTable() , $this->crud->getMatchingFields( $this->getTable() ) , $field , $value ) ) { 
+			if ( $this->crud->update( $this->getTable() , $this->crud->getMatchingFields( $this->getTable() ) , $field , $value ) ) {
 				
 				$serialized_info = serialize( $this->getInfoArray() );	
 				header( "location: " . $this->getRedir() . '&info_box=edited&serialized_info=' . $serialized_info );

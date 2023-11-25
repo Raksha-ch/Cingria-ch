@@ -5,7 +5,7 @@
  <form id="add_property_description" action="" method="post" enctype="multipart/form-data">
  <div class="form_div">
  	<div id="info_bar">ADD PROPERTY DESCRIPTION</div>
- 				<fieldset> 
+ 				<fieldset>
  					<ol>
  				<li>
  					<label><em>*</em> Property</label>
@@ -58,19 +58,19 @@
 	 						</div>
 	 					</li>
  					</ol>
- 				</fieldset> 
+ 				</fieldset>
  			</div>		
- 
+
  			<div class="form_div">
- 				<fieldset> 
- 
+ 				<fieldset>
+
  							<ol>
  				<li class="bottom">
  					<label>&nbsp;</label>
    					<input type="submit" name="submit" class="submit" value="Add Property Description" />
  				</li>
    					<input type="hidden" name="add_property_description" value="1" />
-   			</ol> 
+   			</ol>
    		</fieldset>
    	</form>
  </div>
@@ -120,7 +120,7 @@ EOD;
 
 						<div style="float:right;">
 							 <a href="?page=itemizer&amp;action=delete_property_description&amp;property_description_id={$property_description[property_description_id]}" onclick="return(confirm('Delete property description?'));"
-							class="delete_hover">delete</a> | 
+							class="delete_hover">delete</a> |
 							<a href="?page=itemizer&amp;action=edit_property_description&property_description_id={$property_description[property_description_id]}">edit/show</a>
 
 						</div></li>

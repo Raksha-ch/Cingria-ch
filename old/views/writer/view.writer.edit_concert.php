@@ -10,7 +10,7 @@ $day 	= $dates[2];
  <form id="create_concert_form" action="" method="post" enctype="multipart/form-data">
  <div class="form_div">
 	 	<div id="info_bar">CONCERT</div>
-	 		<fieldset> 
+	 		<fieldset>
 	 			<ol>
 					<li>
 	 					<label>Date</label>
@@ -101,21 +101,21 @@ $day 	= $dates[2];
 						<li>
 	 						<label>Afficher?</label>
 	 						<input type="radio" name="concert_status" value="1"
-	 							<?php  if ( $rows['0']['concert_status'] == 1) { print ' checked="checked" ' ;} ?> 
+	 							<?php  if ( $rows['0']['concert_status'] == 1) { print ' checked="checked" ' ;} ?>
 	 						/> Oui
-	 						<input type="radio" name="concert_status" value="0" 
-	 							<?php  if ($rows['0']['concert_status'] == '0' ) { print ' checked="checked" ' ;} ?> 
+	 						<input type="radio" name="concert_status" value="0"
+	 							<?php  if ($rows['0']['concert_status'] == '0' ) { print ' checked="checked" ' ;} ?>
 	 						/> Non
 	 					</li>
 	 			</ol>
-	 		</fieldset> 
+	 		</fieldset>
 	 </div>
 
 	
- 
+
  			<div class="form_div">
- 				<fieldset> 
- 
+ 				<fieldset>
+
  							<ol>
  				<li class="bottom">
  					<label>&nbsp;</label>
@@ -125,7 +125,7 @@ $day 	= $dates[2];
    					<input type="submit" name="submit" class="submit" value="Modifier" />
  				</li>
    				
-   			</ol> 
+   			</ol>
    		</fieldset>
    	</form>
  </div>
@@ -136,4 +136,3 @@ $day 	= $dates[2];
 	print $category_error;
 	?>
 </div>
-   

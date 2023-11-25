@@ -5,7 +5,7 @@
 	</div>
 	
 			<form id="add_template_form" action="" method="post" enctype="multipart/form-data">
-				<fieldset> 
+				<fieldset>
 					<ol>
 		  				<li>
 							<label>Add Template</label>
@@ -27,7 +27,7 @@
 							<input type="hidden" name="add_template" value="1" />
 		  					<input type="submit" name="submit" class="submit" value="Add Template" />
 						</li>
-		  			</ol> 
+		  			</ol>
 		  		</fieldset>
 		  	</form>
 </div>

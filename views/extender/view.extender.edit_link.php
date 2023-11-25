@@ -4,7 +4,7 @@
 	</div>
 	
 			<form id="edit_link_form" action="" method="post" enctype="multipart/form-data">
-				<fieldset> 
+				<fieldset>
 					<ol>
 		  				<li>
 							<label>Link URL<br/><span class="tinygreyinfo">e.g. http://www.link.com</span></label>
@@ -15,7 +15,7 @@
 							<select name="language_id" class="short_select">
 								<option value="">Select...</option>
 								<?php
-                        
+
 								$rowst  =  $crud->select( 'num' , 'language' , '*' , '', '' ,  'language_id ASC' , '', '' , '' );
 								foreach ($rowst as $key) {
 									print '<option value="'.$key[0].'"';
@@ -76,7 +76,7 @@
 							<input type="hidden" name="link_modification_date" value="<?php print date('Y-m-d');?>" />
 		  					<input type="submit" name="submit" class="submit" value="Edit Link" />
 						</li>
-		  			</ol> 
+		  			</ol>
 		  		</fieldset>
 		  	</form>
 </div>

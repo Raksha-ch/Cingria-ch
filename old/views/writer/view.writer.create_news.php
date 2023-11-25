@@ -2,7 +2,7 @@
  <form id="create_pool_from_profile_form" action="" method="post" name="combo_box" enctype="multipart/form-data">
  <div class="form_div">
 	 	<div id="info_bar">COMMUN</div>
-	 		<fieldset> 
+	 		<fieldset>
 	 			<ol>
 					<li>
 	 					<label>Intitul&eacute;</label>
@@ -22,7 +22,7 @@
 								onDblClick="move(document.combo_box.pool_list_1,document.combo_box['pool_list_2[]'])">
 								<?php
 								foreach ( $artists as $row ) {
-								print '<option value="'.$row['profile_id'].'">'.$row['profile_name'].' 
+								print '<option value="'.$row['profile_id'].'">'.$row['profile_name'].'
 								'.$row['profile_surname'].'&nbsp;&nbsp;['.$row['profile_company'].']'.'</option>';
 								}
 								?>	
@@ -68,21 +68,21 @@
 							</select>
 					</li>
 	 			</ol>
-	 		</fieldset> 
+	 		</fieldset>
 	 </div>
 
 	
  <div class="form_div">	
  	<div id="info_bar">ACCUEIL</div>
- 		<fieldset> 
+ 		<fieldset>
  			<ol>
  				<li>
 	 				<label>Position Accueil</label>
 	 				<select name="news_rank" class="short_select">
 	 					<?php
-	 					for ($i=1; $i < 101; $i++) { 
+	 					for ($i=1; $i < 101; $i++) {
 	 						print '<option value="'.$i.'"';
-	 							if( $i == $_POST['news_rank'] ) { print ' selected="selected" ' ;} 
+	 							if( $i == $_POST['news_rank'] ) { print ' selected="selected" ' ;}
 	 						print '>'.$i.'</option>';
 	 					}
 	 					?>
@@ -113,13 +113,13 @@
 					</select>
 				</li>
  				</ol>
- 				</fieldset> 
+ 				</fieldset>
  </div>
 
 
 	<div class="form_div">	
 	 	<div id="info_bar">PROGRAMME RAPIDE</div>
-	 		<fieldset> 
+	 		<fieldset>
 	 			<ol>
 	 				<li>
 	 					<label>Titre Programme rapide</label>
@@ -127,12 +127,12 @@
 	 				</li>
 
 	 				</ol>
-	 				</fieldset> 
+	 				</fieldset>
 	 </div>
 
  <div class="form_div">	
  	<div id="info_bar">META INFORMATION</div>
- 		<fieldset> 
+ 		<fieldset>
  			<ol>
 
 
@@ -171,12 +171,12 @@
  				</li>
  			
  				</ol>
- 				</fieldset> 
+ 				</fieldset>
  </div>
  			
  				<div class="form_div">
  					<div id="info_bar">DESCRIPTION</div>
- 					<fieldset> 
+ 					<fieldset>
  						<ol>
 								<li>
 			 						<label>Langue</label>
@@ -233,11 +233,11 @@
 			 					</li>
 			 				
  							</ol>
- 						</fieldset> 
+ 						</fieldset>
  					</div>		
  		<div class="form_div">
- 			<fieldset> 
- 
+ 			<fieldset>
+
  						<ol>
  								<li>					
 
@@ -247,21 +247,21 @@
 	 						</div>
 	 					</li>
  					</ol>
- 				</fieldset> 
+ 				</fieldset>
  			</div>		
 
 
  <div class="form_div">
- 	<fieldset> 
+ 	<fieldset>
  	
  				<ol>
  					<li>
  						<label>Afficher?</label>
  						<input type="radio" name="news_status" value="1"
- 							<?php  if ( (!isset($_POST['news_status'])) || ($_POST['news_status'] == 1)) { print ' checked="checked" ' ;} ?> 
+ 							<?php  if ( (!isset($_POST['news_status'])) || ($_POST['news_status'] == 1)) { print ' checked="checked" ' ;} ?>
  						/> Oui
- 						<input type="radio" name="news_status" value="0" 
- 							<?php  if ( $_POST['news_status'] == '0' ) { print ' checked="checked" ' ;} ?> 
+ 						<input type="radio" name="news_status" value="0"
+ 							<?php  if ( $_POST['news_status'] == '0' ) { print ' checked="checked" ' ;} ?>
  						/> Non
  					</li>
  					<li>
@@ -279,7 +279,7 @@
  									if ( $y == $_POST['news_publication_start_date_y'] ) { print ' selected="selected" ' ;}
  								}
  								
- 								print '>'.$y.'</option>'; 
+ 								print '>'.$y.'</option>';
  								
  							}
  							?>
@@ -291,7 +291,7 @@
  								print '<option value="'.$m.'"';
  								
  									if ( isset( $_POST['news_publication_start_date_m'] ) ) {
- 
+
  										if ( $m == $_POST['news_publication_start_date_m'] ) { print ' selected="selected" ' ;}
  									
  									}
@@ -302,7 +302,7 @@
  										
  									}
  									
- 								print '>'.$m.'</option>'; 
+ 								print '>'.$m.'</option>';
  								
  							}
  							?>
@@ -314,15 +314,15 @@
  								print '<option value="'.$d.'"';
  								
  								 	if ( isset( $_POST['news_publication_start_date_d'] ) ) {
- 
+
  										if ( $d == $_POST['news_publication_start_date_d'] ) { print ' selected="selected" ' ;}
- 
+
  									}
- 
+
  									else {
- 
+
  										if ( $d == date( 'd' ) ) { print 'selected="selected" ' ;}
- 
+
  									}
  								
  								print '>'.$d.'</option>';
@@ -342,12 +342,12 @@
  								print '<option value="'.$y.'"';
  								
  									if ( isset( $_POST['news_publication_end_date_y'] ) ) {
- 
+
  										if ( $y == $_POST['news_publication_end_date_y'] ) { print ' selected="selected" ' ;}
  									}
  								
  								
- 								print '>'.$y.'</option>'; 
+ 								print '>'.$y.'</option>';
  							}
 							print '<option value="'.$y_2.'" ';
 							
@@ -366,7 +366,7 @@
  								print '<option value="'.$m.'"';
  									
  									if ( isset( $_POST['news_publication_end_date_m'] ) ) {
- 
+
  										if ( $m == $_POST['news_publication_end_date_m'] ) { print ' selected="selected" ' ;}
  									
  									}
@@ -378,7 +378,7 @@
  									}
  									
  									
- 								print '>'.$m.'</option>'; 
+ 								print '>'.$m.'</option>';
  							}
  							?>
  						</select>
@@ -388,30 +388,30 @@
  								print '<option value="'.$d.'"';
  									
  										if ( isset( $_POST['news_publication_end_date_d'] ) ) {
- 
+
  											if ( $d == $_POST['news_publication_end_date_d'] ) { print ' selected="selected" ' ;}
- 
+
  										}
- 
+
  										else {
- 
+
  											if ( $d == date( 'd' ) ) { print 'selected="selected" ' ;}
- 
+
  										}
  									
- 								print '>'.$d.'</option>'; 
+ 								print '>'.$d.'</option>';
  							}
  							?>
  						</select>
  						
  					</li>
  				</ol>
- 			</fieldset> 
+ 			</fieldset>
  			</div>
- 
+
  			<div class="form_div">
- 				<fieldset> 
- 
+ 				<fieldset>
+
  							<ol>
  				<li class="bottom">
  					<label>&nbsp;</label>
@@ -420,7 +420,7 @@
    					<input type="submit" name="submit" class="submit" value="Ajouter" onClick="selectAll(document.combo_box['pool_list_2[]']);" />
  				</li>
    				
-   			</ol> 
+   			</ol>
    		</fieldset>
    	</form>
  </div>
@@ -432,4 +432,3 @@
 	?>
 </div>
 <script type="text/javascript" src="wmd/wmd.js"></script>
-   

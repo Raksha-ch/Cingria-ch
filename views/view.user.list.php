@@ -12,7 +12,7 @@
 		$admin_name 	
 		$admin_surname 	
 		$admin_email 	
-		$admin_password 
+		$admin_password
 		$admin_group    */
 
 		foreach($rows as $row) {

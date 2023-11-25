@@ -1,6 +1,6 @@
 <div class="list_div">
 	<div id="info_bar">PROPERTIES LIST
-	 	&nbsp; &middot; &nbsp; There are <em><?php print $crud->countRecords('property');?> records</em> in table 
+	 	&nbsp; &middot; &nbsp; There are <em><?php print $crud->countRecords('property');?> records</em> in table
 		<em>Property</em>
 	</div>
 
@@ -14,11 +14,11 @@ foreach($rows as $row) {
 	$modification_date 	= ( $row['property_modification_date'] == '0000-00-00' ) ? '' : ' | upd. '.$row['property_modification_date'];
 	$status 			= ( $row['property_display'] == 0) ? '<img src="img/icons/crossedeye.png" alt="ok" class="icon" />' : '';
 	$last_minute 		= ( $row['property_last_minute'] != 0) ? '<img src="img/icons/last_minute.png" alt="last_minute" class="icon" />' : '';
-	$no_calendar 		= ( $row['property_calendar_display'] == 0) ? '<img src="img/icons/no_calendar.gif" alt="ok" class="icon" />' : '';  
+	$no_calendar 		= ( $row['property_calendar_display'] == 0) ? '<img src="img/icons/no_calendar.gif" alt="ok" class="icon" />' : '';
 	$stars				= str_repeat("<img src=\"img/icons/star.gif\" alt=\"star\" />", $row['property_star']);
 	
-	$lat 		= ( $row['property_lat'] == 0) ? '<span class="tinygreyinfo">lat. unknown</span>' : 'Lat. ' .$row['property_lat'];  
-	$long 		= ( $row['property_lat'] == 0) ? '<span class="tinygreyinfo">long. unknown</span>' : 'long. '.$row['property_long'];  
+	$lat 		= ( $row['property_lat'] == 0) ? '<span class="tinygreyinfo">lat. unknown</span>' : 'Lat. ' .$row['property_lat'];
+	$long 		= ( $row['property_lat'] == 0) ? '<span class="tinygreyinfo">long. unknown</span>' : 'long. '.$row['property_long'];
 
 	
 	if ( $row['dir_name'] != '' ) {
@@ -59,7 +59,7 @@ print <<<EOD
 			<span style="float:right;">
 				 <a href="?page=itemizer&amp;action=delete_property&amp;property_to_be_deleted={$row[property_id]}"
 				 onclick="return(confirm('Delete property?'));" class="delete_hover">delete</a> |
-				<a href="?page=itemizer&amp;action=facilities_set&amp;property_id=$row[property_id]">facilities</a> |  
+				<a href="?page=itemizer&amp;action=facilities_set&amp;property_id=$row[property_id]">facilities</a> |
 				 <a href="?page=itemizer&amp;action=edit_property&amp;property_id={$row[property_id]}&slice=$slice">edit/show</a>
 			</span>
 		</li>

@@ -3,7 +3,7 @@
 		CURRENCY LIST
 	</div>
 			<form id="update_currency_form" action="" method="post" enctype="multipart/form-data">
-				<fieldset> 
+				<fieldset>
 					<ol>
 		  				<li>
 							<label>Euro</label>
@@ -22,7 +22,7 @@
 							<input type="hidden"  name="update_currency" value="1" />
 		  					<input type="submit" name="submit" class="submit" value="Update Currencies" />
 						</li>
-		  			</ol> 
+		  			</ol>
 		  		</fieldset>
 		  	</form>
 </div>

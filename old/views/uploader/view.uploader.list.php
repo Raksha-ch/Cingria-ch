@@ -3,7 +3,7 @@
 	<form action="" method="get" name="" id="" accept-charset="utf-8">
 		<input type="hidden" name="page" value="uploader" >
 		<input type="hidden" name="action" value="list" >
-		<fieldset> 
+		<fieldset>
 			<ol>
 				<li>
 					<label>Select directory</label>
@@ -15,7 +15,7 @@
 					 	?>
 					</select>
 				</li>
-  			</ol> 
+  			</ol>
   		</fieldset>
   	</form>
 </div>
@@ -26,12 +26,12 @@
 <div class="list_div">
 		<div id="info_bar">FILES LIST
 			<?php if(isset($_GET['dir_name']) && ($_GET['dir_name'] != 'all') ) { ?>
-			 &nbsp; &middot; &nbsp; There  
+			 &nbsp; &middot; &nbsp; There
 			<?php
 			print( $session->getSessionVar('total_records') < 2 ) ? ' is <em>' : ' are <em>' ;
-			print $session->getSessionVar('total_records'); 
+			print $session->getSessionVar('total_records');
 			print( $session->getSessionVar('total_records') > 1 ) ? ' files' : ' file' ;?>
-			</em> in directory 
+			</em> in directory
 			<em><?php print ucfirst($uploader->getTable());?></em>
 			<?php } else {
 				print '&nbsp; &middot; &nbsp; <em>Read only!</em>';
@@ -57,7 +57,7 @@
 			
 		foreach($rows as $row) {
 			
-			$where = " language_id = " . $row['language_id']; 
+			$where = " language_id = " . $row['language_id'];
 			$rowx =  $crud->select( '' , 'language' , '*' , '' , $where , '' , '' , 1 , 0 );
 			foreach($rowx as $rox) {
 				$language =  $rox['language_short_name'];
@@ -75,8 +75,8 @@
 			$uploader->setFileUrl($file_url);
 			$file_name 	= ($_GET['file'] == $file) ? '<img src="img/icons/tick.png" alt="ok" class="icon" />&nbsp;<span style="color: #87CC7B;"><strong>'.$file.'</strong>' : $file;
 			$icon		= '<img src="'.$uploader->getFileExtensionIcon($row['upload_file_ext']).'" alt="" class="icon"/>';	
-			$popup 		= ($uploader->filterDisplayableFiles($row['upload_file_ext'])) ? img_popup($file_url) : ''; 
-			$status 	= ($row['upload_file_display'] == 0) ? '<img src="img/icons/crossedeye.png" alt="ok" class="icon" />' : '<img src="img/icons/default.png" alt="ok" class="icon" />'; 
+			$popup 		= ($uploader->filterDisplayableFiles($row['upload_file_ext'])) ? img_popup($file_url) : '';
+			$status 	= ($row['upload_file_display'] == 0) ? '<img src="img/icons/crossedeye.png" alt="ok" class="icon" />' : '<img src="img/icons/default.png" alt="ok" class="icon" />';
 			$file_rank 	= $row['upload_file_rank'];
 			$resize 	= ($uploader->filterDisplayableFiles($row['upload_file_ext'])) ? '<a href="?page=uploader&amp;action=resize&amp;upload_file_id='.$row['upload_file_id'].'&dir_name='.$dir_name.'&slice='.$_GET['slice'].'">resize</a> |':'';
 		

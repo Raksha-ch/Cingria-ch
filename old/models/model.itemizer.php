@@ -5,7 +5,7 @@ class Itemizer {
 		
 		try {
 			
-			if ($this->crud->insert( $this->getTable() , $this->crud->getMatchingFields( $this->getTable() ) ) ) { 
+			if ($this->crud->insert( $this->getTable() , $this->crud->getMatchingFields( $this->getTable() ) ) ) {
 			
 				$this->setErrorFlag(0);
 				$serialized_info = serialize( $this->returnPropertyInfo() );	
@@ -34,7 +34,7 @@ class Itemizer {
 			
 			try {
 					
-				if ( $this->crud->update( $this->getTable() , $this->crud->getMatchingFields( $this->getTable() ) , 'property_id' , $_POST['property_id'] ) ) { 
+				if ( $this->crud->update( $this->getTable() , $this->crud->getMatchingFields( $this->getTable() ) , 'property_id' , $_POST['property_id'] ) ) {
 					
 					$serialized_info = serialize( $this->returnPropertyInfo() );	
 					header( "location: " . $this->getRedir() . '&info_box=edited&serialized_info=' . $serialized_info );
@@ -63,7 +63,7 @@ class Itemizer {
 		
 		try {
 			
-			if ($this->crud->insert( $this->getTable() , $this->crud->getMatchingFields( $this->getTable() ) ) ) { 
+			if ($this->crud->insert( $this->getTable() , $this->crud->getMatchingFields( $this->getTable() ) ) ) {
 			
 				$this->setErrorFlag(0);
 			
@@ -92,7 +92,7 @@ class Itemizer {
 			
 			try {
 					
-				if ( $this->crud->update( $this->getTable() , $this->crud->getMatchingFields( $this->getTable() ) , 'property_description_id' , $_POST['property_description_id'] ) ) { 
+				if ( $this->crud->update( $this->getTable() , $this->crud->getMatchingFields( $this->getTable() ) , 'property_description_id' , $_POST['property_description_id'] ) ) {
 					
 					$serialized_info = serialize( $this->returnPropertyInfo() );	
 					header( "location: " . $this->getRedir() . '&info_box=edited&serialized_info=' . $serialized_info );
@@ -121,7 +121,7 @@ class Itemizer {
 		
 		try {
 			
-			if ($this->crud->insert( $this->getTable() , $this->crud->getMatchingFields( $this->getTable() ) ) ) { 
+			if ($this->crud->insert( $this->getTable() , $this->crud->getMatchingFields( $this->getTable() ) ) ) {
 				
 				$this->setErrorFlag(0);
 				$serialized_info = serialize( $this->returnEditedPropertyInfo() );
@@ -150,7 +150,7 @@ class Itemizer {
 		
 		try {
 				
-			if ( $this->crud->update( $this->getTable() , $this->crud->getMatchingFields( $this->getTable() ) , 'property_facilities_id' , $_POST['property_facilities_id'] ) ) { 
+			if ( $this->crud->update( $this->getTable() , $this->crud->getMatchingFields( $this->getTable() ) , 'property_facilities_id' , $_POST['property_facilities_id'] ) ) {
 				
 				$serialized_info = serialize( $this->returnEditedPropertyInfo() );	
 				header( "location: " . $this->getRedir() . '&info_box=edited&serialized_info=' . $serialized_info );
@@ -203,7 +203,7 @@ class Itemizer {
 	  	$this->_tbl = $_tbl;
 	  }
 	
-	 
+	
 	
 	  function getTable() {
 	  	return $this->_tbl;
@@ -260,10 +260,10 @@ class Itemizer {
 	
 	
 	//  ******************************************************************************************************************************************
-	//  6) INFO                                                                                                                                
-	//  ****************************************************************************************************************************************** 
+	//  6) INFO
+	//  ******************************************************************************************************************************************
 
-	//  ------------------------------------------------------------------------------------------------------------------------------------------ 
+	//  ------------------------------------------------------------------------------------------------------------------------------------------
 	// 	6.2) Profile Info
 	//  ------------------------------------------------------------------------------------------------------------------------------------------
 

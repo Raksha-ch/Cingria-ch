@@ -5,7 +5,7 @@
 	</div>
 	
 		<form id="add_range_of_sizes_form" action="" method="post" enctype="multipart/form-data">
-			<fieldset> 
+			<fieldset>
 				<ol>
 	  				<li>
 						<label>New range of sizes</label>
@@ -16,7 +16,7 @@
 						<input type="hidden" name="add_range_of_sizes" value="1" />
 	  					<input type="submit" name="submit" class="submit" value="Add range of sizes" />
 					</li>
-	  			</ol> 
+	  			</ol>
 	  		</fieldset>
 	  	</form>
 </div>
@@ -24,7 +24,7 @@
 <div class="form_div">
 	
 		<form id="add_to_range_form" action="" method="post" enctype="multipart/form-data">
-			<fieldset> 
+			<fieldset>
 				<ol>
 					<li>
 						<label>Range of sizes</label>
@@ -54,7 +54,7 @@
 						<input type="hidden" name="add_to_range" value="1" />
 	  					<input type="submit" name="submit" class="submit" value="Add to Range" />
 					</li>
-	  			</ol> 
+	  			</ol>
 	  		</fieldset>
 	  	</form>
 </div>

@@ -1,7 +1,7 @@
 <form id="create_profile_form" action="" method="post" enctype="multipart/form-data">
 <div class="form_div">
 	<div id="info_bar">PROFIL D'ARTISTE</div>
-		<fieldset> 
+		<fieldset>
 			<ol>
 				<li>
 					<label>Type d'artiste</label>
@@ -40,7 +40,7 @@
 					</label>
 					<input type="input" class="input" name="profile_company_url" value="<?php print $_POST['profile_company_url'] ?>"/>
 				</li>
-				<!-- 
+				<!--
 				<li>
 					<label>Dossier image</label>
 					<select name="dir_name" class="short_select">
@@ -71,7 +71,7 @@
 			<!--
 		 <div class="form_div">
 		 	<div id="info_bar">Courte biographie</div>
-		 				<fieldset> 
+		 				<fieldset>
 		 					<ol>
 		 				
 
@@ -83,7 +83,7 @@
 			 						</div>
 			 					</li>
 		 					</ol>
-		 				</fieldset> 
+		 				</fieldset>
 		 			</div>
 				-->
 			<div class="form_div">
@@ -139,7 +139,7 @@
   					<input type="hidden"  name="profile_modification" value="0000-00-00" />
 					<input type="hidden"  name="create_profile" 	  value="1" />
 
-  			</ol> 
+  			</ol>
   		</fieldset>
   	</form>
 </div>

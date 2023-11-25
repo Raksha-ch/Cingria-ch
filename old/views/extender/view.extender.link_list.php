@@ -5,7 +5,7 @@
 	</div>
 	
 			<form id="add_link_category_form" action="" method="post" enctype="multipart/form-data">
-				<fieldset> 
+				<fieldset>
 					<ol>
 		  				<li>
 							<label>Add Link Category</label>
@@ -27,7 +27,7 @@
 							<input type="hidden" name="add_link_category" value="1" />
 		  					<input type="submit" name="submit" class="submit" value="Add Link Category" />
 						</li>
-		  			</ol> 
+		  			</ol>
 		  		</fieldset>
 		  	</form>
 </div>
@@ -49,7 +49,7 @@
 	</div>
 	
 			<form id="add_link_form" action="" method="post" enctype="multipart/form-data">
-				<fieldset> 
+				<fieldset>
 					<ol>
 		  				<li>
 							<label>Link URL<br/><span class="tinygreyinfo">e.g. http://www.link.com</span></label>
@@ -128,7 +128,7 @@
 							<input type="hidden" name="link_creation_date" value="<?php print date('Y-m-d');?>" />
 		  					<input type="submit" name="submit" class="submit" value="Add Link" />
 						</li>
-		  			</ol> 
+		  			</ol>
 		  		</fieldset>
 		  	</form>
 </div>
@@ -137,7 +137,7 @@
 	<fieldset>
 		<?php		
 		foreach ($link_rows as $k) {
-			$status = ($k['link_status'] == 2) ? '<img src="img/icons/crossedeye.png" alt="ok" class="icon" />' : '<img src="img/icons/default.png" alt="ok" class="icon" />'; 
+			$status = ($k['link_status'] == 2) ? '<img src="img/icons/crossedeye.png" alt="ok" class="icon" />' : '<img src="img/icons/default.png" alt="ok" class="icon" />';
 			$title = truncateString($k['link_title'],32);
 			$description = truncateString($k['link_description'],12);
 			print <<<EOF

@@ -24,11 +24,11 @@
 			background: #acac75;
 			-webkit-box-shadow: 1px 1px 0px #8c8c5d;    */
 		}
-        
+
 		a { color: #4D4D4D; text-decoration: none; }
 		.selected a, .selected a:visited {
 		   /* text-shadow: 1px 1px 0px #8c8c60;   */
-			color: #e00071; 
+			color: #e00071;
 			
 		}
 
@@ -36,11 +36,11 @@
 		list-style-type: none;
 		display: block;
 		float: left;
-		margin: 1px 2px; 
-		text-align: center;  
-		cursor: pointer;   
-      
-	} 
+		margin: 1px 2px;
+		text-align: center;
+		cursor: pointer;
+
+	}
 	
 	.ui-tooltip-content em { font-size: 1em;}
 	
@@ -65,8 +65,8 @@
 
 	   .ui-tooltip-wiki p{ margin-bottom: 9px; }
 	   .ui-tooltip-wiki .note{ margin-bottom: 0; font-style: italic; color: #888; }
-   
-	  
+
+	
 		.sub_td { background-color: #EFEFEF; padding: 1em; -moz-border-radius: 2px;
 		border-radius: 2px;}
 		.sub_td h2 { font-size: 1em; text-align:left; margin: 0 0 1em 0;}
@@ -74,21 +74,21 @@
 		.toggle_btn { float:left; clear: both; padding: 0 0 0 24px;	 background-image: url('img/icons/btn_open_close.png'); background-repeat: no-repeat; background-position: 0 3px; cursor: pointer;}
 		.plus { background-position: 0 -297px;}
 		
-		.toggler {cursor: pointer;} 
+		.toggler {cursor: pointer;}
 		
 		.book_line { border-bottom: 1px dotted #CCC; width: 100%; float: left; padding-bottom: 12px; margin-bottom: 12px; display:block;}
-		 .ui-tooltip-content em { color: #4d4d4d; font-style: italic;} 
-		.ui-tooltip-content h2 em { color: #e00071; font-style: italic; }  
+		 .ui-tooltip-content em { color: #4d4d4d; font-style: italic;}
+		.ui-tooltip-content h2 em { color: #e00071; font-style: italic; }
 		
-		#tabs {float: left; display: block; margin: -2em 0 3em 0; font-family: arial; font-size: 0.82352941176471em;} 
+		#tabs {float: left; display: block; margin: -2em 0 3em 0; font-family: arial; font-size: 0.82352941176471em;}
 		#tabs a { color: #CCC;}
 		#tabs a.selected_tab {color: #595959; font-style: italic;}
 		 .pink { color: #e00071;}
 	</style>
 <?php
 
-$cover  = $books[0][dir_name].'/'.$books[0][upload_file_name].$books[0][upload_file_ext];   
-$join	= " LEFT JOIN upload_file ON upload_file.upload_file_id = books.upload_file_id ";  
+$cover  = $books[0][dir_name].'/'.$books[0][upload_file_name].$books[0][upload_file_ext];
+$join	= " LEFT JOIN upload_file ON upload_file.upload_file_id = books.upload_file_id ";
 $where  = " book_id = " . $_GET['book_id'];
 $books 	=  $crud->select( '' , 'books' , '*' ,  $join  , $where , '', '' , '1' , '0' );
 
@@ -96,46 +96,46 @@ $books 	=  $crud->select( '' , 'books' , '*' ,  $join  , $where , '', '' , '1' ,
 <div id="main" class="twelvecol">
 	<h1><span><span>Chronologie</span></span></h1>
    <div id="tabs">
-   
+
 		<a href="ajax_chrono.php?type=1" id="first_page" class="selected_tab">Chronologie par année</a> &middot;
 		<a href="ajax_chrono.php?type=2">Chronologie complète</a>
-	   
+	
 	</div>
 	<div id="chrono_div"></div> <!-- Updated via Ajax-->
-	  
+	
 
-</div> 
+</div>
 
 
 <script type="text/javascript">
-	  
+	
 	
 	  var containerId = '#chrono_div';
 	  var tabsId = '#tabs';
 	
-	  function loadTab(tabObj){ 
+	  function loadTab(tabObj){
 		
 		    $.get(tabObj.attr('href'), function(data) {
 
-			$(containerId).html(data); 
-		       	 
+			$(containerId).html(data);
+		       	
 		  });
 
 		
 		}
 		
-	 
-	 $(document).ready(function() {   
-	    
-		 $(tabsId + ' a').click(function() { 
+	
+	 $(document).ready(function() {
+	
+		 $(tabsId + ' a').click(function() {
 			  $('#tabs').find('a').removeClass('selected_tab')
 			  $(this).addClass('selected_tab');
-			  loadTab($(this));				  
+			  loadTab($(this));				
 	          return false;
-	     });  
-	      
+	     });
+	
         loadTab($('#first_page'));
-	     
+	
 
 	 });
 	

@@ -6,23 +6,23 @@
 			break;
 			case 'association':
 				$title = 'Présentation de l\'Association';
-				break; 
+				break;
 		 		case 'chronologie':
 					$title = 'Chronologie';
-					break; 
+					break;
 					case 'oeuvres_completes':
 						$title = 'Les Nouvelles Œuvres Complètes';
-						break; 
+						break;
 
 			  			 case 'les_livres':
 								$title = 'Les Livres';
 								break;  		
 					  			case 'les_petites_feuilles':
 										$title = 'Les Petites Feuilles';
-										break;  
+										break;
 				      					case 'fonds_et_archives':
 												$title = 'Fonds & Archives';
-												break;  
+												break;
 
 		   default:
 		   $title = 'Accueil & Présentation du site';

@@ -86,9 +86,9 @@
 								<label>Rank</label>
 								<select name="upload_file_rank" class="short_select">
 									<?php
-									for ($i=1; $i < 101; $i++) { 
+									for ($i=1; $i < 101; $i++) {
 										print '<option value="'.$i.'"';
-											if( $i == $rows['0']['upload_file_rank'] ) { print ' selected="selected" ' ;} 
+											if( $i == $rows['0']['upload_file_rank'] ) { print ' selected="selected" ' ;}
 										print '>'.$i.'</option>';
 									}
 									?>
@@ -97,7 +97,7 @@
 						
 						<li>
 							<label>Display?</label>
-							<input type="radio" name="upload_file_display" 
+							<input type="radio" name="upload_file_display"
 							<?php if($rows['0']['upload_file_display']=='1'){print'checked="checked"';} ?> value="1" /> Yes
 							<input type="radio" name="upload_file_display"
 							<?php if($rows['0']['upload_file_display']=='0'){print'checked="checked"';} ?> value="0" /> No

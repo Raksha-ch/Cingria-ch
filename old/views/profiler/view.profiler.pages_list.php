@@ -16,14 +16,14 @@
 		$profile_surname	= $row['profile_surname'];
 		
 			print <<<EDO
-				<div class="profiles">  
+				<div class="profiles">
 				<div class="underlined_profile_line">
 				  	<div class="records_left">
 				  		<strong>$page_title</strong><span style="color:#999; font-size: 10px;"> [ $profile_name $profile_surname]</span>
 				  	</div>
 				  	<div class="records_right">
 				  		<a href="?page=profiler&amp;action=delete_page&amp;page_id=$page_id&amp;slice_1=$slice
-						" onclick="return(confirm('Delete profile?'));" class="delete_hover">delete</a> | 
+						" onclick="return(confirm('Delete profile?'));" class="delete_hover">delete</a> |
 				  		<a href="?page=profiler&amp;action=edit_page&amp;page_id=$page_id&amp;slice_1=$slice
 						">edit</a>
 				  	</div>

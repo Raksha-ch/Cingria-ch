@@ -3,7 +3,7 @@
 		RENAME LINK CATEGORY FORM
 	</div>
 			<form id="rename_link_category_form" action="" method="post" enctype="multipart/form-data">
-				<fieldset> 
+				<fieldset>
 					<ol>
 		  				<li>
 							<label>Link Category Name</label>
@@ -15,7 +15,7 @@
 							<input type="hidden"  name="link_category_id" value="<?php print $rows['0']['link_category_id'];?>" />
 		  					<input type="submit" name="submit" class="submit" value="Rename Link Category" />
 						</li>
-		  			</ol> 
+		  			</ol>
 		  		</fieldset>
 		  	</form>
 </div>

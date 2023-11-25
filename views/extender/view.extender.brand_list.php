@@ -5,7 +5,7 @@
 	</div>
 	
 			<form id="add_brand_form" action="" method="post" enctype="multipart/form-data">
-				<fieldset> 
+				<fieldset>
 					<ol>
 		  				<li>
 							<label>Add Brand</label>
@@ -16,7 +16,7 @@
 							<input type="hidden" name="add_brand" value="1" />
 		  					<input type="submit" name="submit" class="submit" value="Add Brand" />
 						</li>
-		  			</ol> 
+		  			</ol>
 		  		</fieldset>
 		  	</form>
 </div>

@@ -22,11 +22,11 @@ $upload_directories_list = ( $_GET['action'] == 'upload_directories_list' ) ? 'c
 			<a href="?page=uploader&amp;action=list_trashed">List Trashed Files</a>
 		</li>
 		<?php if ( $_SESSION['admin_group'] < 2 ) { ?>
-        
+
 		<li <?php print $upload_directories_list;?> >
 			<a href="?page=uploader&amp;action=upload_directories_list">Manage Upload Directories</a>
 		</li>
-        
+
 		<?php } ?>
 		
 			

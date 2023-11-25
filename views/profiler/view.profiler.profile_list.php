@@ -21,15 +21,15 @@
 		$surname 	  		 = $row['profile_surname'];
 		$full_name    		 = $surname.' '.$name;
 		$email				 = $row['profile_email_address'];
-		                     
+		
 		$phone				 = $row['profile_phone_number'];
 		$address			 = $row['profile_address'];
 		$zip				 = $row['profile_postal_code'];
 		$city				 = $row['profile_city'];
 		$country			 = $row['country_name_fr'];
-		                     
+		
 		$company			 = $row['profile_company'];
-		                     
+		
 		$company_phone		 = $row['profile_company_phone_number'];
 		$company_url		 = $row['profile_company_url'];
 			
@@ -90,7 +90,7 @@
 		
 		if($_SESSION['display_type'] == 'full') {
 print <<<EDO
-					<div class="profiles">  
+					<div class="profiles">
 					<div class="underlined_profile_line">
 					  	<div class="records_left">
 					  		$profile_cat <strong>$full_name</strong><span style="color:#999; font-size: 10px;"> [$creation_date$modification_date] $nbr_of_orders</span>
@@ -101,7 +101,7 @@ print <<<EDO
 					  	</div>
 					  	<div class="records_right">
 					  		<a href="?page=profiler&amp;action=delete_profile&amp;profile_id=$profile_id&amp;slice_1=$slice
-							" onclick="return(confirm('Delete profile?'));" class="delete_hover">delete</a> | 
+							" onclick="return(confirm('Delete profile?'));" class="delete_hover">delete</a> |
 					  		<a href="?page=profiler&amp;action=edit&amp;profile_id=$profile_id&amp;slice_1=$slice
 							">edit</a>
 					  	</div>
@@ -121,7 +121,7 @@ EDO;
 
 			if($_SESSION['display_type'] == 'half') {
 	print <<<EDO
-		<div class="profiles">  
+		<div class="profiles">
 		<div class="underlined_profile_line">
 		  	<div class="records_left">
 		  		$profile_cat <strong>$full_name</strong><span style="color:#999; font-size: 10px;"> [$creation_date$modification_date] $nbr_of_orders</span>
@@ -132,7 +132,7 @@ EDO;
 		  	</div>
 		  	<div class="records_right">
 		  		<a href="?page=profiler&amp;action=delete_profile&amp;profile_id=$profile_id&amp;slice_1=$slice
-				" onclick="return(confirm('Delete profile?'));" class="delete_hover">delete</a> | 
+				" onclick="return(confirm('Delete profile?'));" class="delete_hover">delete</a> |
 		  		<a href="?page=profiler&amp;action=edit&amp;profile_id=$profile_id&amp;slice_1=$slice
 				">edit</a>
 		  	</div>
@@ -151,14 +151,14 @@ EDO;
 
 					if($_SESSION['display_type'] == 'minimal') {
 			print <<<EDO
-				<div class="profiles">  
+				<div class="profiles">
 				<div class="underlined_profile_line">
 				  	<div class="records_left">
 				  		$profile_cat <strong>$full_name</strong><span style="color:#999; font-size: 10px;"> [$creation_date$modification_date]  $nbr_of_orders</span>
 				  	</div>
 				  	<div class="records_right">
 				  		<a href="?page=profiler&amp;action=delete_profile&amp;profile_id=$profile_id&amp;slice_1=$slice
-						" onclick="return(confirm('Delete profile?'));" class="delete_hover">delete</a> | 
+						" onclick="return(confirm('Delete profile?'));" class="delete_hover">delete</a> |
 				  		<a href="?page=profiler&amp;action=edit&amp;profile_id=$profile_id&amp;slice_1=$slice
 						">edit</a>
 				  	</div>

@@ -1,7 +1,7 @@
 <div class="list_div">
 	<div id="info_bar">
 		CONCERTS LIST &nbsp; &middot; &nbsp; There are
-		<em><?php print $crud->countRecords( 'concerts');?> concerts</em> in table 
+		<em><?php print $crud->countRecords( 'concerts');?> concerts</em> in table
 		<em><?php print ucfirst($writer->getTable());?></em>
 	</div>
 	
@@ -31,7 +31,7 @@
 		
 		
 	   $id = $row['concert_id'];
-	   
+	
 	 if($row['concert_status'] == 0) { $status = '<img src="img/icons/crossedeye.png">';} else { $status = '<img src="img/icons/default.png">';}
 
 print <<<EOD
@@ -44,7 +44,7 @@ print <<<EOD
 			<span class="tinygreyinfo">$additional_info</span>
 		</span>
 		<span style="float:right;">
-			<a href="?page=writer&amp;action=delete_concert&amp;concert_id=$id" onclick="return(confirm('Delete concert?'));" class="delete_hover">delete</a> | 
+			<a href="?page=writer&amp;action=delete_concert&amp;concert_id=$id" onclick="return(confirm('Delete concert?'));" class="delete_hover">delete</a> |
 			<a href="?page=writer&amp;action=edit_concert&concert_id=$id ">edit/show</a>
 			</span>
 	</li>

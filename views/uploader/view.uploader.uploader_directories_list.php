@@ -4,7 +4,7 @@
 	</div>
 	
 			<form id="add_dir_form" action="" method="post" enctype="multipart/form-data">
-				<fieldset> 
+				<fieldset>
 					<ol>
 		  				<li>
 							<label>Add Directory</label>
@@ -22,7 +22,7 @@
 							<input type="hidden" name="add_dir" value="1" />
 		  					<input type="submit" name="submit" class="submit" value="Add Directory" />
 						</li>
-		  			</ol> 
+		  			</ol>
 		  		</fieldset>
 		  	</form>
 </div>

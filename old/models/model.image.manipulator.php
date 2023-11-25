@@ -136,25 +136,25 @@ class ImageManipulator {
 	
 	function imageCreateFromExtension($file_source, $file_extension) {
 		switch($file_extension) {
-			case '.jpg': 
-		         $_created_image_from_extension = imagecreatefromjpeg($file_source); 
-		         break; 
-		    case '.png': 
+			case '.jpg':
+		         $_created_image_from_extension = imagecreatefromjpeg($file_source);
+		         break;
+		    case '.png':
 		         $_created_image_from_extension = imagecreatefrompng($file_source);
-		         break; 
-		    case '.gif': 
-		         $_created_image_from_extension = imagecreatefromgif($file_source); 
-		    	 break; 
-		    default: 
-		         echo("Error Invalid Image Type"); 
-		         die; 
-		     	 break; 
+		         break;
+		    case '.gif':
+		         $_created_image_from_extension = imagecreatefromgif($file_source);
+		    	 break;
+		    default:
+		         echo("Error Invalid Image Type");
+		         die;
+		     	 break;
 		 }
 		$this->setCreatedImageFromExtension($_created_image_from_extension);
 	}
 	
 	function imageCreateTrueColor($_destination_img_width,$_destination_img_height,$preserve_alpha='1') {
-		$_created_image_true_color = imagecreatetruecolor($_destination_img_width,$_destination_img_height); 
+		$_created_image_true_color = imagecreatetruecolor($_destination_img_width,$_destination_img_height);
 		if($preserve_alpha == '1') {
 			imagealphablending($_created_image_true_color, false);
 			imagesavealpha($_created_image_true_color, true);
@@ -171,7 +171,7 @@ class ImageManipulator {
 			$this->getDestinationImageHeight(),
 			$this->getSourceImageWidth(),
 			$this->getSourceImageHeight()
-			); 
+			);
 	}
 	
 	function calculatePngQualityRatio($png_quality) {
@@ -181,19 +181,19 @@ class ImageManipulator {
 	
 	function returnImage($quality='100') {
 		switch($this->getSourceImageExtension()) {
-			case '.jpg': 
-				 imagejpeg($this->getCreatedTrueColor(),$this->getSourceImageUrl(),$quality); 
-		         break; 
-		    case '.png': 
+			case '.jpg':
+				 imagejpeg($this->getCreatedTrueColor(),$this->getSourceImageUrl(),$quality);
+		         break;
+		    case '.png':
 				 imagepng($this->getCreatedTrueColor(),$this->getSourceImageUrl(),$this->calculatePngQualityRatio($quality));
-				break; 
-		    case '.gif': 
-				 imagegif($this->getCreatedTrueColor(),$this->getSourceImageUrl()); 
-		    	 break; 
-		    default: 
-		         echo("Error Invalid Image Type"); 
-		         die; 
-		     	 break; 
+				break;
+		    case '.gif':
+				 imagegif($this->getCreatedTrueColor(),$this->getSourceImageUrl());
+		    	 break;
+		    default:
+		         echo("Error Invalid Image Type");
+		         die;
+		     	 break;
 		 }
 		$serialized_info=serialize($this->printResizedImageInfo());	
 		header("location:".$this->getRedir().'&info_box=resized&file='.$this->getSourceImage().$this->getSourceImageExtension().'&serialized_info='.$serialized_info);		

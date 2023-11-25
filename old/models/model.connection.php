@@ -6,9 +6,9 @@
 
 /**
  * Source file containing class Connection.
- * 
- * @package    
- * @license    
+ *
+ * @package
+ * @license
  * @author     Yannick Saraillon <yan.saraillon@societe-ecran.tv>
  * @version    0.1
  * @see        Connection
@@ -16,11 +16,11 @@
 
 /**
  * Class Connection.
- * 
+ *
  * Description for class Connection.
  *
- * @package    
- * @license    
+ * @package
+ * @license
  * @author     Yannick Saraillon <yan.saraillon@societe-ecran.tv>
  * @version    0.1
  */
@@ -52,10 +52,10 @@ class Connection
 			if (Connection::$instances == 0) {
 		      	try {
 				    $_dbc = new PDO("mysql:host=$_connectionVarsArray[host];
-									dbname=$_connectionVarsArray[name]", 
+									dbname=$_connectionVarsArray[name]",
 									$_connectionVarsArray['user'],
 									$_connectionVarsArray['password']);
-					$this->_dbc = $_dbc; 
+					$this->_dbc = $_dbc;
 				}
 				catch (PDOException $e) {
 				    echo $e->getMessage();

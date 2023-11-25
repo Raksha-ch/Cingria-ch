@@ -3,7 +3,7 @@
 		RENAME TEMPLATE FORM
 	</div>
 			<form id="rename_category_form" action="" method="post" enctype="multipart/form-data">
-				<fieldset> 
+				<fieldset>
 					<ol>
 		  				<li>
 							<label>Template Name</label>
@@ -15,7 +15,7 @@
 							<input type="hidden"  name="template_id" value="<?php print $rows['0']['template_id'];?>" />
 		  					<input type="submit" name="submit" class="submit" value="Rename Template" />
 						</li>
-		  			</ol> 
+		  			</ol>
 		  		</fieldset>
 		  	</form>
 </div>

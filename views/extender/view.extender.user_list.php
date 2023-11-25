@@ -5,7 +5,7 @@
 	</div>
 	
 		<form id="add_user_form" action="" method="post" enctype="multipart/form-data">
-			<fieldset> 
+			<fieldset>
 				<ol>
 	  				<li>
 						<label>User Name</label>
@@ -35,7 +35,7 @@
 						<input type="hidden" name="add_user" value="1" />
 	  					<input type="submit" name="submit" class="submit" value="Add User" />
 					</li>
-	  			</ol> 
+	  			</ol>
 	  		</fieldset>
 	  	</form>
 	</div>

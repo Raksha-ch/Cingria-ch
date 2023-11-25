@@ -6,13 +6,13 @@
 			break;
 			case 'association':
 				$title = 'Présentation de l\'Association';
-				break; 
+				break;
 		 		case 'chronologie':
 					$title = 'Chronologie';
-					break; 
+					break;
 					case 'premiere-edition-des-oeuvres-completes':
 						$title = 'Première édition critique des Œuvres Complètes';
-						break; 
+						break;
                          						case 'cingria-dans-la-litterature-romande':
 								$title = 'Cingria dans la littérature romande';
 								break;
@@ -21,10 +21,10 @@
 								break;  		
 					  			case 'les-petites-feuilles':
 										$title = 'Les Petites Feuilles';
-										break;  
+										break;
 				      					case 'les-fonds':
 												$title = 'Les Fonds';
-												break;  
+												break;
 
 		   default:
 		   $title = 'Accueil & Présentation du site';

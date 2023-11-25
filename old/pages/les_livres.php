@@ -24,11 +24,11 @@
 			background: #acac75;
 			-webkit-box-shadow: 1px 1px 0px #8c8c5d;    */
 		}
-        
+
 		a { color: #4D4D4D; text-decoration: none; }
 		.selected a, .selected a:visited {
 		   /* text-shadow: 1px 1px 0px #8c8c60;   */
-			color: #e00071; 
+			color: #e00071;
 			
 		}
 
@@ -36,11 +36,11 @@
 		list-style-type: none;
 		display: block;
 		float: left;
-		margin: 1px 2px; 
-		text-align: center;  
-		cursor: pointer;   
-      
-	} 
+		margin: 1px 2px;
+		text-align: center;
+		cursor: pointer;
+
+	}
 	
 	.ui-tooltip-content em { font-size: 1em;}
 	
@@ -65,8 +65,8 @@
 
 	   .ui-tooltip-wiki p{ margin-bottom: 9px; }
 	   .ui-tooltip-wiki .note{ margin-bottom: 0; font-style: italic; color: #888; }
-   
-	  
+
+	
 		.sub_td { background-color: #EFEFEF; padding: 1em; -moz-border-radius: 2px;
 		border-radius: 2px;}
 		.sub_td h2 { font-size: 1em; text-align:left; margin: 0 0 1em 0;}
@@ -74,12 +74,12 @@
 		.toggle_btn { float:left; clear: both; padding: 0 0 0 24px;	 background-image: url('img/icons/btn_open_close.png'); background-repeat: no-repeat; background-position: 0 3px; cursor: pointer;}
 		.plus { background-position: 0 -297px;}
 		
-		.toggler {cursor: pointer;} 
+		.toggler {cursor: pointer;}
 		
 		.book_line { border-bottom: 1px dotted #CCC; width: 100%; float: left; padding-bottom: 12px; margin-bottom: 12px; display:block;}
 		
 	</style>
-</style> 
+</style>
 <div id="main" class="fourcol" style="padding-right: 4em;">
 	<h1><span><span>Les Livres</span></span></h1> <br/><br/>
 	
@@ -98,7 +98,7 @@
 		</div>
 	</div>
 
-   
+
    	
 	<div class="book_line">
 		<div class="toggler">
@@ -167,7 +167,7 @@
 				<br/><br/>Captant l’extraordinaire acuité de sensations d’un être qui n’ignora que l’indifférence, c’est la langue elle-même ici qui voit, fait voir, et promène délectablement le lecteur. Avec son mélange d’élaboration fastueuse et de spontanéité déflagrante, elle nous restitue de la même façon le suc des temps anciens où déambulait l’érudition imaginative de l’écrivain, et la vibration des instants de ce monde que son regard toujours neuf et libre enregistrait pour les magnifier. « Je ne suis pas un nom », a-t-il noté, « il n’y a que la vie qui m’intéresse. » En retour la vie éclate dans tout ce qui demeure sous le nom de Cingria. (Jacques Réda)
 			</div>
 		</div>
-	</div>            
+	</div>
 	
 </div>
 <div class="sevencol">	
@@ -178,7 +178,7 @@
 	<li><a href="#" rel="psd">En bouquinerie</a></li>
 </ul>
 
-<ul class="item"> 
+<ul class="item">
 	<li rel="jquery"><a href="http://ajax" title="test.php" id="Bitume Exquis Bitume Exquis Bitume Exquis Bitume Exquis"><img src="images/18_Bitume exquis.jpg"></a></li>
 	<li rel="jquery"><a href="http://ajax" title="test.php" id="Bitume Exquis Bitume Exquis Bitume Exquis Bitume Exquis"><img src="images/18_La Jongleresse.jpg"></a></li>
 	<li rel="jquery"><a href="http://ajax" title="test.php" id="Bitume Exquis Bitume Exquis Bitume Exquis Bitume Exquis"><img src="images/18_Musiques de Fribourg.jpg"></a></li>
@@ -196,7 +196,7 @@
 	<li rel="jquery"><img src="images/23_Michon.jpg"></li>
 	
 	
-</ul>   
+</ul>
 </div>
 <script type="text/javascript">
 	
@@ -209,27 +209,27 @@
 		
 		$('.menu li a').click(function() {
 			
-			   
+			
 			$('.menu li').removeClass('selected');
 			$(this).parent('li').addClass('selected');
 			
 			thisItem 	= $(this).attr('rel');
 			
 			if(thisItem != "all") {
-			       
-			   
+			
+			
 				var min_width = Math.min.apply( null,  $('.item li[rel='+thisItem+'] img').map(function(){ return $(this).width();}).get());
                 var max_height = Math.min.apply( null,  $('.item li[rel='+thisItem+'] img').map(function(){ return $(this).height();}).get());
 
-                 
+
 			
 			
 			
 				$('.item li[rel='+thisItem+']').stop()
 														.animate({'width' : min_width +'px',
 														 			'height' : max_height +'px',
-																	 'opacity' : 1, 
-																	 'marginRight' : '2px', 
+																	 'opacity' : 1,
+																	 'marginRight' : '2px',
 																	 'marginLeft' : '2px'
 																	});
 																	
@@ -237,32 +237,32 @@
 														.animate({'width' : 0,
 														 			  'height' : 0,
 																	 'opacity' : 0,
-																	 'marginRight' : 0, 
+																	 'marginRight' : 0,
 																	 'marginLeft' : 0
 																	});
-			} else { 
+			} else {
 				
-			 
+			
 				
 				
 				 var min_width = Math.min.apply( null,  $('.item li img').map(function(){ return $(this).width();}).get());
 				 var max_height = Math.max.apply( null,  $('.item li img').map(function(){ return $(this).height();}).get());
-                
-				   
+
+				
 				$('.item li').stop()
-								.animate({'opacity' : 1, 
+								.animate({'opacity' : 1,
 											 'width' : min_width + 'px',
-											'height' : max_height +'px',  
-											 'marginRight' : '2px', 
+											'height' : max_height +'px',
+											 'marginRight' : '2px',
 											 'marginLeft' : '2px'
 											});
-			} 
-			return false;  
+			}
+			return false;
 		})
 		
 		$('.item li img').animate({'opacity' : 1}).hover(function() {
 			$('.item li img').not(this).stop().animate({'opacity' : 0.5}, 240);
-		}, function() {                       
+		}, function() {
 			$('.item li img').not(this).stop().animate({'opacity' : 1}, 240);
 		});
 		
@@ -273,14 +273,14 @@
 	
 	// Create the tooltips only on document load
 	$(document).ready(function()
-	{      
-	   
+	{
+	
 	   // Make sure to only match links to wikipedia with a rel tag
 	   $('a[href*=ajax/][title]').each(function()
 	   {
 	      // We make use of the .each() loop to gain access to each element via the "this" keyword...
 	
-	   
+	
 	   adjust = $(this).parent().height();
 			
 	$(this).qtip(
@@ -309,17 +309,17 @@
 	            effect: false, // Disable positioning animation,
 				     adjust: {
 					         y: -70,
-						     
-					      }         
+						
+					      }
 				
 				
 	         },
-	         
-	  
+	
+	
 	
 	         show: {
 	            event: 'click',
-	            solo: true, // Only show one tooltip at a time 
+	            solo: true, // Only show one tooltip at a time
 				modal: {
 	               on: true, // Make it modal (darken the rest of the page)...
 	               blur: true // ... but don't close the tooltip when clicked
@@ -342,4 +342,4 @@
 	
 	
 	
-</script> 
+</script>

@@ -1,17 +1,17 @@
 <?php
 class myExceptions extends Exception {
-    
+
     // Constructeur de la classe.
     // Il faut bien penser à rapeller le constructeur de la classe Exception.
     public function __construct($msg) {
         parent :: __construct($msg);
     }
-    
+
     // Pour le fun, on ajoute une méthode qui récupère l'heure de l'erreur.
     public function getTime() {
         return date('Y-m-d H:i:s');
     }
-    
+
     // Méthode retournant un message d'erreur complet et formaté.
     public function getError() {
 
@@ -21,7 +21,7 @@ class myExceptions extends Exception {
         $return .= 'A la ligne : ' . $this->getLine() . '<br/>';
         $return .= 'Dans le fichier : ' . $this->getFile() . '<br/>';
         $return .= 'Il était : ' . $this->getTime();
-        
+
         return $return;
     }
 

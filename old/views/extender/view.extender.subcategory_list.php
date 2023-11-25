@@ -5,7 +5,7 @@
 	</div>
 	
 			<form id="add_category_form" action="" method="post" enctype="multipart/form-data">
-				<fieldset> 
+				<fieldset>
 					<ol>
 		  				<li>
 							<label>Ajouter un lieu</label>
@@ -27,7 +27,7 @@
 							<input type="hidden" name="add_subcategory" value="1" />
 		  					<input type="submit" name="submit" class="submit" value="Ajouter" />
 						</li>
-		  			</ol> 
+		  			</ol>
 		  		</fieldset>
 		  	</form>
 </div>

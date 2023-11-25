@@ -1,7 +1,7 @@
 <div class="form_div">
 	<form id="" action="" method="post">
 		<div id="info_bar">EDITER DISCOGRAPHIE</div>
-				<fieldset> 
+				<fieldset>
 					<ol>
 		  				<li>
 							<label>Titre de la discographie</label>
@@ -20,7 +20,7 @@
 		  					<input type="submit" name="submit" class="submit" value="Edit" />
 						</li>
 		  					
-		  			</ol> 
+		  			</ol>
 		  		</fieldset>
 		  	</form>
 		</div>

@@ -2,7 +2,7 @@
 	<div id="info_bar">
 		WRITING LIST &nbsp; &middot; &nbsp; There are
 		<em><?php print $crud->countRecordsWhere( 'template', 'template_parent_id != 0' );?> templates</em> and
-		<em><?php print $crud->countRecords('writing');?> writings</em> in table 
+		<em><?php print $crud->countRecords('writing');?> writings</em> in table
 		<em><?php print ucfirst($writer->getTable());?></em>
 	</div>
 	
@@ -17,7 +17,7 @@
 		$wheres = " template_id = ".$row['template_id'];
 		$rowz  =  $crud->select( '' , 'writing' , '*' , '', $wheres , 'writing_title ASC, writing_rank ASC', '', '' , '' ); // get writings
 		$nbr_of_writings = count($rowz);	
-		$nbr = ( $nbr_of_writings > 1) ? 'writings' : 'writing'; 
+		$nbr = ( $nbr_of_writings > 1) ? 'writings' : 'writing';
 
 									
 				print <<<EOD
@@ -28,7 +28,7 @@ EOD;
 
 					foreach($rowz as $rowzz) {
 						
-						$where = " language_id = " . $rowzz['language_id']; 
+						$where = " language_id = " . $rowzz['language_id'];
 						$rowx =  $crud->select( '' , 'language' , '*' , '' , $where , '' , '' , 1 , 0 );
 						foreach($rowx as $rox) {
 							$language =  $rox['language_short_name'];
@@ -46,13 +46,13 @@ EOD;
 							<span style="float:left;width: 14px;">{$status}</span>
 							<span class="tinygreyinfo">[{$rowzz[writing_rank]}] [{$language}]</span>
 							<span>{$start} {$due}</span>
-								{$rowzz[writing_title]} 
+								{$rowzz[writing_title]}
 							<span class="tinygreyinfo">{$description}</span>
 						</span>
 						
 						<span style="float:right;">
 							 <a href="?page=writer&amp;action=delete_writing&amp;writing_id={$rowzz[writing_id]}" onclick="return(confirm('Delete writing?'));"
-							class="delete_hover">delete</a> | 
+							class="delete_hover">delete</a> |
 							<a href="?page=writer&amp;action=edit_writing&writing_id={$rowzz[writing_id]}">edit/show</a>
 						
 						</span></li>

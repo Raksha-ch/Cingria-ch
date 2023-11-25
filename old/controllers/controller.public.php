@@ -1,32 +1,32 @@
 <?php
 
    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-   //																																		  
-   //  	SCRIPT SUMMARY (2010.13.03)  (n.b.: this file is included by switch.writer.php)                                                                                                       	  
-   //																																		  
+   //																																		
+   //  	SCRIPT SUMMARY (2010.13.03)  (n.b.: this file is included by switch.writer.php)                                                                                                       	
+   //																																		
    // 	**************************************************************************************************************************************
-   //																																		  
-   //	0) PERMISSION CHECK                                                                                                                                                                                                                                                                                                                                                      
-   //	1) WRITING                                                                                                                           
-   //			1.1) Select Writings                                                                                                
-   //                                                                                                                                         
+   //																																		
+   //	0) PERMISSION CHECK
+   //	1) WRITING
+   //			1.1) Select Writings
+   //
    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-                                                  
 
 
-                                                                                             
+
+
 //  ******************************************************************************************************************************************
-//  0) PERMISSION CHECK                                                                                                                                
+//  0) PERMISSION CHECK
 //  ******************************************************************************************************************************************	
 
 	// if ( $_SESSION['login_status'] != 1 ) { header( "location:?page=home" ) ;}
 
 
 //  ******************************************************************************************************************************************
-//  1) WRITING                                                                                                                                
+//  1) WRITING
 //  ******************************************************************************************************************************************
 
-//  ------------------------------------------------------------------------------------------------------------------------------------------ 
+//  ------------------------------------------------------------------------------------------------------------------------------------------
 // 	1.1) Select Writings
 //  ------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -44,13 +44,13 @@
 
 		$where 		= " template_id = 78 ";
 		$txts 		= $crud->select(  '' , 'writing' , 'writing_content' ,  ''  , $where , 'writing_rank DESC', '' , '' , '' );
-	    
+	
 		$where 	= " template_id = 80 ";
 		$citations = $crud->select(  '' , 'writing' , 'writing_content, writing_description' ,  ''  , $where , 'writing_rank DESC', '' , '' , '' );
 		
 		$where 	= " template_id = 82 ";
 		$notice_bio = $crud->select(  '' , 'writing' , 'writing_content, writing_title' ,  ''  , $where , 'writing_rank DESC', '' , '' , '' );
-		                               
+		
 	
 	}
 
@@ -62,18 +62,18 @@
 		$txts 		= $crud->select(  '' , 'writing' , 'writing_content' ,  ''  , $where , 'writing_rank DESC', '' , '' , '' );
 
 		$where 		  	  =  " dir_name = 'uploads/documents' AND upload_file_display = 1 ";
-		$documents  	  =  $crud->select( '' , 'upload_file' , '*' , '' , $where ,  '' , '' , '' , '' );		                              
+		$documents  	  =  $crud->select( '' , 'upload_file' , '*' , '' , $where ,  '' , '' , '' , '' );		
 
-	} 
+	}
 	
 	
 	if ( isset( $_GET['p'] ) && (  $_GET['p'] == 'oeuvres_completes' ) ) {
 
 	    $where 		= " template_id = 72 ";
 		$txts 		= $crud->select(  '' , 'writing' , 'writing_content' ,  ''  , $where , 'writing_rank DESC', '' , '' , '' );
-                               
 
-	}   
+
+	}
 	
 	/* PAGES : agence.php  => texte agence */
 	
@@ -124,7 +124,7 @@
 	$where 		= " news_status = 1 ";
 	if ( isset( $_GET['id'] ) &&  ( $_GET['p'] == 'concerts') )	{ $where .= "AND news.news_id = " . $_GET['id']; }	
 	$select		= " news.news_id,
-					news.news_public_date, 
+					news.news_public_date,
 					news.news_time,
 					news.pool_list_2,	
 				    news.news_title,
@@ -173,7 +173,7 @@
 				$where 		= " profile_id = " . $v['profile_id'];
 				$artists	= $crud->select( '' , 'profile' , '*' , ''  , $where , '', '' , '1' , '0' );
 
-				$artist	 	= $artists[0]['profile_name'].' '.$artists[0]['profile_surname']; 
+				$artist	 	= $artists[0]['profile_name'].' '.$artists[0]['profile_surname'];
 
 				$concerts .= $day.' '. $nomMois . ' '.$year.', <strong>'. $artist  .'</strong>, '.$place. '<br/>';
 			}
@@ -185,11 +185,11 @@
 	
 
 	if($_GET['year'] == 'passes') {
-		$where	  = " concerts.date < NOW() AND concerts.concert_status = 1 " ; 
+		$where	  = " concerts.date < NOW() AND concerts.concert_status = 1 " ;
 		$concerts = $crud->select( '' , 'concerts' , '*' ,  ''  , $where, 'date DESC', '' , '' , '' );
 		
 	} else {
-		$where	  = " concerts.date >= NOW() AND concerts.concert_status = 1 "; 
+		$where	  = " concerts.date >= NOW() AND concerts.concert_status = 1 ";
 		$concerts = $crud->select( '' , 'concerts' , '*' ,  ''  , $where, 'date ASC', '' , '' , '' );
 		
 	}
@@ -209,7 +209,7 @@
 		$join		= " LEFT JOIN profile_description ON profile_description.profile_id = profile.profile_id ";	
 		$where 		= " profile.profile_status = 1 AND profile.profile_id = " .$key;
 		$artists[] 	=  $crud->select( '' , 'profile' , '*' ,  $join  , $where , '', '' , '' , '' );
-	 
+	
 	}
 	
 	$where 		= " dir_name = '" . $concerts[0]['dir_name'] ."'" ;

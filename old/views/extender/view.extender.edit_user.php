@@ -3,7 +3,7 @@
 		EDIT USER FORM
 	</div>
 		<form id="edit_user_form" action="" method="post" enctype="multipart/form-data">
-			<fieldset> 
+			<fieldset>
 				<ol>
 	  				<li>
 						<label>User Name</label>
@@ -34,7 +34,7 @@
 						<input type="hidden" name="admin_id" value="<?php print $rows['0']['admin_id'];?>" />
 	  					<input type="submit" name="submit" class="submit" value="Edit User" />
 					</li>
-	  			</ol> 
+	  			</ol>
 	  		</fieldset>
 	  	</form>
 	</div>

@@ -1,7 +1,7 @@
 <div class="form_div">
 	<div id="info_bar">FLUSH PROFILES FORM</div>
 	<form action="" name="jump" id="jump"  method="post" enctype="multipart/form-data">
-		<fieldset> 
+		<fieldset>
 			<ol>
 				<li>
 					<label>Flush Type</label>
@@ -19,7 +19,7 @@
 						<?php if ($_GET['flush_type']=='profile_password'){ print 'selected="selected"';} ?>>Unregistered users</option>
 					</select>
 				</li>
-  			</ol> 
+  			</ol>
   		</fieldset>
   	</form>
 </div>
@@ -29,7 +29,7 @@ if($_GET['flush_type'] == 'profile_creation') {
 ?>
 <div class="form_div">
 	<form action="" name="" id=""  method="post" enctype="multipart/form-data">
-		<fieldset> 
+		<fieldset>
 			<ol>
   				<li>
 					<label>Flush <strong>profiles created</strong></label>
@@ -45,7 +45,7 @@ if($_GET['flush_type'] == 'profile_creation') {
 						<option>year</option>
 						<?php
 						$current = date('Y')+1;
-						for ($i=2000; $i < $current ; $i++) { 
+						for ($i=2000; $i < $current ; $i++) {
 							print '<option value="'.$i.'">'.$i.'</option>';
 						}
 						?>
@@ -54,7 +54,7 @@ if($_GET['flush_type'] == 'profile_creation') {
 						<option>month</option>
 						<?php
 						for ($i=1; $i < 13 ; $i++) {
-							$j = sprintf("%02d", $i);  
+							$j = sprintf("%02d", $i);
 							print '<option value="'.$j.'">'.$j.'</option>';
 						}
 						?>
@@ -63,7 +63,7 @@ if($_GET['flush_type'] == 'profile_creation') {
 						<option >day</option>
 						<?php
 						for ($i=1; $i < 32 ; $i++) {
-							$j = sprintf("%02d", $i);  
+							$j = sprintf("%02d", $i);
 							print '<option value="'.$j.'">'.$j.'</option>';
 						}
 						?>
@@ -75,7 +75,7 @@ if($_GET['flush_type'] == 'profile_creation') {
 					<input type="hidden" name="flush_type" value="profile_creation">
   					<input type="submit" name="submit" class="submit" value="Flush" />
 				</li>
-  			</ol> 
+  			</ol>
   		</fieldset>
   	</form>
 </div>
@@ -86,7 +86,7 @@ if($_GET['flush_type'] == 'profile_modification') {
 ?>
 <div class="form_div">
 	<form action="" name="" id=""  method="post" enctype="multipart/form-data">
-		<fieldset> 
+		<fieldset>
 			<ol>
   				<li>
 					<label>Flush <strong>profiles modified</strong></label>
@@ -102,7 +102,7 @@ if($_GET['flush_type'] == 'profile_modification') {
 						<option>year</option>
 						<?php
 						$current = date('Y')+1;
-						for ($i=2000; $i < $current ; $i++) { 
+						for ($i=2000; $i < $current ; $i++) {
 							print '<option value="'.$i.'">'.$i.'</option>';
 						}
 						?>
@@ -111,7 +111,7 @@ if($_GET['flush_type'] == 'profile_modification') {
 						<option>month</option>
 						<?php
 						for ($i=1; $i < 13 ; $i++) {
-							$j = sprintf("%02d", $i);  
+							$j = sprintf("%02d", $i);
 							print '<option value="'.$j.'">'.$j.'</option>';
 						}
 						?>
@@ -120,7 +120,7 @@ if($_GET['flush_type'] == 'profile_modification') {
 						<option >day</option>
 						<?php
 						for ($i=1; $i < 32 ; $i++) {
-							$j = sprintf("%02d", $i);  
+							$j = sprintf("%02d", $i);
 							print '<option value="'.$j.'">'.$j.'</option>';
 						}
 						?>
@@ -132,7 +132,7 @@ if($_GET['flush_type'] == 'profile_modification') {
 					<input type="hidden" name="flush_type" value="profile_modification">
   					<input type="submit" name="submit" class="submit" value="Flush" />
 				</li>
-  			</ol> 
+  			</ol>
   		</fieldset>
   	</form>
 </div>
@@ -144,7 +144,7 @@ if($_GET['flush_type'] == 'range_of_dates') {
 	<span style="font-size: 12px;"><br/>&nbsp;&nbsp;Flush profiles created between <strong>Date #1</strong> and <strong>Date #2</strong></span>
 	
 	<form action="" name="" id=""  method="post" enctype="multipart/form-data">
-		<fieldset> 
+		<fieldset>
 			<ol>
 				<li>
 					<label>Date #1</label>
@@ -152,7 +152,7 @@ if($_GET['flush_type'] == 'range_of_dates') {
 						<option>year</option>
 						<?php
 						$current = date('Y')+1;
-						for ($i=2000; $i < $current ; $i++) { 
+						for ($i=2000; $i < $current ; $i++) {
 							print '<option value="'.$i.'">'.$i.'</option>';
 						}
 						?>
@@ -160,8 +160,8 @@ if($_GET['flush_type'] == 'range_of_dates') {
 					<select name="start_month" class="shorter_select">
 						<option>month</option>
 						<?php
-						for ($i=1; $i < 13 ; $i++) { 
-							$j = sprintf("%02d", $i); 
+						for ($i=1; $i < 13 ; $i++) {
+							$j = sprintf("%02d", $i);
 							print '<option value="'.$j.'">'.$j.'</option>';
 						}
 						?>
@@ -170,8 +170,8 @@ if($_GET['flush_type'] == 'range_of_dates') {
 						<option>day</option>
 						<?php
 						
-						for ($i=1; $i < 32 ; $i++) { 
-							$j = sprintf("%02d", $i); 
+						for ($i=1; $i < 32 ; $i++) {
+							$j = sprintf("%02d", $i);
 							print '<option value="'.$j.'">'.$j.'</option>';
 						}
 						?>
@@ -184,7 +184,7 @@ if($_GET['flush_type'] == 'range_of_dates') {
 						<option>year</option>
 						<?php
 						$current = date('Y')+1;
-						for ($i=2000; $i < $current ; $i++) { 
+						for ($i=2000; $i < $current ; $i++) {
 							print '<option value="'.$i.'">'.$i.'</option>';
 						}
 						?>
@@ -192,8 +192,8 @@ if($_GET['flush_type'] == 'range_of_dates') {
 					<select name="end_month" class="shorter_select">
 						<option>month</option>
 						<?php
-						for ($i=1; $i < 13 ; $i++) { 
-							$j = sprintf("%02d", $i); 
+						for ($i=1; $i < 13 ; $i++) {
+							$j = sprintf("%02d", $i);
 							print '<option value="'.$j.'">'.$j.'</option>';
 						}
 						?>
@@ -202,7 +202,7 @@ if($_GET['flush_type'] == 'range_of_dates') {
 						<option>day</option>
 						<?php
 						for ($i=1; $i < 32 ; $i++) {
-							$j = sprintf("%02d", $i);  
+							$j = sprintf("%02d", $i);
 							print '<option value="'.$j.'">'.$j.'</option>';
 						}
 						?>
@@ -214,7 +214,7 @@ if($_GET['flush_type'] == 'range_of_dates') {
 					<input type="hidden" name="flush_type" value="range_of_dates">
   					<input type="submit" name="submit" class="submit" value="Flush" />
 				</li>
-  			</ol> 
+  			</ol>
   		</fieldset>
   	</form>
 </div>
@@ -224,14 +224,14 @@ if($_GET['flush_type'] == 'profile_password') {
 ?>
 <div class="form_div">	
 	<form action="" name="" id=""  method="post" enctype="multipart/form-data">
-		<fieldset> 
+		<fieldset>
 			<ol>
 				<li class="bottom">
 					<label>Flush <strong>unregistered users</strong></label>
   					<input type="submit" name="submit" class="submit" value="Flush" />
 					<input type="hidden" name="flush_type" value="profile_password">
 				</li>
-  			</ol> 
+  			</ol>
   		</fieldset>
   	</form>
 </div>

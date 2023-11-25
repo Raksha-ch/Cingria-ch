@@ -30,7 +30,7 @@ EOD;
 
 						<div style="float:right;">
 							 <a href="?page=profiler&amp;action=delete_profile_description&amp;profile_description_id={$profile_description[profile_description_id]}" onclick="return(confirm('Delete profile description?'));"
-							class="delete_hover">delete</a> | 
+							class="delete_hover">delete</a> |
 							<a href="?page=profiler&amp;action=edit_profile_description&profile_description_id={$profile_description[profile_description_id]}">edit/show</a>
 
 						</div></li>
@@ -49,7 +49,7 @@ EOD;
  <form id="add_profile_description" action="" method="post" enctype="multipart/form-data">
  <div class="form_div">
  	<div id="info_bar">ADD PROFILE DESCRIPTION</div>
- 				<fieldset> 
+ 				<fieldset>
  					<ol>
  				<li>
  					<label>* Profile</label>
@@ -102,19 +102,19 @@ EOD;
 	 						</div>
 	 					</li>
  					</ol>
- 				</fieldset> 
+ 				</fieldset>
  			</div>		
- 
+
  			<div class="form_div">
- 				<fieldset> 
- 
+ 				<fieldset>
+
  							<ol>
  				<li class="bottom">
  					<label>&nbsp;</label>
    					<input type="submit" name="submit" class="submit" value="Add Profile Description" />
  				</li>
    					<input type="hidden" name="add_profile_description" value="1" />
-   			</ol> 
+   			</ol>
    		</fieldset>
    	</form>
  </div>

@@ -9,7 +9,7 @@ if ( ( $_POST['login_value'] != '' ) && ( $_POST['password_value'] != '' ) ) {
 	
 	if ( $login->getLoginErrorFlag() == 0 ) {
 		
-		$session->setSessionVar ( 'username'     , $login->getUsername()    ); 
+		$session->setSessionVar ( 'username'     , $login->getUsername()    );
 		$session->setSessionVar ( 'login_status' , $login->getLoginStatus() );
 		$session->setSessionVar ( 'admin_group'  , $login->getAdminGroup()  );
 		header ( "location:?page=home" );		
@@ -33,7 +33,7 @@ if ( ( $_POST['profile_surname'] != '' ) && ( $_POST['profile_password'] != '' )
 	
 	if ( $login->getLoginErrorFlag() == 0 ) {
 		
-		$session->setSessionVar ( 'username'     , $login->getUsername()    ); 
+		$session->setSessionVar ( 'username'     , $login->getUsername()    );
 		$session->setSessionVar ( 'user_login_status' , $login->getLoginStatus() );
 		$session->setSessionVar ( 'profile_id' , $login->getProfileId() );
 		header ( "location:?page=home" );		

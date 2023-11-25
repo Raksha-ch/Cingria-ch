@@ -1,17 +1,17 @@
 <div id="main" class="eightcol">
  		
 				<h1><span>Première édition critique des <em>Œuvres complètes</em></span></h1>
-                
+
                 <p>
 				<strong><?php print $txts[0]['writing_content'];?></strong>
 				<!-- <img src="img/test.jpg" style="float:left; width: 120px; padding: 2% 2% 2% 0"> -->
 			    </p>
-				<br/> 
+				<br/>
 				
 				<div id="main_oc">
 				<?php print $txts[1]['writing_content'];?>
 			    </div>
-			    
+			
 			    </p>
 			     <br/><br/>
 			   <h1><span>Les <em>Récits</em></span></h1>
@@ -21,7 +21,7 @@
 			<br/><br/>Cette plongée dans les manuscrits sous toutes leurs formes et dans la diversité des supports possibles est révélatrice de l’activité de l’écrivain, de tout un côté de laboratoire des possibilités narratives ou critiques, du potentiel que recèlent mots et expressions, de la difficulté dans le choix des synonymes, quand on veut que les textes restent ouverts, libres, dégagés.<br/><br/>
 						Pour mettre en place les « récits », terme le plus souple et le plus large pour désigner ce mixte entre histoire et description que Cingria conjugue le plus souvent au présent et à la première personne, les chercheurs ont refusé l’ordre chronologique (qui est celui de l’édition des Œuvres complètes publiées à L’Age d’Homme sous la direction de Pierre-Olivier Walzer entre 1967 à 1981) et l’ordre alphabétique qui aurait été celui des listes surréalistes. Ils ont séparé la suite des récits en deux séries:<br/><br/>D’une part, « Itinéraires et  lieux dits » permettent de développer toutes les harmoniques des lieux, inséparables du temps. Se déclinent ainsi différentes modalités de rythmes, d’actions, d’impressions, de jeux : « Fuites et poursuites », « Explorations », « Etapes » (de lieu en lieu, selon son mode préféré de déambulation) et « Regards ».<br/><br/>D’autre part, « Histoires et scènes » regroupent les écrits à teneur anecdotique ou fabuleuse ; c’est le narrateur-personnage qui interroge le lieu, recourt parfois à la troisième personne, amorce une intrigue, élabore une légère trame. Se succèdent ainsi « Fabulations », « Contes » et « Epiphanies » (comme autant de petites scènes observées qui témoignent de cette passion du réel qui habite l’écrivain). A cela s’ajoutent, outre les ateliers déjà décrits, trois catégories à part : « Retours sur l’enfance » (textes rétrospectifs autobiographiques), « Adresse » (c’est toute la veine dialogique de Cingria qui s’exprime ici, que ce soit dans le « Grand Questionnaire » ou dans des lettres fictives ou réelles, familières ou philosophiques, selon l’héritage de Pétrarque) et « Cingria avant Cingria »  (textes de jeunesse, tous parus dans des revues suisses entre 1904 et 1908, puis entre 1915 et 1919).</p>
 			    </div>
-			    
+			
 			    </p>
 			     <br/><br/>
 			   <h1><span>Les <em>Propos</em></span></h1>
@@ -31,7 +31,7 @@
 						<br/><br/>Selon leur thème dominant, ils sont répartis en huit sections : Esthétique générale, Poétique, Littérature et Beaux-Arts pour le premier volume, Musique, Idées politiques, Philosophie et Religion, enfin Culture et Société pour le second. Dans ces quelque six cents textes, dont la moitié environ avait été laissée inédite par l’auteur, chacun trouvera ses propres sujets de prédilection, et les idées de Cingria bien affirmées, avec humeur ou délicatesse, enthousiasme ou mépris. Deux cahiers iconographiques agrémentent ces textes.
 						<br/><br/>La remarquable culture de Cingria et ses sauts dans le temps et dans l’espace, associés à une spontanéité toujours en éveil, font de ces articles, originairement disséminés dans de multiples revues et aujourd’hui rassemblés, un délice de lecture. Ne boudez pas ce plaisir…
 			    </div>
-						    
+						
 			    </p>
 			     <br/><br/>
 			   <h1><span>Les <em>Essais</em></span></h1>
@@ -45,22 +45,22 @@
 			
 			
 			
-			</div> 
-	                 		 <div id="intro" class="fourcol last">  
+			</div>
+	                 		 <div id="intro" class="fourcol last">
 								<div id="yellow_box_top_left">
 								    En librairie dès maintenant : les nouvelles <em style="font-size:1em;">Œuvres Complètes</em> de Cingria, dans la belle collection « Caryatides » de L’Age d’Homme ! Une aventure éditoriale exceptionnelle par son ambition scientifique et sa durée (près de deux décennies de travail). Au total, six volumes qui totalisent quelque 7200 pages éditées par 22 collaborateurs internationaux. De quoi offrir enfin à cet écrivain, l’un des grands de son siècle, le rayonnement qu’il mérite.
-								    
+								
 								</div>
 							 </div>
 							
-				   
+				
 
 
 							
 							   	
 					   <div class="fourcol" id="order_box"> 	
 				
-		  
+		
 					<h2><span>Commande des volumes</span></h2>
 				   <br/>
 				<div id="bulletin">
@@ -109,5 +109,5 @@
 
 				
 					</div>
-                
+
 				</div>

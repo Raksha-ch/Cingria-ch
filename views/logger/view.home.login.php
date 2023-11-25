@@ -8,7 +8,7 @@
 		<div id="info_bar">ADMIN LOGIN FORM</div>
 		
 		<form id="try_profile_form" action="" method="post" enctype="multipart/form-data">
-			<fieldset> 
+			<fieldset>
 				<ol>
 	  				<li>
 						<label>Login</label>
@@ -22,7 +22,7 @@
 						<label>&nbsp;</label>
 	  					<input type="submit" name="submit" class="submit" value="Login as admin" />
 					</li>
-	  			</ol> 
+	  			</ol>
 	  		</fieldset>
 	  	</form>
 	

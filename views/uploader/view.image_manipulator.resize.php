@@ -10,7 +10,7 @@
 				</li>
 				<li class="top">
 					<label>Current width :</label>
-					<input type="input" class="shortest_input" value="<?php print $img_manipulator->getSourceImageWidth();?>" 
+					<input type="input" class="shortest_input" value="<?php print $img_manipulator->getSourceImageWidth();?>"
 					name="img_current_width" /> px
 				</li>
 				<li>
@@ -23,7 +23,7 @@
 					<select name="param_trans">
 						<?php
 						$shrinkage_values_r = array(100,75,66,50,33,25,10,5);
-						for ($i=100; $i > 0; $i--) { 
+						for ($i=100; $i > 0; $i--) {
 							$shrinkage_values_r[] = $i;
 						}
 						foreach ($shrinkage_values_r as $key => $value) {

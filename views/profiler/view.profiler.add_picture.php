@@ -1,7 +1,7 @@
 <div class="form_div">
 		<div id="info_bar">ADD PROFILE PICTURE</div>
 	<form id="" action="" method="post" enctype="multipart/form-data">
-		<fieldset> 
+		<fieldset>
 			<ol>
   				<li class="top">
 					<label>Select file</label>
@@ -23,7 +23,7 @@
 				<input type="hidden" name="save" value="true" />
 				<input type="hidden" name="check_size" value="true" />
   				<input type="hidden" name="profile_id" value="<?php print $_GET['profile_id']?>" />
-  			</ol> 
+  			</ol>
   		</fieldset>
   	</form>
 </div>

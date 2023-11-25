@@ -3,7 +3,7 @@
 		<form id="" action="" method="post" enctype="multipart/form-data">
 			
 		<div id="info_bar">UPLOAD FORM</div>
-			<fieldset> 
+			<fieldset>
 				<ol>
 					<li>
 						<label><em>*</em> Select Directory</label>
@@ -19,7 +19,7 @@
 						<input type="file" name="file"/>
 					</li>
 				</ol>
-	 		</fieldset> 
+	 		</fieldset>
 		</div>
 		
 		
@@ -57,7 +57,7 @@
 		
 
 	 		<div class="form_div">
-					<fieldset> 
+					<fieldset>
 						<ol>
 							<!--
 							<li>
@@ -115,9 +115,9 @@
 								<label>Rank</label>
 								<select name="upload_file_rank" class="short_select">
 									<?php
-									for ($i=1; $i < 101; $i++) { 
+									for ($i=1; $i < 101; $i++) {
 										print '<option value="'.$i.'"';
-											if( $i == $_POST['upload_file_rank'] ) { print ' selected="selected" ' ;} 
+											if( $i == $_POST['upload_file_rank'] ) { print ' selected="selected" ' ;}
 										print '>'.$i.'</option>';
 									}
 									?>
@@ -125,7 +125,7 @@
 							</li>
 							<li>
 								<label>Display?</label>
-								<?php 
+								<?php
 								if ( ( $_POST['upload_file_display'] == '1' ) || ( !isset( $_POST['upload_file_display'] ) ) ) {
 									$yes_check = ' checked="checked" ';
 								}
@@ -137,12 +137,12 @@
 								<input type="radio" name="upload_file_display" <?php print $no_check ; ?> value="0" /> No
 							</li>
 						</ol>
-			 		</fieldset> 
+			 		</fieldset>
 
 				</div>	
 				
 				<div class="form_div">
-						<fieldset> 
+						<fieldset>
 							<ol>	
 					
 	  				<li>
@@ -168,18 +168,18 @@
 	  					<input type="checkbox" name="dont_save" value="true" />
 					</li>
 	  			</ol>
-	   		</fieldset> 
-      
+	   		</fieldset>
+
 	  	</div>	
 	  	
 	  	<div class="form_div">
-	  			<fieldset> 
+	  			<fieldset>
 	  				<ol>
 	  				<li class="bottom">
 						<label>&nbsp;</label>
 	  					<input type="submit" name="submit" class="submit" value="Upload" />
 					</li>
-	  			</ol> 
+	  			</ol>
 	  		</fieldset>
 	  	</form>
 	</div>

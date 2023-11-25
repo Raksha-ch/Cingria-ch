@@ -1,7 +1,7 @@
 <div class="form_div">
 	<form id="" action="" method="post">
 		<div id="info_bar">EDITER PROFIL D'ARTISTE</div>
-				<fieldset> 
+				<fieldset>
 					<ol>
 						<li>
 							<label>Type d'artiste</label>
@@ -101,7 +101,7 @@
 						-->	
 							<li>
 								<label>Afficher?</label>
-								<input type="radio" name="profile_status" 
+								<input type="radio" name="profile_status"
 								<?php if($rows['0']['profile_status']=='1'){print'checked="checked"';} ?> value="1" /> Oui
 								<input type="radio" name="profile_status"
 								<?php if($rows['0']['profile_status']=='0'){print'checked="checked"';} ?> value="0" /> Non
@@ -112,7 +112,7 @@
 							<!--
 							<div class="form_div">
 							 	<div id="info_bar">Courte biographie</div>
-							 				<fieldset> 
+							 				<fieldset>
 							 					<ol>
 
 
@@ -124,7 +124,7 @@
 								 						</div>
 								 					</li>
 							 					</ol>
-							 				</fieldset> 
+							 				</fieldset>
 							 			</div>
 							-->
 								<div class="form_div">
@@ -181,7 +181,7 @@
 		  					<input type="submit" name="submit" class="submit" value="Edit" />
 						</li>
 		  					
-		  			</ol> 
+		  			</ol>
 		  		</fieldset>
 		  	</form>
 		</div>

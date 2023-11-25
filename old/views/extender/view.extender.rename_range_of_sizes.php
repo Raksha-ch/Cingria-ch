@@ -3,7 +3,7 @@
 		RENAME RANGE OF SIZES FORM
 	</div>
 			<form id="rename_category_form" action="" method="post" enctype="multipart/form-data">
-				<fieldset> 
+				<fieldset>
 					<ol>
 		  				<li>
 							<label>Range of sizes</label>
@@ -15,7 +15,7 @@
 							<input type="hidden"  name="size_array_id" value="<?php print $rows['0']['size_array_id'];?>" />
 		  					<input type="submit" name="submit" class="submit" value="Rename Range" />
 						</li>
-		  			</ol> 
+		  			</ol>
 		  		</fieldset>
 		  	</form>
 </div>

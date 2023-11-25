@@ -3,7 +3,7 @@
 		RENAME SUBCATEGORY FORM
 	</div>
 			<form id="rename_subcategory_form" action="" method="post" enctype="multipart/form-data">
-				<fieldset> 
+				<fieldset>
 					<ol>
 		  				<li>
 							<label>Subcategory Name</label>
@@ -15,7 +15,7 @@
 							<input type="hidden"  name="subcategory_id" value="<?php print $rows['0']['subcategory_id'];?>" />
 		  					<input type="submit" name="submit" class="submit" value="Rename Subcategory" />
 						</li>
-		  			</ol> 
+		  			</ol>
 		  		</fieldset>
 		  	</form>
 </div>

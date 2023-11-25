@@ -19,34 +19,34 @@ $img_array_1 = array('slides/slide_09.jpg',
      					'slides/slide_19.jpg',
      					'slides/slide_20.jpg',
 						'slides/slide_21.jpg'); 					
- 
+
   shuffle($img_array_1);
   shuffle($img_array_2);   			
-  
-  $slideshow_1 = '<div id="slides_main">'; 
+
+  $slideshow_1 = '<div id="slides_main">';
   $i = 1;
   foreach ($img_array_1 as $key) {
-  	     
-		if($i == 1) { 
+  	
+		if($i == 1) {
 			     $slideshow_1 .=  '<img src="'.$key.'" alt="" class="firstslide" />';
 			}
 		 else {
-			    $slideshow_1 .=  '<img src="'.$key.'" alt="" />'; 
-		}   
+			    $slideshow_1 .=  '<img src="'.$key.'" alt="" />';
+		}
 	   $i++;
-  }   
+  }
   $slideshow_1 .= '</div>';
 
-  $slideshow_2 = '<div id="slides_main_right">'; 
+  $slideshow_2 = '<div id="slides_main_right">';
   $j = 1;
   foreach ($img_array_2 as $key) {
 
-		if($j == 1) { 
+		if($j == 1) {
 			     $slideshow_2 .=  '<img src="'.$key.'" alt="" class="firstslide" />';
 			}
 		 else {
-			    $slideshow_2 .=  '<img src="'.$key.'" alt="" />'; 
-		}   
+			    $slideshow_2 .=  '<img src="'.$key.'" alt="" />';
+		}
 	   $j++;
   }
  $slideshow_2 .= '</div>';

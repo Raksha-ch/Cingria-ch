@@ -1,7 +1,7 @@
 <form id="create_discography_form" action="" method="post" enctype="multipart/form-data">
 <div class="form_div">
 	<div id="info_bar">DISCOGRAPHIE</div>
-		<fieldset> 
+		<fieldset>
 			<ol>
 				<li>
 					<label>Titre de la discographie</label>
@@ -9,7 +9,7 @@
 				</li>
 			
 		 		</ol>
-		 	</fieldset> 
+		 	</fieldset>
 		 	</div>
 		
 
@@ -23,7 +23,7 @@
 				</li>
 
 					<input type="hidden"  name="create_discography" value="1" />
-  			</ol> 
+  			</ol>
   		</fieldset>
   	</form>
 </div>
@@ -70,14 +70,14 @@ CREATEDPROFILE;
 
 		
 			print <<<EDO
-				<div class="profiles">  
+				<div class="profiles">
 				<div class="underlined_profile_line">
 				  	<div class="records_left">
 				  		<strong>$page_title</strong>
 				  	</div>
 				  	<div class="records_right">
 				  		<a href="?page=profiler&amp;action=delete_discography&amp;discography_id=$page_id&amp;slice_1=$slice
-						" onclick="return(confirm('Delete discography? All records linked to this discography will also be deleted.'));" class="delete_hover">delete</a> | 
+						" onclick="return(confirm('Delete discography? All records linked to this discography will also be deleted.'));" class="delete_hover">delete</a> |
 				  		<a href="?page=profiler&amp;action=edit_discography&amp;discography_id=$page_id&amp;slice_1=$slice
 						">rename</a>
 				  	</div>

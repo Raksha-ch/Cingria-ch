@@ -1,7 +1,7 @@
 <form id="create_profile_form" action="" method="post" enctype="multipart/form-data">
 <div class="form_div">
 	<div id="info_bar">EDITER UN DISQUE</div>
-		<fieldset> 
+		<fieldset>
 			<ol>
 				<li>
 					<label>Entr&eacute;e attribu&eacute;e &agrave;</label>
@@ -36,7 +36,7 @@
 					<select name="upload_file_id" id="upload_file_id" class="short_select">
 						<option value="0">Select...</option>
 						<?php
-							$where = ' dir_name = "uploads/discographies" '; 
+							$where = ' dir_name = "uploads/discographies" ';
 							$rowx =  $crud->select('','upload_file','*','',$where,'','upload_file_name ASC','','');
 							foreach ($rowx as $rox) {
 								if($rox['upload_file_display']=='0'){$status = ' &nbsp; ( off )';} else { $status= '';}
@@ -51,7 +51,7 @@
 				</li>
 			
 				<li>					
-                
+
 						<textarea class="long_textarea_input" name="discography_item_content"><?php print $rows['0']['discography_item_content']; ?></textarea>
 							<div style="padding: 12px; float:left;">
 								<div class="wmd-preview" style="background-color: #EFEFEF; float:left; padding: 2px;"></div>
@@ -60,7 +60,7 @@
 
 		 	
 		 		</ol>
-		 	</fieldset> 
+		 	</fieldset>
 		 	</div>
 		
 
@@ -74,7 +74,7 @@
 				</li>
 					<input type="hidden"  name="discography_item_id" value="<?php print $rows['0']['discography_item_id']; ?>" />
 					<input type="hidden"  name="edit_discography_item" value="1" />
-  			</ol> 
+  			</ol>
   		</fieldset>
   	</form>
 </div>

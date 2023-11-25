@@ -5,7 +5,7 @@
  <form id="create_writing_form" action="" method="post" enctype="multipart/form-data">
  <div class="form_div">
  	<div id="info_bar">CREATE WRITING</div>
- 		<fieldset> 
+ 		<fieldset>
  			<ol>
  				<li>
  					<label>* Title</label>
@@ -16,10 +16,10 @@
  					<input type="text" class="input" name="writing_description" value="<?php print $_POST['writing_description'] ?>" />
  				</li>
  							</ol>
- 							</fieldset> 
+ 							</fieldset>
  			</div>
  			<div class="form_div">
- 				<fieldset> 
+ 				<fieldset>
  					<ol>
  				<li>
  					<label>* Template Element</label>
@@ -53,22 +53,22 @@
  					<label>Rank</label>
  					<select name="writing_rank" class="short_select">
  						<?php
- 						for ($i=1; $i < 101; $i++) { 
+ 						for ($i=1; $i < 101; $i++) {
  							print '<option value="'.$i.'"';
- 								if( $i == $_POST['writing_rank'] ) { print ' selected="selected" ' ;} 
+ 								if( $i == $_POST['writing_rank'] ) { print ' selected="selected" ' ;}
  							print '>'.$i.'</option>';
  						}
  						?>
  					</select>
  				</li>
  				</ol>
- 				</fieldset> 
+ 				</fieldset>
  </div>
- 
+
  			
  				<div class="form_div">
  					<div id="info_bar">WRITING CONTENT</div>
- 					<fieldset> 
+ 					<fieldset>
  						<ol>
  					<li>
  						<label>Language</label>
@@ -128,10 +128,10 @@
 	 					<input type="text" class="input" name="writing_public_date" value="<?php print $_POST['writing_public_date'] ?>" />
 	 				</li>
  					</ol>
- 					</fieldset> 
+ 					</fieldset>
  				</div>		
  		<div class="form_div">
- 			<fieldset> 
+ 			<fieldset>
  				<ol>
 					<li>					
 
@@ -142,11 +142,11 @@
 				</li>
 					</ol>
  						
- 				</fieldset> 
+ 				</fieldset>
  		</div>	
 		
 		<div class="form_div">
-			<fieldset> 
+			<fieldset>
 				<ol>
 					
 			<li>
@@ -163,7 +163,7 @@
 							$dir_name = implode('/',$arr);
 							
 							if($rox['upload_file_display']=='0'){$status = ' &nbsp; ( off )';} else { $status= '';}
-							 
+							
 							print '<option value="'.$dir_name.'/'.$rox['upload_file_name'].$rox['upload_file_ext'].'">'.$dir_name.'/'.$rox['upload_file_name'].$rox['upload_file_ext'].$status.'</option>';
 						}
 					?>
@@ -183,19 +183,19 @@
 				<textarea class="textarea_input" name="media_url"></textarea>
 			</li>
 			</ol>
-			</fieldset> 
+			</fieldset>
 		</div>	
  <div class="form_div">
- 	<fieldset> 
+ 	<fieldset>
  	
  				<ol>
  					<li>
  						<label>Display?</label>
  						<input type="radio" name="writing_status" value="1"
- 							<?php  if ( (!isset($_POST['writing_status'])) || ($_POST['writing_status'] == 1)) { print ' checked="checked" ' ;} ?> 
+ 							<?php  if ( (!isset($_POST['writing_status'])) || ($_POST['writing_status'] == 1)) { print ' checked="checked" ' ;} ?>
  						/> Yes
- 						<input type="radio" name="writing_status" value="0" 
- 							<?php  if ( $_POST['writing_status'] == '0' ) { print ' checked="checked" ' ;} ?> 
+ 						<input type="radio" name="writing_status" value="0"
+ 							<?php  if ( $_POST['writing_status'] == '0' ) { print ' checked="checked" ' ;} ?>
  						/> No
  					</li>
  					<li>
@@ -213,7 +213,7 @@
  									if ( $y == $_POST['writing_publication_start_date_y'] ) { print ' selected="selected" ' ;}
  								}
  								
- 								print '>'.$y.'</option>'; 
+ 								print '>'.$y.'</option>';
  								
  							}
  							?>
@@ -225,7 +225,7 @@
  								print '<option value="'.$m.'"';
  								
  									if ( isset( $_POST['writing_publication_start_date_m'] ) ) {
- 
+
  										if ( $m == $_POST['writing_publication_start_date_m'] ) { print ' selected="selected" ' ;}
  									
  									}
@@ -236,7 +236,7 @@
  										
  									}
  									
- 								print '>'.$m.'</option>'; 
+ 								print '>'.$m.'</option>';
  								
  							}
  							?>
@@ -248,15 +248,15 @@
  								print '<option value="'.$d.'"';
  								
  								 	if ( isset( $_POST['writing_publication_start_date_d'] ) ) {
- 
+
  										if ( $d == $_POST['writing_publication_start_date_d'] ) { print ' selected="selected" ' ;}
- 
+
  									}
- 
+
  									else {
- 
+
  										if ( $d == date( 'd' ) ) { print 'selected="selected" ' ;}
- 
+
  									}
  								
  								print '>'.$d.'</option>';
@@ -276,12 +276,12 @@
  								print '<option value="'.$y.'"';
  								
  									if ( isset( $_POST['writing_publication_end_date_y'] ) ) {
- 
+
  										if ( $y == $_POST['writing_publication_end_date_y'] ) { print ' selected="selected" ' ;}
 
  									}
 
- 								print '>'.$y.'</option>'; 
+ 								print '>'.$y.'</option>';
 								
  							}
 
@@ -302,7 +302,7 @@
  								print '<option value="'.$m.'"';
  									
  									if ( isset( $_POST['writing_publication_end_date_m'] ) ) {
- 
+
  										if ( $m == $_POST['writing_publication_end_date_m'] ) { print ' selected="selected" ' ;}
  									
  									}
@@ -314,7 +314,7 @@
  									}
  									
  									
- 								print '>'.$m.'</option>'; 
+ 								print '>'.$m.'</option>';
  							}
  							?>
  						</select>
@@ -324,30 +324,30 @@
  								print '<option value="'.$d.'"';
  									
  										if ( isset( $_POST['writing_publication_end_date_d'] ) ) {
- 
+
  											if ( $d == $_POST['writing_publication_end_date_d'] ) { print ' selected="selected" ' ;}
- 
+
  										}
- 
+
  										else {
- 
+
  											if ( $d == date( 'd' ) ) { print 'selected="selected" ' ;}
- 
+
  										}
  									
- 								print '>'.$d.'</option>'; 
+ 								print '>'.$d.'</option>';
  							}
  							?>
  						</select>
  						
  					</li>
  				</ol>
- 			</fieldset> 
+ 			</fieldset>
  			</div>
- 
+
  			<div class="form_div">
- 				<fieldset> 
- 
+ 				<fieldset>
+
  							<ol>
  				<li class="bottom">
  					<label>&nbsp;</label>
@@ -355,7 +355,7 @@
  				</li>
    					<input type="hidden" name="writing_creation_date" value="<?php print date('Y-m-d');?>" />
    					<input type="hidden" name="create_writing" value="1" />
-   			</ol> 
+   			</ol>
    		</fieldset>
    	</form>
  </div>
@@ -436,4 +436,3 @@ $(document).ready(function() {
 });
 
 </script>
-   

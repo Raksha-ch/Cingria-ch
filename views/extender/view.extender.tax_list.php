@@ -3,7 +3,7 @@
 		TAXES LIST
 	</div>
 			<form id="update_tax_form" action="" method="post" enctype="multipart/form-data">
-				<fieldset> 
+				<fieldset>
 					<ol>
 		  				<li>
 						<?php
@@ -25,7 +25,7 @@ EOD;
 					   		<input type="hidden"  name="update_tax" value="1" />
 			  		   		<input type="submit" name="submit" class="submit" value="Update Tax" />
 					   </li>
-					</ol> 
+					</ol>
 		  		</fieldset>
 		  	</form>
 </div>

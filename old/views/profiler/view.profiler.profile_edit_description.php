@@ -2,7 +2,7 @@
  <form id="add_profile_description" action="" method="post" enctype="multipart/form-data">
  <div class="form_div">
  	<div id="info_bar">ADD PROFILE DESCRIPTION</div>
- 				<fieldset> 
+ 				<fieldset>
  					<ol>
  				<li>
  					<label>* Profile</label>
@@ -55,12 +55,12 @@
 	 						</div>
 	 					</li>
  					</ol>
- 				</fieldset> 
+ 				</fieldset>
  			</div>		
- 
+
  			<div class="form_div">
- 				<fieldset> 
- 
+ 				<fieldset>
+
  							<ol>
  				<li class="bottom">
  					<label>&nbsp;</label>
@@ -68,7 +68,7 @@
  				</li>
 					<input type="hidden" name="profile_description_id" value="<?php print $rows['0']['profile_description_id']?>" />
    					<input type="hidden" name="edit_profile_description" value="1" />
-   			</ol> 
+   			</ol>
    		</fieldset>
    	</form>
  </div>

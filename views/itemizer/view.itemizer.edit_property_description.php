@@ -10,7 +10,7 @@
  <form id="edit_property_description" action="" method="post" enctype="multipart/form-data">
  <div class="form_div">
  	<div id="info_bar">EDIT PROPERTY DESCRIPTION</div>
- 				<fieldset> 
+ 				<fieldset>
  					<ol>
  				<li>
  					<label><em>*</em> Property</label>
@@ -63,15 +63,15 @@
 	 						</div>
 	 					</li>
  					</ol>
- 				</fieldset> 
+ 				</fieldset>
  			</div>		
  	
 
 
 
  			<div class="form_div">
- 				<fieldset> 
- 
+ 				<fieldset>
+
  							<ol>
  				<li class="bottom">
  					<label>&nbsp;</label>
@@ -79,7 +79,7 @@
  				</li>
 					<input type="hidden" name="property_description_id" value="<?php print $rows['0']['property_description_id']?>" />
    					<input type="hidden" name="edit_property_description" value="1" />
-   			</ol> 
+   			</ol>
    		</fieldset>
    	</form>
  </div>

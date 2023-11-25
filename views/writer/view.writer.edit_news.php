@@ -1,7 +1,7 @@
 <form id="edit_news_form" action="" method="post" name="combo_box" enctype="multipart/form-data">
 <div class="form_div">
 	<div id="info_bar">COMMUN</div>
-		<fieldset> 
+		<fieldset>
 			<ol>
 				<li>
 					<label>Intitul&eacute;</label>
@@ -45,7 +45,7 @@
 							
 							foreach ( $artists as $row ) {
 				
-							print '<option value="'.$row['profile_id'].'">'.$row['profile_name'].' 
+							print '<option value="'.$row['profile_id'].'">'.$row['profile_name'].'
 							'.$row['profile_surname'].'&nbsp;&nbsp;['.$row['profile_company'].']'.'</option>';
 							}
 							?>	
@@ -65,7 +65,7 @@
 							$where = 'profile_id = ' . $row;
 							$artists =  $crud->select('','profile','profile_id,profile_name,profile_surname,profile_company','',$where, 'profile_name ASC', '' ,'','');
 								
-							print '<option value="'.$artists[0]['profile_id'].'">'.$artists[0]['profile_name'].' 
+							print '<option value="'.$artists[0]['profile_id'].'">'.$artists[0]['profile_name'].'
 							'.$artists[0]['profile_surname'].'&nbsp;&nbsp;['.$artists[0]['profile_company'].']'.'</option>';
 							}
 							?>
@@ -162,20 +162,20 @@
 						
 					</li>
 				</ol>
-			</fieldset> 
+			</fieldset>
 			</div>
 
 		
 			<div class="form_div">
 				<div id="info_bar">ACCUEIL</div>
 			 	
-				<fieldset> 
+				<fieldset>
 					<ol>
 							<li>
 								<label>Position Accueil</label>
 								<select name="news_rank" class="short_select">
 									<?php
-									for ($i=1; $i < 101; $i++) { 
+									for ($i=1; $i < 101; $i++) {
 										print '<option value="'.$i.'"';
 											if ( $i == $rows['0']['news_rank'] ) { print ' selected="selected" ' ;}
 										print '>'.$i.'</option>';
@@ -211,11 +211,11 @@
 							</li>
 			
 				</ol>
-				</fieldset> 
+				</fieldset>
 </div>
 <div class="form_div">	
  	<div id="info_bar">PROGRAMME RAPIDE</div>
- 		<fieldset> 
+ 		<fieldset>
  			<ol>
  				<li>
  					<label>Titre Programme rapide</label>
@@ -223,12 +223,12 @@
  				</li>
 
  				</ol>
- 				</fieldset> 
+ 				</fieldset>
  </div>
 			
  <div class="form_div">	
  	<div id="info_bar">META INFORMATION</div>
- 		<fieldset> 
+ 		<fieldset>
  			<ol>
 
 				<li>
@@ -265,7 +265,7 @@
 	 					<input type="text" class="input" name="news_time" value="<?php print $rows['0']['news_time'] ?>" />
 	 				</li>
 			</ol>
-		 </fieldset> 
+		 </fieldset>
 	</div>
 
 		 				<div class="form_div">
@@ -304,10 +304,10 @@
 							</li>
 							
 							</ol>
-						</fieldset> 
+						</fieldset>
 					</div>		
 		<div class="form_div">
-			<fieldset> 
+			<fieldset>
 
 					<ol>
 							<li>					
@@ -318,20 +318,20 @@
 						</div>
 					</li>
 					</ol>
-				</fieldset> 
+				</fieldset>
 			</div>
 		
 					
 <div class="form_div">
-	<fieldset> 
+	<fieldset>
 	
 				<ol>
 					<li>
 						<label>Afficher?</label>
-						<input type="radio" name="news_status" value="1" 
+						<input type="radio" name="news_status" value="1"
 						<?php if($rows['0']['news_status'] == '1'){ print 'checked="checked"' ;} ?>
 						/> Oui
-						<input type="radio" name="news_status" value="0" 
+						<input type="radio" name="news_status" value="0"
 						<?php if($rows['0']['news_status'] == '0'){ print 'checked="checked"' ;} ?>
 						/> Non
 					</li>
@@ -344,13 +344,13 @@
 							$start = explode("-", $start);
 							$end  = $rows['0']['news_publication_end_date'];
 							$end = explode("-", $end);
-							 
+							
 							$y = date('Y');
 							$y_2 = $y + 11;
 							for ($y; $y < $y_2; $y++) {
 								print '<option value="'.$y.'"';
 									if($y == $start[0]) { print 'selected="selected"' ;}
-								print '>'.$y.'</option>'; 
+								print '>'.$y.'</option>';
 							}
 							?>
 						</select>
@@ -359,7 +359,7 @@
 							for ($m=1; $m < 13; $m++) {
 								print '<option value="'.$m.'"';
 									if($m == $start[1]) { print 'selected="selected"' ;}
-								print '>'.$m.'</option>'; 
+								print '>'.$m.'</option>';
 							}
 							?>
 						</select>
@@ -368,7 +368,7 @@
 							for ($d=1; $d < 32; $d++) {
 								print '<option value="'.$d.'"';
 									if($d == $start[2]) { print 'selected="selected"' ;}
-								print '>'.$d.'</option>'; 
+								print '>'.$d.'</option>';
 							}
 							?>
 						</select>
@@ -383,7 +383,7 @@
 							for ($y; $y < $y_2; $y++) {
 								print '<option value="'.$y.'"';
 									if($y == $end[0]) { print 'selected="selected"' ;}
-								print '>'.$y.'</option>'; 
+								print '>'.$y.'</option>';
 							}
 							?>
 						</select>
@@ -392,7 +392,7 @@
 							for ($m=1; $m < 13; $m++) {
 								print '<option value="'.$m.'"';
 									if($m == $end[1]) { print 'selected="selected"' ;}
-								print '>'.$m.'</option>'; 
+								print '>'.$m.'</option>';
 							}
 							?>
 						</select>
@@ -401,18 +401,18 @@
 							for ($d=1; $d < 32; $d++) {
 								print '<option value="'.$d.'"';
 									if($d == $end[2]) { print 'selected="selected"' ;}
-								print '>'.$d.'</option>'; 
+								print '>'.$d.'</option>';
 							}
 							?>
 						</select>
 						
 					</li>
 				</ol>
-			</fieldset> 
+			</fieldset>
 			</div>
 
 			<div class="form_div">
-				<fieldset> 
+				<fieldset>
 
 							<ol>
 				<li class="bottom">
@@ -422,7 +422,7 @@
   					<input type="hidden" name="update_news" value="1" />
   					<input type="submit" name="submit" class="submit" value="Editer" onClick="selectAll(document.combo_box['pool_list_2[]']);" />
 				</li>
-  			</ol> 
+  			</ol>
   		</fieldset>
   	</form>
 </div>

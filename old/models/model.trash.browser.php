@@ -24,7 +24,7 @@ class TrashBrowser {
 	}
 	
 	function countItems() {
-		 $items = count($this->getItemsArray()); 
+		 $items = count($this->getItemsArray());
 		return $items-2;// 2 files are . and ..
 	}
 	
@@ -38,7 +38,7 @@ class TrashBrowser {
 			else {
 				throw new myExceptions('The file <em>'.$file_to_be_erased.'</em> couldn\'t be erased.');
 			}
-		} 
+		}
 		catch(myExceptions $e) {
 	  		print $e->getError();			
 	  	}

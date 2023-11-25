@@ -1,13 +1,13 @@
 <?php
 class myExceptions extends Exception {
-    
+
     // Constructeur de la classe.
     // Il faut bien penser à rapeller le constructeur de la classe Exception.
     public function __construct($msg) {
         parent :: __construct($msg);
     }
 
-    
+
     // Méthode retournant un message d'erreur complet et formaté.
     public function getError() {
 

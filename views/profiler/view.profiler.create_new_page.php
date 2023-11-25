@@ -1,7 +1,7 @@
 <form id="create_profile_form" action="" method="post" enctype="multipart/form-data">
 <div class="form_div">
 	<div id="info_bar">PAGE</div>
-		<fieldset> 
+		<fieldset>
 			<ol>
 				<li>
 					<label>Page attribu&eacute;e &agrave;</label>
@@ -73,7 +73,7 @@
 			 			</div>
 			 	</li>
 		 		</ol>
-		 	</fieldset> 
+		 	</fieldset>
 		 	</div>
 		
 
@@ -87,7 +87,7 @@
 				</li>
 
 					<input type="hidden"  name="create_page" value="1" />
-  			</ol> 
+  			</ol>
   		</fieldset>
   	</form>
 </div>

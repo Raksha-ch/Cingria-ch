@@ -3,7 +3,7 @@
 		RENAME DIRECTORY FORM
 	</div>
 			<form id="rename_directory_form" action="" method="post" enctype="multipart/form-data">
-				<fieldset> 
+				<fieldset>
 					<ol>
 		  				<li>
 							<label>Directory Name</label>
@@ -16,7 +16,7 @@
 							<input type="hidden"  name="dir_root" value="<?php print $dirs['dir_path'];?>" />
 		  					<input type="submit" name="submit" class="submit" value="Rename Directory" />
 						</li>
-		  			</ol> 
+		  			</ol>
 		  		</fieldset>
 		  	</form>
 </div>

@@ -6,7 +6,7 @@
 			<div class="info_box">
 			<fieldset class="info" id="recordset_menu">
 				<ul>
-					<?php print $pager->buildSlicesNavigator($sortKeyArray, $sortDirectionArray, $displayTypeArray, 1, '' , '') ;?>	    
+					<?php print $pager->buildSlicesNavigator($sortKeyArray, $sortDirectionArray, $displayTypeArray, 1, '' , '') ;?>	
 				</ul>
 			</fieldset>
 		</div>

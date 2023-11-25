@@ -1,0 +1,93 @@
+
+ #timeline a { 
+	font-family: sans-serif;  
+	font-size: 0.58823529411765em;
+	color: #3b3b3b;
+	text-decoration: none;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	-ms-transition: 0.3s;
+	transition: 0.3s;
+}
+   #timeline a:hover,
+   #timeline a.selected {
+		color: #e00071;
+	}
+
+
+
+
+	#timeline {
+		width: 100%;
+		height: 440px;
+		overflow: hidden;
+		margin:  -24px 0 0 0;
+		position: relative;
+		background: url('../img/dot2.gif') 16px top repeat-y;
+	}
+		#dates {
+			width: 100px;
+			height: 300px;
+			overflow: hidden;
+			float: left;
+		}
+			#dates li {
+				list-style: none;
+				width: 100px;
+				height: 30px;
+				line-height: 30px;
+				font-size: 24px;
+				padding: 0 0 0 26px;
+				background: url('../img/biggerdot.png') left center no-repeat;
+			}
+				#dates a {
+					line-height: 20px;
+					padding-bottom: 10px;
+				}
+				#dates .selected {
+			        font-size: 0.82352941176471em;
+			        font-weight:normal;
+		   
+				}
+		
+		#issues {
+			width: 900px;
+			height: 440px;
+			overflow: hidden;
+			float: left; 
+		   
+		}	
+			#issues li {
+				width: 900px;
+				height: 440px;
+				list-style: none;
+
+			}
+	 
+			     .caption { font-family: sans-serif; font-size: 0.76470588235294em;}
+			
+			
+				#issues li img {
+					   max-width: 200px;
+					
+				}
+				#issues li h1 {
+					color: #fff;
+					font-size: 1.64705882352941em;   
+					text-align: left;
+					border: none;
+					padding: 2% 0;
+					
+				} 
+				
+				#issues li h1 span {
+					           padding: 3px 4px;
+				              background-color: #AFB5BE; 
+							-moz-border-radius: 4px;
+							border-radius: 4px; 
+							 border: none;  
+				}
+
+	   
+		

@@ -28,9 +28,9 @@
 class Connection
 {
     const DB_HOST 		= 'localhost';
-    const DB_NAME 		= 'cingria';
-    const DB_USER 		= 'chabert_13';
-    const DB_PASSWORD 	= 'YR5m?xj0B&ifxa6h';
+    const DB_NAME 		= 'cingria_ch';
+    const DB_USER 		= 'cingria_ch';
+    const DB_PASSWORD 	= 'soe3oow4Mahjiu2i';
     const DB_TYPE		= 'mysql';
 
         private $_connectionConstantsArray = array();

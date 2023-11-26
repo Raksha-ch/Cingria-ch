@@ -19,44 +19,44 @@ $create_new_discography_item 				= ( $_GET['action'] == 'create_new_discography_
 ?>
 
 <div id="menu_navigator">
-	<ol>
-		<li <?php print $active_list;?> >
-			<a href="?page=profiler&amp;action=profile_list">Lister les artistes</a>
-		</li>
+  <ol>
+    <li <?php print $active_list;?> >
+      <a href="?page=profiler&amp;action=profile_list">Lister les artistes</a>
+    </li>
 
-		<li <?php print $active_create_new_profile;?> >
-			<a href="?page=profiler&amp;action=create_new_profile">Cr&eacute;er un profil</a>
-		</li>
-		<!--
-		<li <?php print $active_manage_profile_description; ?> >
-			<a href="?page=profiler&amp;action=manage_profile_description">G&eacute;rer les biographies</a>
-		</li>
-		-->
-		<li <?php print $active_pages_list; ?> >
-			<a href="?page=profiler&amp;action=pages_list">Lister les pages</a>
-		</li>
-		<li <?php print $active_create_new_page; ?> >
-			<a href="?page=profiler&amp;action=create_new_page">Cr&eacute;er une page</a>
-		</li>
-		
-	   <li <?php print $active_discography_list; ?> >
-	   	<a href="?page=profiler&amp;action=discography_list">Lister les discographies</a>
-	   </li>
-	   <li <?php print $create_new_discography_item; ?> >
-	   	<a href="?page=profiler&amp;action=create_new_discography_item">G&eacute;rer une discographie</a>
-	   </li>
-		<!--
-		<li <?php /*print $active_list_trashed_profile_pictures;*/?> >
-			<a href="?page=profiler&amp;action=list_trashed_profile_pictures">List Trashed Profile Pictures</a>
-		</li>
-		-->
-	</ol>
+    <li <?php print $active_create_new_profile;?> >
+      <a href="?page=profiler&amp;action=create_new_profile">Cr&eacute;er un profil</a>
+    </li>
+    <!--
+    <li <?php print $active_manage_profile_description; ?> >
+      <a href="?page=profiler&amp;action=manage_profile_description">G&eacute;rer les biographies</a>
+    </li>
+    -->
+    <li <?php print $active_pages_list; ?> >
+      <a href="?page=profiler&amp;action=pages_list">Lister les pages</a>
+    </li>
+    <li <?php print $active_create_new_page; ?> >
+      <a href="?page=profiler&amp;action=create_new_page">Cr&eacute;er une page</a>
+    </li>
+
+     <li <?php print $active_discography_list; ?> >
+      <a href="?page=profiler&amp;action=discography_list">Lister les discographies</a>
+     </li>
+     <li <?php print $create_new_discography_item; ?> >
+      <a href="?page=profiler&amp;action=create_new_discography_item">G&eacute;rer une discographie</a>
+     </li>
+    <!--
+    <li <?php /*print $active_list_trashed_profile_pictures;*/?> >
+      <a href="?page=profiler&amp;action=list_trashed_profile_pictures">List Trashed Profile Pictures</a>
+    </li>
+    -->
+  </ol>
 </div>
 
 
 <?php
-	
-	
+
+
 if ( $_GET['action']  == 'create_new_profile' )				{ include 'views/profiler/view.profiler.create.php' ;}
 if ( $_GET['action']  == 'create_new_page' )				{ include 'views/profiler/view.profiler.create_new_page.php' ;}
 if ( $_GET['action']  == 'edit_page' )						{ include 'views/profiler/view.profiler.edit_page.php' ;}

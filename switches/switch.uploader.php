@@ -10,27 +10,27 @@ $upload_directories_list = ( $_GET['action'] == 'upload_directories_list' ) ? 'c
 ?>
 
 <div id="menu_navigator">
-	<ol>
-		
-		<li <?php print $active_list;?> >
-			<a href="?page=uploader&amp;action=list">List Files</a>
-		</li>
-		<li <?php print $active_upload;?> >
-			<a href="?page=uploader&amp;action=upload">Upload New File</a>
-		</li>
-		<li <?php print $active_list_trashed;?> >
-			<a href="?page=uploader&amp;action=list_trashed">List Trashed Files</a>
-		</li>
-		<?php if ( $_SESSION['admin_group'] < 2 ) { ?>
+  <ol>
 
-		<li <?php print $upload_directories_list;?> >
-			<a href="?page=uploader&amp;action=upload_directories_list">Manage Upload Directories</a>
-		</li>
+    <li <?php print $active_list;?> >
+      <a href="?page=uploader&amp;action=list">List Files</a>
+    </li>
+    <li <?php print $active_upload;?> >
+      <a href="?page=uploader&amp;action=upload">Upload New File</a>
+    </li>
+    <li <?php print $active_list_trashed;?> >
+      <a href="?page=uploader&amp;action=list_trashed">List Trashed Files</a>
+    </li>
+    <?php if ( $_SESSION['admin_group'] < 2 ) { ?>
 
-		<?php } ?>
-		
-			
-	</ol>
+    <li <?php print $upload_directories_list;?> >
+      <a href="?page=uploader&amp;action=upload_directories_list">Manage Upload Directories</a>
+    </li>
+
+    <?php } ?>
+
+
+  </ol>
 </div>
 
 <?php

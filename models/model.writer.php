@@ -28,7 +28,7 @@
 
 
 class Writer {
-	
+
 
 //  ******************************************************************************************************************************************
 //  0) INITIALIZE VARS
@@ -43,9 +43,9 @@ class Writer {
 //  1) CONSTRUCTOR
 //  ******************************************************************************************************************************************	
 
-	function __construct() {
-		$this->setErrorFlag(0);
-	}
+  function __construct() {
+    $this->setErrorFlag(0);
+  }
 
 //  ------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -56,19 +56,19 @@ class Writer {
 //  2) GETTERS & SETTERS
 //  ******************************************************************************************************************************************
 
-	function setCrud($crud) 									{ $this->crud = $crud; }
-	
-	function setWritingTitle($_writing_title) 					{ $this->_writing_title = $_writing_title; }
-	function getWritingTitle() 									{ return $this->_writing_title; }
-		
-	function setTable($_tbl) 									{ $this->_tbl = $_tbl; }
-	function getTable() 										{ return $this->_tbl; }
-	
-	function setRedir($_redir) 									{ $this->_redir = $_redir; }
-	function getRedir() 										{ return $this->_redir; }
-	
-	function setErrorFlag($_error_flag) 						{ $this->_error_flag = $_error_flag; }	
-	function getErrorFlag() 									{ return $this->_error_flag; }
+  function setCrud($crud) 									{ $this->crud = $crud; }
+
+  function setWritingTitle($_writing_title) 					{ $this->_writing_title = $_writing_title; }
+  function getWritingTitle() 									{ return $this->_writing_title; }
+
+  function setTable($_tbl) 									{ $this->_tbl = $_tbl; }
+  function getTable() 										{ return $this->_tbl; }
+
+  function setRedir($_redir) 									{ $this->_redir = $_redir; }
+  function getRedir() 										{ return $this->_redir; }
+
+  function setErrorFlag($_error_flag) 						{ $this->_error_flag = $_error_flag; }	
+  function getErrorFlag() 									{ return $this->_error_flag; }
 
 //  ------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -83,95 +83,95 @@ class Writer {
 // 	3.1) Create Writing
 //  ------------------------------------------------------------------------------------------------------------------------------------------
 
-	function createWriting() {
-		
-		try {
-			
-			if ( $this->crud->insert( $this->getTable() , $this->crud->getMatchingFields( $this->getTable() ) ) ) {
-				
-				$serialized_info = serialize( $this->WritingInfo() );	
-				header("location: ".$this->getRedir().'&info_box=created&serialized_info=' . $serialized_info );
-			
-			}
-			else {
-				
-	  			$this->setErrorFlag( 1 );
-				throw new myExceptions( 'The new writing couldn\'t be created</em>.' );
+  function createWriting() {
 
-			}
-			
-		}
-		
-		catch ( myExceptions $e ) {
-			
-			print $e->getError();
-		
-		}	
-					
-	}
+    try {
+
+      if ( $this->crud->insert( $this->getTable() , $this->crud->getMatchingFields( $this->getTable() ) ) ) {
+
+        $serialized_info = serialize( $this->WritingInfo() );	
+        header("location: ".$this->getRedir().'&info_box=created&serialized_info=' . $serialized_info );
+
+      }
+      else {
+
+          $this->setErrorFlag( 1 );
+        throw new myExceptions( 'The new writing couldn\'t be created</em>.' );
+
+      }
+
+    }
+
+    catch ( myExceptions $e ) {
+
+      print $e->getError();
+
+    }	
+
+  }
 
 //  ------------------------------------------------------------------------------------------------------------------------------------------
 // 	3.2) Edit Writing
 //  ------------------------------------------------------------------------------------------------------------------------------------------
 
-	function editWriting() {
-		
-		try {
-				
-			if ( $this->crud->update( $this->getTable() , $this->crud->getMatchingFields( $this->getTable() ) , 'writing_id' , $_POST['writing_id'] ) ) 			
-			
-			{
-			
-				$serialized_info = serialize( $this->WritingInfo() );	
-				header( "location: " . $this->getRedir() . '&info_box=edited&serialized_info=' . $serialized_info );
-				
-			}
-			
-			else {	
-				
-				$this->setErrorFlag( 1 );
-				throw new myExceptions( 'The writing couldn\'t be edited.' );
-				
-			}
-				
-		}
-		
-		catch ( myExceptions $e ) {
-			
-			print $e->getError();	
-					
-		}
-				
-	}
+  function editWriting() {
+
+    try {
+
+      if ( $this->crud->update( $this->getTable() , $this->crud->getMatchingFields( $this->getTable() ) , 'writing_id' , $_POST['writing_id'] ) ) 			
+
+      {
+
+        $serialized_info = serialize( $this->WritingInfo() );	
+        header( "location: " . $this->getRedir() . '&info_box=edited&serialized_info=' . $serialized_info );
+
+      }
+
+      else {	
+
+        $this->setErrorFlag( 1 );
+        throw new myExceptions( 'The writing couldn\'t be edited.' );
+
+      }
+
+    }
+
+    catch ( myExceptions $e ) {
+
+      print $e->getError();	
+
+    }
+
+  }
 
 
 //  ------------------------------------------------------------------------------------------------------------------------------------------
 // 	3.3) Delete Writing
 //  ------------------------------------------------------------------------------------------------------------------------------------------
 
-  	function deleteWriting( $writing_field , $writing_id ) {	
-  	
-  	  try {
-	
-  	  	if ( $this->crud->delete( $this->getTable() , $writing_field , '=' , $writing_id ) ) {
-	
-  	  		header("location: ".$this->getRedir());	
-  	
-  		}
-  	
-  		else {
-  	    		$this->setErrorFlag(1);
-  				throw new myExceptions('The writing <em>#'.$writing_id.'</em> couldn\'t be deleted from table <em>'.$this->getTable().'</em>.');
-  	  	}
-  	
-	  }
-  	
-	  catch ( myExceptions $e ) {
-  			print $e->getError();			
-  	
-	  }
-	
-  	}	
+    function deleteWriting( $writing_field , $writing_id ) {	
+
+      try {
+
+        if ( $this->crud->delete( $this->getTable() , $writing_field , '=' , $writing_id ) ) {
+
+          header("location: ".$this->getRedir());	
+
+      }
+
+      else {
+            $this->setErrorFlag(1);
+          throw new myExceptions('The writing <em>#'.$writing_id.'</em> couldn\'t be deleted from table <em>'.$this->getTable().'</em>.');
+        }
+
+    }
+
+    catch ( myExceptions $e ) {
+        print $e->getError();			
+
+    }
+
+    }	
 
 //  ------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -186,83 +186,83 @@ class Writer {
 // 	4.1) Create News
 //  ------------------------------------------------------------------------------------------------------------------------------------------
 
-	// cf. function createWriting()
-		
+  // cf. function createWriting()
+
 //  ------------------------------------------------------------------------------------------------------------------------------------------
 // 	4.2) Edit News
 //  ------------------------------------------------------------------------------------------------------------------------------------------
 
-	function editNews() {
-		
-		try {
-				
-			if ( $this->crud->update( $this->getTable() , $this->crud->getMatchingFields( $this->getTable() ) , 'news_id' , $_POST['news_id'] ) ) 			
-			
-			{
-			
-				$serialized_info = serialize( $this->WritingInfo() );	
-				header( "location: " . $this->getRedir() . '&info_box=edited&serialized_info=' . $serialized_info );
-				
-			}
-			
-			else {	
-				
-				$this->setErrorFlag( 1 );
-				throw new myExceptions( 'The news couldn\'t be edited.' );
-				
-			}
-				
-		}
-		
-		catch ( myExceptions $e ) {
-			
-			print $e->getError();	
-					
-		}
-				
-	}
+  function editNews() {
+
+    try {
+
+      if ( $this->crud->update( $this->getTable() , $this->crud->getMatchingFields( $this->getTable() ) , 'news_id' , $_POST['news_id'] ) ) 			
+
+      {
+
+        $serialized_info = serialize( $this->WritingInfo() );	
+        header( "location: " . $this->getRedir() . '&info_box=edited&serialized_info=' . $serialized_info );
+
+      }
+
+      else {	
+
+        $this->setErrorFlag( 1 );
+        throw new myExceptions( 'The news couldn\'t be edited.' );
+
+      }
+
+    }
+
+    catch ( myExceptions $e ) {
+
+      print $e->getError();	
+
+    }
+
+  }
 
 
-	//  ------------------------------------------------------------------------------------------------------------------------------------------
-	// 	4.3) Edit Concert
-	//  ------------------------------------------------------------------------------------------------------------------------------------------
+  //  ------------------------------------------------------------------------------------------------------------------------------------------
+  // 	4.3) Edit Concert
+  //  ------------------------------------------------------------------------------------------------------------------------------------------
 
-		function editConcert() {
+    function editConcert() {
 
-			try {
+      try {
 
-				if ( $this->crud->update( $this->getTable() , $this->crud->getMatchingFields( $this->getTable() ) , 'concert_id' , $_POST['concert_id'] ) ) 			
+        if ( $this->crud->update( $this->getTable() , $this->crud->getMatchingFields( $this->getTable() ) , 'concert_id' , $_POST['concert_id'] ) ) 			
 
-				{
+        {
 
-					$serialized_info = serialize( $this->WritingInfo() );	
-					header( "location: " . $this->getRedir() . '&info_box=edited&serialized_info=' . $serialized_info );
+          $serialized_info = serialize( $this->WritingInfo() );	
+          header( "location: " . $this->getRedir() . '&info_box=edited&serialized_info=' . $serialized_info );
 
-				}
+        }
 
-				else {	
+        else {	
 
-					$this->setErrorFlag( 1 );
-					throw new myExceptions( 'The concert couldn\'t be edited.' );
+          $this->setErrorFlag( 1 );
+          throw new myExceptions( 'The concert couldn\'t be edited.' );
 
-				}
+        }
 
-			}
+      }
 
-			catch ( myExceptions $e ) {
+      catch ( myExceptions $e ) {
 
-				print $e->getError();	
+        print $e->getError();	
 
-			}
+      }
 
-		}
+    }
 
 
 //  ------------------------------------------------------------------------------------------------------------------------------------------
 // 	4.3) Delete News
 //  ------------------------------------------------------------------------------------------------------------------------------------------
 
-  	// cf. function deleteWriting()
+    // cf. function deleteWriting()
 
 //  ------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -276,77 +276,77 @@ class Writer {
 // 	5.1) Check Title
 //  ------------------------------------------------------------------------------------------------------------------------------------------
 
- 	function checkTitle($title) {
- 	
-		try {
- 		
-			if ($title == '' )  {
- 			
-				$this->_error_flag = 1;
- 				throw new myExceptions('There is <em>no title</em> to your writing.');
- 			
-			}
- 		
-		}
- 	
-		catch ( myExceptions $e ) {
- 		
-			return $e->getError();
- 		
-		}
+  function checkTitle($title) {
 
- 	}
+    try {
+
+      if ($title == '' )  {
+
+        $this->_error_flag = 1;
+        throw new myExceptions('There is <em>no title</em> to your writing.');
+
+      }
+
+    }
+
+    catch ( myExceptions $e ) {
+
+      return $e->getError();
+
+    }
+
+  }
 
 //  ------------------------------------------------------------------------------------------------------------------------------------------
 // 	5.2) Check Template
 //  ------------------------------------------------------------------------------------------------------------------------------------------
 
- 	function checkTemplate($template) {
+  function checkTemplate($template) {
 
-		try {
+    try {
 
-			if ( $template == '0' )  {
+      if ( $template == '0' )  {
 
-				$this->_error_flag = 1;
- 				throw new myExceptions('You can\'t select a main category template. Please <em>select a subcategory.</em>');
+        $this->_error_flag = 1;
+        throw new myExceptions('You can\'t select a main category template. Please <em>select a subcategory.</em>');
 
-			}
+      }
 
-		}
+    }
 
-		catch ( myExceptions $e ) {
+    catch ( myExceptions $e ) {
 
-			return $e->getError();
+      return $e->getError();
 
-		}
+    }
 
- 	}
+  }
 
 
 //  ------------------------------------------------------------------------------------------------------------------------------------------
 // 	5.3) Check Category
 //  ------------------------------------------------------------------------------------------------------------------------------------------
 
- 	function checkCategory($category) {
+  function checkCategory($category) {
 
-		try {
+    try {
 
-			if ( $category == '0' )  {
+      if ( $category == '0' )  {
 
-				$this->_error_flag = 1;
- 				throw new myExceptions('Please <em>select a news category</em>.');
+        $this->_error_flag = 1;
+        throw new myExceptions('Please <em>select a news category</em>.');
 
-			}
+      }
 
-		}
+    }
 
-		catch ( myExceptions $e ) {
+    catch ( myExceptions $e ) {
 
-			return $e->getError();
+      return $e->getError();
 
-		}
+    }
 
- 	}
+  }
 
 //  ******************************************************************************************************************************************
 //  6) INFO
@@ -356,12 +356,12 @@ class Writer {
 // 	6.1) Profile Info
 //  ------------------------------------------------------------------------------------------------------------------------------------------
 
-	function WritingInfo() {
+  function WritingInfo() {
 
-	$edit_writing_info =  array( 'title' => $this->getWritingTitle() );
-	
-	return $edit_writing_info;
-	
+  $edit_writing_info =  array( 'title' => $this->getWritingTitle() );
+
+  return $edit_writing_info;
+
   }
 
 //  ------------------------------------------------------------------------------------------------------------------------------------------

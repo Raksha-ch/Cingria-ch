@@ -38,7 +38,7 @@
       <a href="?page=home&amp;action=logout">log me out</a>.
       <br/>
       <img src="img/icons/next.png" alt="arrow" /> I am not <strong><?php print $session->getSessionVar( 'username' ) ?></strong>,
-      <a href="mailto:yan.saraillon@societe-ecran.tv">I would like to contact the webmaster</a>.
+      <a href="mailto:odyx@raksha.ch">I would like to contact the webmaster</a>.
     </div>
     <?php } ?>
   </div>
@@ -61,7 +61,7 @@
       <fieldset class="info">
         <br/>
         There is <strong>no matching profile</strong>.<br/>
-        Please try again or <a href="mailto:yan.saraillon@societe-ecran.tv"><strong>contact the webmaster</strong></a>.<br/><br/>
+        Please try again or <a href="mailto:odyx@raksha.ch"><strong>contact the webmaster</strong></a>.<br/><br/>
       </fieldset>
   </div>
   <?php } ?>	

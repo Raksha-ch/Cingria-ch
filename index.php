@@ -21,9 +21,6 @@ $title    = checkPageTitle($_PAGE);
 
 <head>
   <title>Association des Amis de Charles-Albert Cingria &middot; <?php print $title; ?></title>
-
-  <!-- <base href="http://www.cingria.ch/index2.php"> -->
-
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta charset="utf-8" />
@@ -55,21 +52,16 @@ $title    = checkPageTitle($_PAGE);
   <script type="text/javascript" src="js/fullsize.js"></script>
   <link href="https://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
   <script src="https://vjs.zencdn.net/c/video.js"></script>
-
-
   <!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   <!--[if lte IE 7]><script src="js/IE8.js" type="text/javascript"></script><![endif]-->
   <!--[if lt IE 7]><link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/><![endif]-->
-
 </head>
 
 <body>
-
   <div class="container">
     <div class="row">
-
       <div id="logo" class="fourcol">
-        <p><a href="/accueil"><img src="img/logo_site_2.gif" alt="Logo Cingria" /></a></p>
+        <p><a href="/accueil"><img src="img/logo_site_2.gif" alt="Charles-Albert Cingria" /></a></p>
       </div>
       <div class="eightcol last">
         <nav>
@@ -78,28 +70,19 @@ $title    = checkPageTitle($_PAGE);
               <?php menu_item('/', 'accueil', 'Accueil', $_PAGE); ?>
             </li>
             <li>&middot;</li>
-
             <li>
               <?php menu_item('/', 'association', 'L\'Association', $_PAGE); ?>
             </li>
             <li>&middot;</li>
-
             <li>
               <?php menu_item('/', 'premiere-edition-des-oeuvres-completes', 'Les Œuvres complètes', $_PAGE); ?>
             </li>
             <li>&middot;</li>
-
-
             <li>
               <?php menu_item('/', 'chronologie', 'Chronologie', $_PAGE); ?>
             </li>
-
           </ul>
-
-
           <ul>
-
-
             <li>
               <?php menu_item('/', 'les-livres', 'Les livres', $_PAGE); ?>
             </li>
@@ -108,7 +91,6 @@ $title    = checkPageTitle($_PAGE);
               <?php menu_item('/', 'les-fonds', 'Les Fonds', $_PAGE); ?>
             </li>
             <?php if (!checkIfExplorer()) {  ?>
-
               <li>&middot;</li>
               <li>
                 <?php menu_item('/', 'les-petites-feuilles', 'les Petites Feuilles', $_PAGE); ?>
@@ -117,10 +99,7 @@ $title    = checkPageTitle($_PAGE);
               <li>
                 <?php menu_item('/', 'cingria-dans-la-litterature-romande', 'Pour aller plus loin', $_PAGE); ?>
               </li>
-
             <?php }  ?>
-
-
           </ul>
         </nav>
       </div>
@@ -181,12 +160,9 @@ $title    = checkPageTitle($_PAGE);
           </a>
         <?php } ?>
         <div id="to_top" style="margin: -12px 0 0 0; clear: both; display:block; width: 300px; text-align: right; float:right; color: #B2B8BA; letter-spacing: 2px; font-size: 0.64705882352941em; font-family:'Lucida Grande',sans-serif;">
-          VERS LE SOMMET<img src="img/to_top.png" alt="sommet de page" style="float:right; margin: 3px 0 0 7px" />
-
+          VERS LE SOMMET<img src="img/to_top.png" alt="Sommet de page" style="float:right; margin: 3px 0 0 7px" />
         </div>
       </div>
-
-
     </footer>
   </div>
 
@@ -201,16 +177,11 @@ $title    = checkPageTitle($_PAGE);
 
     });
 
-
     $(document).ready(function() {
-
-
-
       $(".masonry_item img").fullsize({
         shadow: true,
         forceTitleBar: false
       });
-
 
       $('#to_top, #signature_text').fadeTo(0, 0.5);
       $('#signature_arrow').fadeTo(0, 0);
@@ -218,15 +189,12 @@ $title    = checkPageTitle($_PAGE);
       $('#signature_arrow2').fadeTo(0, 0);
 
       $('#to_top').mouseover(function() {
-
         $(this).stop().fadeTo(100, 1);
       }).mouseout(function() {
         $(this).stop().fadeTo(500, 0.5);
       });
 
-
       $('#signature_text').hover(
-
         function() {
           $(this).stop().fadeTo(100, 1).animate({
             marginLeft: '6px'
@@ -235,7 +203,6 @@ $title    = checkPageTitle($_PAGE);
           });
         },
         function() {
-
           $(this).stop().fadeTo(500, 0.5).animate({
             marginLeft: '0'
           }, 120, function() {
@@ -245,7 +212,6 @@ $title    = checkPageTitle($_PAGE);
       );
 
       $('#signature_text2').hover(
-
         function() {
           $(this).stop().fadeTo(100, 1).animate({
             marginLeft: '6px'
@@ -254,7 +220,6 @@ $title    = checkPageTitle($_PAGE);
           });
         },
         function() {
-
           $(this).stop().fadeTo(500, 0.5).animate({
             marginLeft: '0'
           }, 120, function() {
@@ -289,10 +254,8 @@ $title    = checkPageTitle($_PAGE);
       $('#show_more').click(function() {
 
         $('#bio').find('p:nth-child(2)').slideToggle('fast');
-
         text = $(this).text() == 'lire la suite de la notice' ? 'réduire la notice' : 'lire la suite de la notice';
         $(this).text(text);
-
       });
 
       $('#contact_info').hide();
@@ -313,10 +276,7 @@ $title    = checkPageTitle($_PAGE);
 
     });
 
-
-
     $(window).load(function() {
-
       setInterval(function() {
         $('#slides_main :nth-child(1)').next().show().end().fadeOut(1200).appendTo('#slides_main');
       }, 12000);
@@ -358,7 +318,6 @@ $title    = checkPageTitle($_PAGE);
 
     });
 
-
     // Once the video is ready
     _V_("example_video_1").ready(function() {
 
@@ -377,4 +336,5 @@ $title    = checkPageTitle($_PAGE);
     });
   </script>
 </body>
+
 </html>

@@ -35,7 +35,7 @@
 
   /* PAGES : index.php  => texte accueil */
 
-  if ( isset( $_GET['p'] ) && (  $_GET['p'] == 'accueil' ) ) {
+  if ( $_PAGE == 'accueil' ) {
 
     $where 		= " template_id = 78 ";
     $txts 		= $crud->select(  '' , 'writing' , 'writing_content' ,  ''  , $where , 'writing_rank DESC', '' , '' , '' );
@@ -54,7 +54,7 @@
 
 
 
- if ( isset( $_GET['p'] ) && (  $_GET['p'] == 'association' ) ) {
+ if ( $_PAGE == 'association' ) {
 
       $where 		= " template_id = 77 ";
     $txts 		= $crud->select(  '' , 'writing' , 'writing_content' ,  ''  , $where , 'writing_rank DESC', '' , '' , '' );
@@ -65,7 +65,7 @@
   }
 
 
-  if ( isset( $_GET['p'] ) && (  $_GET['p'] == 'premiere-edition-des-oeuvres-completes' ) ) {
+  if ( $_PAGE == 'premiere-edition-des-oeuvres-completes' ) {
 
       $where 		= " template_id = 72 ";
     $txts 		= $crud->select(  '' , 'writing' , 'writing_content' ,  ''  , $where , 'writing_rank DESC', '' , '' , '' );
@@ -75,7 +75,7 @@
 
   /* PAGES : les_livres.php  => texte les livres */
 
-  if ( isset( $_GET['p'] ) && (  $_GET['p'] == 'les-livres' ) ) {
+  if ( $_PAGE == 'les-livres' ) {
 
     $join	= " LEFT JOIN upload_file ON upload_file.upload_file_id = books.upload_file_id ";
     $where	= " book_description != '' ";
@@ -84,14 +84,8 @@
   }
 
 
-  if ( isset( $_GET['p'] ) && (  $_GET['p'] == 'chronologie' ) ) {
+  if ( $_PAGE == 'chronologie' ) {
 
     //$chronology 	=  $crud->select( '' , 'chronology' , '*' ,  ''  , '' , 'chronology_year ASC', '' , '' , '' );
 
   }
-
-
-
-
-
-?>

@@ -1,6 +1,6 @@
 <?php
 
-if(!isset($_GET['p'])){ $_GET['p'] = 'accueil';}
+$_PAGE = stripslashes($_GET['p'] ?? 'accueil');
 
 include 'models/model.connection.php';
 include 'models/model.crud.php';
@@ -12,7 +12,7 @@ include 'functions/function.checkPageTitle.php';
 include 'functions/function.menuItem.php';
 include 'functions/function.checkIfExplorer.php';
 
-$title 	 = checkPageTitle($_GET['p']);
+$title 	 = checkPageTitle($_PAGE);
 
 ?>
 
@@ -73,23 +73,23 @@ $title 	 = checkPageTitle($_GET['p']);
       <nav>
         <ul>
           <li>
-            <?php menu_item( '/', 'accueil', 'Accueil', $_GET['p'] ); ?>
+            <?php menu_item( '/', 'accueil', 'Accueil', $_PAGE ); ?>
           </li>
           <li>&middot;</li>
 
            <li>
-            <?php menu_item( '/', 'association', 'L\'Association', $_GET['p'] ); ?>
+            <?php menu_item( '/', 'association', 'L\'Association', $_PAGE ); ?>
           </li>
           <li>&middot;</li>
 
           <li>
-            <?php menu_item( '/', 'premiere-edition-des-oeuvres-completes', 'Les Œuvres complètes', $_GET['p'] ); ?>
+            <?php menu_item( '/', 'premiere-edition-des-oeuvres-completes', 'Les Œuvres complètes', $_PAGE ); ?>
           </li>
                     <li>&middot;</li>
 
 
           <li>
-            <?php menu_item( '/', 'chronologie', 'Chronologie', $_GET['p'] ); ?>
+            <?php menu_item( '/', 'chronologie', 'Chronologie', $_PAGE ); ?>
           </li>
 
         </ul>
@@ -99,21 +99,21 @@ $title 	 = checkPageTitle($_GET['p']);
 
 
           <li>
-            <?php menu_item( '/', 'les-livres', 'Les livres', $_GET['p'] ); ?>
+            <?php menu_item( '/', 'les-livres', 'Les livres', $_PAGE ); ?>
           </li>
           <li>&middot;</li>
           <li>
-            <?php menu_item( '/', 'les-fonds', 'Les Fonds', $_GET['p'] ); ?>
+            <?php menu_item( '/', 'les-fonds', 'Les Fonds', $_PAGE ); ?>
           </li>
           <?php  if(!checkIfExplorer()) {  ?>
 
                <li>&middot;</li>
             <li>
-              <?php menu_item( '/', 'les-petites-feuilles', 'les Petites Feuilles', $_GET['p'] ); ?>
+              <?php menu_item( '/', 'les-petites-feuilles', 'les Petites Feuilles', $_PAGE ); ?>
             </li>
           <li>&middot;</li>
           <li>
-          <?php menu_item( '/', 'cingria-dans-la-litterature-romande', 'Pour aller plus loin', $_GET['p'] ); ?>
+          <?php menu_item( '/', 'cingria-dans-la-litterature-romande', 'Pour aller plus loin', $_PAGE ); ?>
           </li>
 
           <?php }  ?>
@@ -127,13 +127,11 @@ $title 	 = checkPageTitle($_GET['p']);
 
   <div class="container">
     <div class="row">
-
-      <?php include('pages/'.$_GET['p'].'.php') ;?>
-
-        </div>
+      <?php include('pages/'.$_PAGE.'.php') ;?>
     </div>
+  </div>
 
-    <div class="container" style="margin: 0 0 -34px 0;">
+  <div class="container" style="margin: 0 0 -34px 0;">
     <div class="row">
       <div class="twelvecol last">
         <div id="contribute"></div>
@@ -157,7 +155,7 @@ $title 	 = checkPageTitle($_GET['p']);
         vous pouvez prendre contact avec  <a href="mailto:s.assal@bluewin.ch" class="pink_link_sans">nous</a> ici	.</span>
         </div>
        <div id="footer_right">
-        <?php if($_GET['p']!= 'cingria-dans-la-litterature-romande') { ?>
+        <?php if($_PAGE!= 'cingria-dans-la-litterature-romande') { ?>
           <a href="articles/histoire-de-la-litterature-en-suisse-romande-cingria.pdf">
           <div id="articles" style="display: block; color: #B2B8BA; padding: 0 0 0 80px; margin: 52px 0 0 0; text-align: left; letter-spacing: 2px; font-size: 0.82352941176471em; font-family:'Lucida Grande',sans-serif;">
             <span id="fading_button">

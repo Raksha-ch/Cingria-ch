@@ -26,7 +26,7 @@ $chronology 	=  $crud->select( '' , 'chronology' , '*' ,  ''  , '' , 'chronology
         print '<li id="'.$v['chronology_year'].'"><h1><span>'.$v['chronology_year'].'</span></h1>
 
         <div style="float:left; 966px;">
-        <div style="float:left; width:750px; margin: 0 24px 0 0; text-align: justify;">'.utf8_encode($v['chronology_description']).'</div>';
+        <div style="float:left; width:750px; margin: 0 24px 0 0; text-align: justify;">'.($v['chronology_description']).'</div>';
 
 
 
@@ -69,7 +69,7 @@ $chronology 	=  $crud->select( '' , 'chronology' , '*' ,  ''  , '' , 'chronology
         <div style="float:left; display: block; clear: both; margin: 0 1em 0 0;"><h1><span>'.$v['chronology_year'].'</span></h1></div>
 
     <div style="float:left; 1066px;">
-    <div style="float:left; width:750px; margin: 0 42px 0 0; text-align: justify;">'.utf8_encode($v['chronology_description']);
+    <div style="float:left; width:750px; margin: 0 42px 0 0; text-align: justify;">'.($v['chronology_description']);
 
 
 

@@ -147,14 +147,20 @@ $title    = checkPageTitle($_PAGE);
       <div class="padded_footer_item" style="float:left; width: 40%;">
         <span style="color: #B2B8BA; font-family:'Raleway'; text-shadow: 0px 1px 1px #212222;">Association des Amis de<br />Charles-Albert Cingria</span>
         <span style="font-size: 0.6em; clear:both; display: block; line-height: 0.9em; margin: 3px 0 0 0; ">rue Centrale 8<br />1804 Corsier-sur-Vevey &middot; Suisse</span>
-        <div id="signature" style="font-size: 0.41176470588235em; clear:both; display: block; line-height: 0.6em; margin: 38px 0 0 -4px; color: #B2B8BA; letter-spacing: 1px;">
+        <div id="signature" style="font-size: 0.4em; clear:both; display: block; line-height: 0.6em; margin: 38px 0 0 -4px; color: #B2B8BA; letter-spacing: 1px;">
           <div id="signature_arrow"><img src="img/arrow_grey.png" alt="arrow" /></div>
-          <div id="signature_text" class="signature"><a href="http://www.societe-ecran.tv" onclick="window.open(this.href, '_blank'); return false;">SOCIETE-ECRAN MEDIA</a></div>
+          <div id="signature_text" class="signature"><a href="https://www.societe-ecran.tv/" target="_blank">SOCIETE-ECRAN MEDIA</a></div>
+          <div class="signature" style="color:#272729; float:left; margin: 0 0 0 4px;">2011-2013</div>
+        </div>
+        <div id="signature2" style="font-size: 0.4em; clear:both; display: block; line-height: 0.6em; margin: 38px 0 0 -4px; color: #B2B8BA; letter-spacing: 1px;">
+          <div id="signature_arrow2"><img src="img/arrow_grey.png" alt="arrow" /></div>
+          <div id="signature_text2" class="signature"><a href="https://raksha.ch/" target="_blank">Raksha.ch</a></div>
           <div class="signature" style="color:#272729; float:left; margin: 0 0 0 4px;">
-            <?php $start = 2011;
+            <?php $start = 2023;
             print $start;
-            if (date('Y') != $start) {
-              print '-' . date('y');
+            $year = date('Y');
+            if ($year > $start) {
+              print '-' . $year;
             } ?>
           </div>
         </div>
@@ -208,6 +214,8 @@ $title    = checkPageTitle($_PAGE);
 
       $('#to_top, #signature_text').fadeTo(0, 0.5);
       $('#signature_arrow').fadeTo(0, 0);
+      $('#to_top, #signature_text2').fadeTo(0, 0.5);
+      $('#signature_arrow2').fadeTo(0, 0);
 
       $('#to_top').mouseover(function() {
 
@@ -236,10 +244,24 @@ $title    = checkPageTitle($_PAGE);
         }
       );
 
+      $('#signature_text2').hover(
 
+        function() {
+          $(this).stop().fadeTo(100, 1).animate({
+            marginLeft: '6px'
+          }, 80, function() {
+            $('#signature_arrow2').fadeTo(100, 1)
+          });
+        },
+        function() {
 
-
-
+          $(this).stop().fadeTo(500, 0.5).animate({
+            marginLeft: '0'
+          }, 120, function() {
+            $('#signature_arrow2').fadeTo(100, 0);
+          });
+        }
+      );
 
       var list_items = $('#main_oc').find('li');
       $.each(list_items, function(key) {
@@ -281,9 +303,6 @@ $title    = checkPageTitle($_PAGE);
 
       });
 
-
-
-
       $('#to_top').click(function() {
         $('html, body').animate({
           scrollTop: 0
@@ -291,8 +310,6 @@ $title    = checkPageTitle($_PAGE);
       });
 
       $('blockquote').quovolver(500, 18000);
-
-
 
     });
 
@@ -306,14 +323,7 @@ $title    = checkPageTitle($_PAGE);
       setInterval(function() {
         $('#slides_main_right :nth-child(1)').next().show().end().fadeOut(1200).appendTo('#slides_main_right');
       }, 10000);
-
-
-
-
     });
-
-
-
 
     $('<?php print $slideshow_1 ?>').insertAfter('#main_text p:first-child');
     $('<?php print $slideshow_2 ?>').insertAfter('#main_text p:nth-child(4)');
@@ -321,7 +331,6 @@ $title    = checkPageTitle($_PAGE);
     $(function() {
       $("#order_box").jScroll();
     });
-
 
 
     $('.sub').hide();
@@ -350,8 +359,6 @@ $title    = checkPageTitle($_PAGE);
     });
 
 
-
-
     // Once the video is ready
     _V_("example_video_1").ready(function() {
 
@@ -369,8 +376,5 @@ $title    = checkPageTitle($_PAGE);
       window.onresize = resizeVideoJS; // Call the function on resize
     });
   </script>
-
-
 </body>
-
 </html>

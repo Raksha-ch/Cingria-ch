@@ -117,8 +117,8 @@ input { padding:5px; border:2px solid #ddd; width:20%; -moz-box-sizing:border-bo
   	
 	#to_top,  #signature { cursor: pointer;}
     .signature {font-size: 0.64705882352941em; font-family:'Lucida Grande',sans-serif;}
-	#signature_text, #signature_arrow { float: left;}
-	#signature_text a, #signature_text a:hover { color: #B2B8BA; text-decoration: none;}
+	#signature_text, #signature_arrow, #signature_text2, #signature_arrow2 { float: left;}
+	#signature_text a, #signature_text a:hover, #signature_text2 a, #signature_text2 a:hover { color: #B2B8BA; text-decoration: none;}
 	#slides { position: relative; width: 222px; height: 102px;}
 	#slides img { position: absolute; left: 0; top: 0; display: none;}
 	#slides img.firstslide { display: block;}

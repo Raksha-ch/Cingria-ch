@@ -152,10 +152,10 @@ $title    = checkPageTitle($_PAGE);
           <div id="signature_text" class="signature"><a href="http://www.societe-ecran.tv" onclick="window.open(this.href, '_blank'); return false;">SOCIETE-ECRAN MEDIA</a></div>
           <div class="signature" style="color:#272729; float:left; margin: 0 0 0 4px;">
             <?php $start = 2011;
-              print $start;
-              if (date('Y') != $start) {
-                print '-' . date('y');
-              } ?>
+            print $start;
+            if (date('Y') != $start) {
+              print '-' . date('y');
+            } ?>
           </div>
         </div>
       </div>

@@ -52,8 +52,8 @@ $title 	 = checkPageTitle($_PAGE);
   <script type="text/javascript" src="js/jscroll.js"></script>
   <script type="text/javascript" src="js/masonry.js"></script>
   <script type="text/javascript" src="js/fullsize.js"></script>
-  <link href="http://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
-    <script src="http://vjs.zencdn.net/c/video.js"></script>
+  <link href="https://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
+  <script src="https://vjs.zencdn.net/c/video.js"></script>
 
 
   <!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->

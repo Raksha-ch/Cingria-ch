@@ -9,18 +9,18 @@ $join	= " LEFT JOIN upload_file ON upload_file.upload_file_id = books.upload_fil
 $where  = " book_id = " . (int) $_GET['book_id'];
 $books 	=  $crud->select( '' , 'books' , '*' ,  $join  , $where , '', '' , '1' , '0' );
 
-$author 	= ($books[0][book_author] != '') ? utf8_encode($books[0][book_author]).', ' : '' ;
-$title 		= ($books[0][book_title] != '') ? utf8_encode($books[0][book_title]).', ' : '' ;
-$editor 	= ($books[0][book_editor] != '') ? utf8_encode($books[0][book_editor]).', ' : '' ;
-$book_detail_1 = ($books[0][book_detail_1] != '') ? utf8_encode($books[0][book_detail_1]).', ' : '' ;
-$book_detail_2 = ($books[0][book_detail_2] != '') ? '('.utf8_encode($books[0][book_detail_2]).'), ' : '' ;
-$place = ($books[0][place] != '') ? utf8_encode($books[0][place]).', ' : '' ;
-$original_edition_date = ($books[0][original_edition_date] != '') ? utf8_encode($books[0][original_edition_date]).', ' : '' ;
-$re_edition_date = ($books[0][re_edition_date] != '') ? utf8_encode($books[0][re_edition_date]).', ' : '' ;
+$author 	= ($books[0][book_author] != '') ? ($books[0][book_author]).', ' : '' ;
+$title 		= ($books[0][book_title] != '') ? ($books[0][book_title]).', ' : '' ;
+$editor 	= ($books[0][book_editor] != '') ? ($books[0][book_editor]).', ' : '' ;
+$book_detail_1 = ($books[0][book_detail_1] != '') ? ($books[0][book_detail_1]).', ' : '' ;
+$book_detail_2 = ($books[0][book_detail_2] != '') ? '('.($books[0][book_detail_2]).'), ' : '' ;
+$place = ($books[0][place] != '') ? ($books[0][place]).', ' : '' ;
+$original_edition_date = ($books[0][original_edition_date] != '') ? ($books[0][original_edition_date]).', ' : '' ;
+$re_edition_date = ($books[0][re_edition_date] != '') ? ($books[0][re_edition_date]).', ' : '' ;
 $no_of_pages = ($books[0][no_of_pages] != '') ? $books[0][no_of_pages].' pages.' : '' ;
 
 $cover = $books[0][dir_name].'/'.$books[0][upload_file_name].$books[0][upload_file_ext];
-$description = utf8_encode($books[0][book_description]);
+$description = ($books[0][book_description]);
 
 $entry = trim($author.$title.$book_detail_1.$place.$editor.$book_detail_2.$original_edition_date.$re_edition_date.$no_of_pages);
 

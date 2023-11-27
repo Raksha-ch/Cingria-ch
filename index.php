@@ -161,7 +161,7 @@ $title    = checkPageTitle($_PAGE);
       </div>
       <div style="float:left; width: 230px; margin: 52px 0 0 0; ">
         <span id="hidden_contact" style="display: block; color: #B2B8BA; text-align: left; letter-spacing: 2px; font-size: 12px; font-family:'Lucida Grande',sans-serif;">Si vous souhaitez partager des documents autour de Cingria,
-          vous pouvez prendre contact avec <a href="mailto:s.assal@bluewin.ch" class="pink_link_sans">nous</a> ici .</span>
+          vous pouvez prendre contact avec <a href="mailto:info@cingria.ch" class="pink_link_sans">nous</a> ici .</span>
       </div>
       <div id="footer_right">
         <?php if ($_PAGE != 'cingria-dans-la-litterature-romande') { ?>

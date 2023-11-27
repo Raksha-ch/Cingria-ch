@@ -26,8 +26,7 @@
     <br /><br />
     <a href="#" id="contact" class="pink_link_min_height">Recevoir les Petites Feuilles</a>
     <span id="contact_info">
-      Mme Suzy Assal<br />
-      <a href="mailto:a.assal@bluewin.ch" class="pink_link">a.assal@bluewin.ch</a>
+      <a href="mailto:info@cingria.ch" class="pink_link">info@cingria.ch</a>
     </span>
 
 

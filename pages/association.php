@@ -68,8 +68,7 @@
     <br /><br />
     <a href="#" id="contact" class="pink_link_min_height">Lien de contact</a>
     <span id="contact_info">
-      Thierry Raboud<br />
-      <a href="mailto:thierry@raboud.com" class="pink_link">thierry@raboud.com</a>
+      <a href="mailto:info@cingria.ch" class="pink_link">info@cingria.ch</a>
     </span>
   </div>
 

@@ -98,21 +98,21 @@ ul.item { margin: 12px 0 0 38px; }
   <?php
   foreach ($books as $k => $v) {
 
-      $author 	= ($v[book_author] != '') ? utf8_encode($v[book_author]).', ' : '' ;
-    $first_title= utf8_encode($v[book_title]);
+      $author 	= ($v[book_author] != '') ? ($v[book_author]).', ' : '' ;
+    $first_title= ($v[book_title]);
 
-    $title 		= ($v[book_title] != '') ? utf8_encode($v[book_title]).', ' : '' ;
-    $editor 	= ($v[book_editor] != '') ? utf8_encode($v[book_editor]).', ' : '' ;
-    $book_detail_1 = ($v[book_detail_1] != '') ? utf8_encode($v[book_detail_1]).', ' : '' ;
-    $book_detail_2 = ($v[book_detail_2] != '') ? '('.utf8_encode($v[book_detail_2]).'), ' : '' ;
-    $place = ($v[place] != '') ? utf8_encode($v[place]).', ' : '' ;
-    $original_edition_date = ($v[original_edition_date] != '') ? utf8_encode($v[original_edition_date]).', ' : '' ;
-    $re_edition_date = ($v[re_edition_date] != '') ? utf8_encode($v[re_edition_date]).', ' : '' ;
+    $title 		= ($v[book_title] != '') ? ($v[book_title]).', ' : '' ;
+    $editor 	= ($v[book_editor] != '') ? ($v[book_editor]).', ' : '' ;
+    $book_detail_1 = ($v[book_detail_1] != '') ? ($v[book_detail_1]).', ' : '' ;
+    $book_detail_2 = ($v[book_detail_2] != '') ? '('.($v[book_detail_2]).'), ' : '' ;
+    $place = ($v[place] != '') ? ($v[place]).', ' : '' ;
+    $original_edition_date = ($v[original_edition_date] != '') ? ($v[original_edition_date]).', ' : '' ;
+    $re_edition_date = ($v[re_edition_date] != '') ? ($v[re_edition_date]).', ' : '' ;
     $no_of_pages = ($v[no_of_pages] != '') ? $v[no_of_pages].'pp.' : '' ;
 
 
     $cover = $v[dir_name].'/tn_'.$v[upload_file_name].$v[upload_file_ext];
-    $description = utf8_encode($v[book_description]);
+    $description = ($v[book_description]);
 
     $entry = trim($author.$title.$book_detail_1.$place.$editor.$book_detail_2.$original_edition_date.$re_edition_date.$no_of_pages);
 

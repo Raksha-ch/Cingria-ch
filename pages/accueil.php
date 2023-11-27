@@ -16,7 +16,7 @@
         <span class="pseudo_pink_link">Pour citer cette page :</span><br/>
         <em>Charles-Albert Cingria</em>. (2 mars 2012). L'Association des Amis de Charles-Albert Cingria. Page consultée le <?php print date(j); ?> <?php
         $mois = array('','janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre');
-        print $mois[date(n)]; ?> <?php print date(Y); ?> à <?php print date("H:i") ?> à partir de http://www.cingria.ch/accueil</p>
+        print $mois[date(n)]; ?> <?php print date(Y); ?> à <?php print date("H:i") ?> à partir de <a href="https://<?php print $_SERVER['HTTP_HOST'] ?>/accueil"><?php print $_SERVER['HTTP_HOST'] ?>/accueil</a></p>
           </div>
 
 

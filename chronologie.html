@@ -211,8 +211,6 @@
        });
 
         loadTab($('#first_page'));
-
-
    });
 
 
@@ -330,7 +328,7 @@
       var list_items = $('#main_oc').find('li');
       $.each(list_items, function(key) {
         key = key + 1;
-        $(this).prepend('<img src="img/icons/'&#32;+&#32;key&#32;+&#32;'.png" alt="' + key + '" />');
+        $(this).prepend('<img src="img/icons/' + key + '.png" alt="' + key + '" />');
       });
 
 

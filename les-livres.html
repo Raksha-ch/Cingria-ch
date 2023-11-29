@@ -1,0 +1,1319 @@
+
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <title>Association des Amis de Charles-Albert Cingria &middot; Les Livres</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="css/1140.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  <link rel="stylesheet" href="css/timelinr.css" type="text/css" />
+  <link rel="stylesheet" href="css/qtip.css" type="text/css" />
+  <link rel="stylesheet" href="css/fullsize.css" type="text/css" />
+
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link href='https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Cantarell' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,600' rel='stylesheet' type='text/css'>
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+  <script type="text/javascript" src="js/scrollto.js"></script>
+  <script type="text/javascript" src="js/easing.js"></script>
+  <script type="text/javascript" src="js/quovolver.js"></script>
+  <script type="text/javascript" src="js/timelinr.js"></script>
+  <script type="text/javascript" src="js/qtip.js"></script>
+  <script type="text/javascript" src="js/jscroll.js"></script>
+  <script type="text/javascript" src="js/masonry.js"></script>
+  <script type="text/javascript" src="js/fullsize.js"></script>
+  <link href="https://vjs.zencdn.net/c/video-js.css" rel="stylesheet">
+  <script src="https://vjs.zencdn.net/c/video.js"></script>
+  <!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <!--[if lte IE 7]><script src="js/IE8.js" type="text/javascript"></script><![endif]-->
+  <!--[if lt IE 7]><link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/><![endif]-->
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div id="logo" class="fourcol">
+        <p><a href="accueil.html"><img src="img/logo_site_2.gif" alt="Charles-Albert Cingria" /></a></p>
+      </div>
+      <div class="eightcol last">
+        <nav>
+          <ul>
+            <li>
+              <a href="accueil.html" >Accueil</a>            </li>
+            <li>&middot;</li>
+            <li>
+              <a href="association.html" >L'Association</a>            </li>
+            <li>&middot;</li>
+            <li>
+              <a href="premiere-edition-des-oeuvres-completes.html" >Les Œuvres complètes</a>            </li>
+            <li>&middot;</li>
+            <li>
+              <a href="chronologie.html" >Chronologie</a>            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="les-livres.html"  class="active" >Les livres</a>            </li>
+            <li>&middot;</li>
+            <li>
+              <a href="les-fonds.html" >Les Fonds</a>            </li>
+                          <li>&middot;</li>
+              <li>
+                <a href="les-petites-feuilles.html" >les Petites Feuilles</a>              </li>
+              <li>&middot;</li>
+              <li>
+                <a href="cingria-dans-la-litterature-romande.html" >Pour aller plus loin</a>              </li>
+                      </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <style type="text/css" media="screen">
+  #books_menu {display: block; margin: 36px 0 24px 28px;}
+  ul {
+    margin: 0;
+    text-align: left;
+  }
+
+  ul.menu {
+    margin: 0.58823529411765em 0 3em 0;
+
+  }
+
+  ul.menu li {
+    list-style-type: none;
+    display: inline-block;
+      padding: 0.52941176470588em 0.47058823529412em 0  0.47058823529412em ;
+    width: 200px;
+
+  }
+
+    .selected {
+      background-color: #989EA6;
+        background-image: none;
+        border: medium none;
+        border-radius: 2px 2px 2px 2px;
+        color: white;
+        padding: 2px 4px;
+    }
+
+    a { color: #4D4D4D; text-decoration: none;  }
+    .selected a, .selected a:visited {
+       /* text-shadow: 1px 1px 0px #8c8c60;   */
+      /* color: #e00071; */
+      color: white;
+
+    }
+
+ul.item { margin: 12px 0 0 38px; }
+
+    ul.item li {
+    list-style-type: none;
+    display: inline;
+    float: left;
+    margin: 1px 2px;
+    text-align: center;
+    cursor: pointer;
+
+  }
+
+  .ui-tooltip-content em { font-size: 1em;}
+
+  .ui-tooltip-wiki{
+     max-width: 520px;
+  }
+
+     .ui-tooltip-wiki .ui-tooltip-content{
+        padding: 1.8em;
+          font-size: 1.41176470588235em;
+        line-height: 1.4em;
+     }
+
+     .ui-tooltip-wiki h1{
+        margin: 0 0 7px;
+
+        font-size: 1.5em;
+        line-height: 1em;
+     }
+
+     .ui-tooltip-wiki img{ padding: 0 10px 0 0; }
+
+     .ui-tooltip-wiki p{ margin-bottom: 9px; }
+     .ui-tooltip-wiki .note{ margin-bottom: 0; font-style: italic; color: #888; }
+
+
+    .sub_td { background-color: #EFEFEF; padding: 1em; -moz-border-radius: 2px;
+    border-radius: 2px;}
+    .sub_td h2 { font-size: 1em; text-align:left; margin: 0 0 1em 0;}
+
+    .sub { float:left; clear:both; margin: 1em 0;}
+    .toggle_btn { float:left; clear: both; padding: 0 0 0 24px;	 background-image: url('img/icons/btn_open_close.png'); background-repeat: no-repeat; background-position: 0 3px; cursor: pointer;}
+
+    .plus { background-position: 0 -297px;}
+
+    .toggler {cursor: pointer;}
+
+    .book_line { border-bottom: 1px dotted #CCC; width: 100%; float: left; padding-bottom: 12px; margin-bottom: 12px; display:block;}
+    .tiny_date { font-size: 0.70588235294118em;}
+
+    .ui-tooltip-content em { color: #4d4d4d; font-style: italic;}
+    .ui-tooltip-content h2 em { color: #e00071; font-style: italic; }
+  </style>
+</style>
+<div id="main" class="fourcol" style="padding-right: 4em;">
+  <h1><span><span>Les Livres</span></span></h1>
+
+  <br/><br/>
+
+  <div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn">  L'Eau de la dixième milliaire. (Pages sur Rome)  <span class="tiny_date">&middot; 1932</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em> L'Eau de la dixième milliaire. (Pages sur Rome) </em>, Lausanne, Mermod, (Aujourd’hui, n° 120), 1932</h2>
+      <img src="uploads/couvertures/tn_leaudeladixiememilliaire.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Cingria garde des « souvenirs sinistres » de la rédaction de l'un de ses chefs-d'oeœuvre qu'il a écrit à la commande de son éditeur et mécène Henry-Louis Mermod quelques mois avant sa parution. Ces « pages sur Rome » illustrent idéalement l'alliage propre à l'auteur de promenades vigilantes et d'érudition galopante, d'observations et de dissertations, de guide touristique et de récit fantastique. Le texte est un aqueduc. Son parcours des eaux – « qui furent ici le début de tout comme elles furent le début de la terre » – révèle une Rome à la fois ville historique et ville éternelle.
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> A propos de la langue espéranto dite langue universelle <span class="tiny_date">&middot; 1906</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>A propos de la langue espéranto dite langue universelle</em>, Genève, Editons de La Voile latine, 1906</h2>
+      <img src="uploads/couvertures/tn_esperanto.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      La première plaquette de Cingria fut un pamphlet – ceux qui connaissent l'homme ne s'en surprendront guère. L'écrit s'en prend à l'invention du Dr Zamenhof à qui le tout Genève fait un concert de louanges lors du deuxième congrès internationnal consacré à l'espéranto. Nous sommes à la fin du moins d'août 1906.
+Par un subterfuge éditorial dont il a le secret, le jeune écrivain réagit quelques semaines à peine après l'événement ; il dénonce la « vivisection nauséabonde » d'une langue faite de bric latin et de broc germanique, et l'hybris d'un « monsieur à redingote et à lunettes d'or » qui prétend à créer une langue, alors qu'une langue est la vie d'un peuple. Par là, Cingria s'inscrit dans le débat sur la nature, organique ou institutionnelle, du langage qui divise les linguistes. En même temps que son intérêt vif pour ces questions, il démontre son sens de la polémique et son don du rythme.
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Anthologie de Charles-Albert Cingria <span class="tiny_date">&middot; 1995</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Anthologie de Charles-Albert Cingria</em>, préface de Jean-Louis Kuffer, Bordeaux, L'Escampette, 1995, 154pp.</h2>
+      <img src="uploads/couvertures/tn_anthologie1995.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Il est très peu d'écrivains contemporains qui semblent plus étrangers que Charles-Albert Cingria aux tumultes de ce qu'on appelle l'actualité, et qui nous propulsent à la fois, avec autant d'énergie, au coeur même du présent. Cingria aura traversé la moitié de notre siècle ponctué de révolutions locales et de guerres mondiales sans que ses écrits n'en conservent de traces significatives, et pourtant on se tromperait en affirmant qu'il a ignoré son époque. Ce n'est pas qu'il se voile la face ou qu'il prône le dégagement. Simplement il vit à un autre étage. Ce n'est pas qu'il soit coupé de la réalité. Au contraire il l'investit avec une intensité particulière, mais d'une manière qui lui est propre. Ce n'est pas qu'il fuie la terre des hommes. C'est qu'il l'arpente et l'habite à sa façon. Son temps n'est pas celui des grands événements et des grandes questions du jour, dont, relevait Jean Paulhan, il se « foutait complètement ». (Jean-Louis Kuffer) <br/><br/>Contient vingt-sept textes de Charles-Albert Cingria parus en périodiques : « Question importante », « Anémie », « Quinze novembre », « Moderne voulu moderne », « Ciel de Paris », « Petit carême aérien », « <em>Two questions</em> », « La Lettre », « Truculence », « Sonate », « Rois fainéants », « Eloge du cycle », « Veillée rurale », « Propos sur l'information », Tapisserie de triomphe », « Le Pain et le Sel », « Auteurs et éditeurs I », « Auteurs et éditeurs II », « Auteurs, éditeurs et... lecteurs III », « D'un jeudi à l'autre », « L'Hiver », « Une semaine », « Peindre », « Les Petits Monstres », « Salut aux lacs », « Rendre les livres » et « Faire apprendre par coeur ».
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Bois sec Bois vert <span class="tiny_date">&middot; 1983</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Bois sec Bois vert</em>, Paris, Gallimard, (collection « L'Imaginaire »), 1983, 286pp.</h2>
+      <img src="uploads/couvertures/tn_boissecboisvert1983.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      En 1933, Jean Paulhan écrivait à André Gide : « Je ne serais pas loin de voir dans Cingria un grand écrivain. » C'était aussi l'avis de Claudel, de Ramuz, de Cocteau, de Max Jacob et de quelques autres. Quinze ans plus tard paraissait <em>Bois sec Bois vert</em> qui, aujourd'hui encore, est comme le microcosme d'une oeuvre que son auteur dispersait autant par nécessité que par insouciance, mais qui s'est révélée avec le temps considérable, et d'une rare cohésion dans sa diversité. Si plusieurs textes que réunit <em>Bois sec Bois vert</em> semblent ainsi relever plus ou moins du genre de la nouvelle (« Xénia et le diamant »), du conte fantasmagorique (« Hyppolite hippocampe »), de l'étude littéraire historique (« Lou Sordel ») ou archéologique (« Le Compte des formes »), ils appartiennent en fait comme les six autres au genre unique et indéfinissable que s'est créé le génie vadrouilleur de Cingria. Captant l'extraordinaire acuité de sensations d'un être qui n'ignora que l'indifférence, c'est la langue elle-même ici qui voit, fait voir, et promène délectablement le lecteur. Avec son mélange d'élaboration fastueuse et de spontanéité déflagrante, elle nous restitue de la même façon le suc des temps anciens où déambulait l'érudition imaginative de l'écrivain, et la vibration des instants de ce monde que son regard toujours neuf et libre enregistrait pour les magnifier. « Je ne suis pas un nom », a-t-il noté, « il n'y a que la vie qui m'intéresse. » En retour la vie éclate dans tout ce qui demeure sous le nom de Cingria. (Jacques Réda)
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Bois sec Bois vert <span class="tiny_date">&middot; 1948</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Bois sec Bois vert</em>, Paris, Gallimard, 1948</h2>
+      <img src="uploads/couvertures/tn_boissecboisvert.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      A part « Hippolyte hippocampe » (qui n'est que <em>Phèdre</em> à rebours) et « Le Haut Bief » qui ont paru dans La <em>NRF</em> et dans <em>Mesures</em> en l'espèce d'articles, ces textes ont déjà vu le jour sous forme de petits livres. [...] Peut-être alors serait-il nécessaire de dire quelques mots d'introduction aux pages qui vont suivre. J'en serais incapable, ne les ayant pas regardées. Non par présomption ou pour éviter une fatigue : pour me conformer au très haut enseignement d'un de mes amis de cette terre que j'admire le plus et dont le conseil est le plus à écouter : Max Jacob ; disant : « Ne jamais revoir, la plume en main, un texte qui n'est pas de l'année même, autrement tout est en bas. » J'eusse bien préféré que tout fût en bas, mais tel n'était pas l'avis de ceux qui voulaient cette édition, et j'ai bien dû m'y soumettre. (Charles-Albert Cingria, « avant-propos » inédit au projet d'<em>oeuvre complète</em>, vers 1936.)
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Cahiers bleus <span class="tiny_date">&middot; 1982</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2><em>Cahiers bleus</em>, Troyes, ( n° 24), été 1982</h2>
+      <img src="uploads/couvertures/tn_cahiersbleus.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Avec des contributions de Edmond Humeau, Jacques Réda, André Dhôtel, Jean-Marie Dunoyer, Georges Borgeaud, Géa Augsbourg, Yoki, Pierre Olivier Walzer, Christian Noorbergen et Dominique Daguet, et des textes inédits de Cingria : « Retour au cadastre », « Lettre à Germain Paulhan », « Petite mise au point », « Faire le malin », « Retour aux jupes », « Morale murale », « Six petites lettres » et « Chine ».
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Cahiers de l'Alliance culturelle romande <span class="tiny_date">&middot; 1983</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2><em>Cahiers de l'Alliance culturelle romande</em>, Genève, (n° 29), novembre 1983</h2>
+      <img src="uploads/couvertures/tn_allianceculturelle.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Ce cahier est consacré à Alexandre et Charles-Albert Cingria, à l'occasion du centième anniversaire de la naissance de ce dernier. C'est la raison qui nous fait commencer par le cadet. De nombreuses études présentent l'un et l'autre. Elles ne doivent pas nous faire oublier ce qu'ils ont de commun, d'une intensité rare chez deux frères, maîtres dans des arts différents. (Weber-Perret, extrait de l'éditorial).<br/><br/>Contient des contributions de (pour la partie consacrée à Charles-Albert) Jacques Chessex, Jean-Louis Kuffer, Pierre-Olivier Walzer, Georges Anex, Jacques Réda. André Desponds, Richard Garzarolli, Bruno Ackermann, Doris Jakubec, Jean-Claude Genoud, Philippe Jaccottet, Philippe Kaenel, Gabrielle Faure, Jil Silbenstein, Charles-F. Sunier, Alain Rochat, Dominique Monnin, Olivier Goy, Roger Guignard, Isabelle Melley-Cingria, Edmond Humeau, Sven Stelling-Michaud, Victor Desarzens, Georges Borgeaud, Maurice Chappaz, Henri Noverraz, Georges Duplain et Henri Perrochon. Contient des textes et des extraits de Cingria : « Déplacement », « L'Ame antique », « A l'inventeur de l'esperanto », « Odeur de roseaux », « Les Années 33 sq. », <em>L'Eau de la dixième milliaire</em> « <em>Aria del mese</em> », « Grand questionnaire », « Recensement », « Eloge du cycle », « Images de la Suisse », « Baignade fluviale », « Arrivée à Paris », « Novalaise », « La Fameuse étoile », « Dialogue par la pluie » et « Les Chèvres ».
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Charles-Albert Cingria en roue libre <span class="tiny_date">&middot; 2005</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Nicolas Bouvier, <em>Charles-Albert Cingria en roue libre</em>, édition Doris Jakubec, Carouge-Genève, Zoé, 2005, 172pp.</h2>
+      <img src="uploads/couvertures/tn_bouvier.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Nicolas Bouvier (1929-1998), voyageur ouvert au monde entier et aux langues inconnues grâce à son oreille musicienne, n'a pas croisé Charles-Albert Cingria (1883-1954) sur les routes et les chemins, autour de Genève, de Paris ou de Rome, ni n'a fait halte dans les mêmes bibliothèques à la recherche des mêmes manuscrits. Mais il a lu ses chroniques, ses proses, ses récits fantastiques ou fantasmagoriques, ses traductions des maîtres anciens, entrant ainsi en dialogue avec lui, cherchant les raisons de ces instants magiques où le monde dévoile son secret, son sens lumineux, sa beauté légère. Ce qui intéresse Nicolas Bouvier lisant Cingria, homme au charisme épique, c'est la manière d'écrire le voyage, l'art de circuler et d'aller et venir tout en observant le proche comme s'il était neuf et inconnu. <br/>« Un mètre carré, et l'univers », c'est la formule de Cingria pour déambuler, s'étonner, vivre, méditer, écrire.<br/>Le titre de ce livre, choisi par Nicolas Bouvier, souligne le rapport très libre qu'il entretient avec Cingria: lâcher prise et rouler sans entrave.
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Charles-Albert Cingria. L'Instant intemporel <span class="tiny_date">&middot; 2008</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Jacques Chessex, <em>Charles-Albert Cingria. L'Instant intemporel</em>, Lausanne, L'Age d'Homme, (« Poche suisse n°240 »), 2008, 89pp.</h2>
+      <img src="uploads/couvertures/tn_chessexagedhomme.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Contemporain de Claudel et de Strawinsky, Charles-Albert Cingria va son chemin dans le Moyen Age des antiphonaires et la plus libre invention moderne. C'est qu'il vit comme personne l'instant et l'intemporel, soucieux de Dieu, de style, d'images, de stupeur inspirée au choc des figures et des choses.<br/>Prosateur au génie dru, conteur d'histoires enluminées comme autant de miracles quotidiens, il pratique la digression du chat et la halte du pèlerin comblé par la grâce d'être là. Ecrivain sauvage, mondain, intransigeant, et l'un des styles les plus élaborés et printaniers du vingtième siècle. (Jacques Chessex)
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Charles-Albert Cingria. Verbe de cristal dans les étoiles <span class="tiny_date">&middot; 2007</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Anne Marie Jaton, <em>Charles-Albert Cingria. Verbe de cristal dans les étoiles</em>, Lausanne, Presses polytechniques et universitaires romandes, (« Le savoir suisse »), 2007, 135pp.</h2>
+      <img src="uploads/couvertures/tn_jaton.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Sans cesse on voit ressurgir l'oeuvre inclassable de Charles-Albert Cingria. Les petites feuilles que dispersait l'érudit vagabond ont été converties en oeuvres complètes et ses lettres sont recueillies comme des perles. Mais comment lire ses livres déroutants, aux titres étranges ? Cette étude révèle ces classiques comme un monument de fraîcheur. L'écrivain lie ses fidèles comme dans une société secrète avec leur ferveur et leurs marottes cingriesques. De cette « épopée des petits riens », Anne Marie Jaton dégage la science, cachée sous les grâces de la désinvolture. La liberté de pensée y est souveraine et capte la vie. Amoureux du latin, du Moyen Age, des chats et de la musique, Cingria a pratiqué en vérité les grandes audaces de la modernité : temps désarticulé, folie des détails, narration rebondissant par les surprises enchanteresses et continues de l'écriture.
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Charles-Albert Cingria <span class="tiny_date">&middot; 1967</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Jacques Chessex, <em>Charles-Albert Cingria</em>, Paris, Pierre Seghers, (« Poètes d'aujourd'hui » n° 170), 1967, 190pp.</h2>
+      <img src="uploads/couvertures/tn_chessexseghers.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Charles-Albert Cingria (1883-1954). Génial vagabond de l'Europe latine, il a porté ses pas, avec une désinvolture de grande race dans les contrées les plus singulières de l'esprit. Il a ramené de ses voyages un carnet de route où la poésie reste à jamais prisonnière. D'une intransigeance hautaine, Charles-Albert Cingria, entouré d'une légende de pauvre pèlerin, revit grâce à Jacques Chessex, poète et romancier suisse, nourri aux mêmes sources.
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Charles-Albert Cingria <span class="tiny_date">&middot; 2004</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2><em>Charles-Albert Cingria</em>, dossier coordonné par Alain Corbellari, Lausanne, L'Age d'Homme, (« Les Dossiers H »), 2004, 490pp.</h2>
+      <img src="uploads/couvertures/tn_dossiersh.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      « Constantinopolitain, c'est-à-dire Italo-franc levantin », comme il aimait à le dire lui-même, Charles-Albert Cingria (1883-1954) est l'un des écrivains les plus inclassables du XX<sup>e</sup> siècle. Natif de Genève, mais farouche catholique, dandy ruiné, il promena sa silhouette de clochard vélocipédiste entre Paris, où il garda longtemps un pied-à-terre, et la Suisse romande, dont il fut, aux côtés de Ramuz, de Gilliard, de Gonzague de Reynold, l'un des promoteurs du renouveau littéraire avant d'être l'un des mentors de la génération des Jaccottet, Chessex et Borgeaud. Collaborateur régulier de la <em>NRF</em>, ami de Max Jacob, de Claudel, de Paulhan, Cingria reste victime d'une légende d'un pittoresque trompeur et de l'apparent éclatement de son oeuvre, où l'érudition donne la main à la fantaisie dans un irrépressible élan de liberté créatrice qui bouleverse les frontières des genres. Pour les cinquante ans de sa mort, ce « Dossier H » fait le point sur sa fortune critique et brosse de lui un portrait témoignant de l'actualité de son oeuvre et de la séduction qu'elle opère sur un lectorat de plus en plus nombreux.
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Chiens &amp; chats littéraires chez Cingria, Rousseau et Cendrars <span class="tiny_date">&middot; 2002</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Jacques Réda, Jacques Berchtold, Jean-Carlo Flückiger, <em>Chiens &amp; chats littéraires chez Cingria, Rousseau et Cendrars</em>, Genève, La Dogana, 2002, 135pp.</h2>
+      <img src="uploads/couvertures/tn_redachiensetchat.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      « Les chats ont d'autres idées que les chiens sur la vie », notait Octave Mirbeau &mdash; et sans doute d'autres lectures, serait-on tenté d'ajouter. Chiens et chats, en tout cas, ont littéralement investi le territoire littéraire, y imprimant les plus visibles et lisibles des empreintes. Ils ont aussi divisé l'humanité (et plus particulièrement les écrivains) en deux clans souvent peu aimables l'un envers l'autre. « Comme chiens et chats » dit la sagesse des nations... et « li chien soun dou bou Dieu et li cat soun dou diable » ne craint pas d'affirmer un proverbe provençal.<br/>Emblème de la fidélité, le chien ne s'alarme que de l'abandon de ses maîtres ; le chat, pour sa part, jaloux de son indépendance, hédoniste et libertaire, saura s'attacher &mdash; mine de rien &mdash; des écrivains comme Baudelaire, Mallarmé ou Léautaud. Dans cet ouvrage, c'est à Rousseau, Cendrars et Cingria d'évoquer pour nous leurs compagnons chiens &amp; chats...
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Cippe à Charles-Albert Cingria. Un recueil d'hommages <span class="tiny_date">&middot; 2011</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2><em>Cippe à Charles-Albert Cingria. Un recueil d'hommages</em>, Bienne, ACEL, (Gollion, Infolio), 2011, 154pp.</h2>
+      <img src="uploads/couvertures/tn_cippecollectif.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Ce cippe « hors série » accompagne le cippe « normal » consacré à Cingria à l'occasion de la sortie des nouvelles Oeuvres complètes de Charles-Albert Cingria qui paraissent cet automne à L'Age d'Homme. Ce « cippe à Charles-Albert Cingria » est réalisé dans l'esprit qui avait prévalu à la composition de la « Couronne de Charles-Albert Cingria » (NRF, 1955) et à la « Nouvelle couronne de Charles-Albert Cingria » (<em>NRF</em>, 1993). Une anthologie, ici, composée en pensant aux fameuses <em>Petites Feuilles</em>, avec de très courts textes d'amis et d'auteurs ayant une certaine dilection pour Cingria.<br/>Parmi lesquels, Pierre Alechinsky, Pascal Commère, Philippe Delaveau, Alain Duault, Guy Goffette, Philippe Hélénon, Patrick Kéchichian, Jean-Georges Lossier, Jean-René Moeschler, Gilles Ortlieb, Jacques Réda, Jean Starobinski, Pierre Voélin ou Alexandre Voisard.
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Colères et antidotes <span class="tiny_date">&middot; 2009</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Colères et antidotes</em>, édition Maryke de Courten, préface de Daniel Maggetti, Lausanne, L'Age d'Homme, (collection « Poche suisse » n° 251), 2009, 179pp.</h2>
+      <img src="uploads/couvertures/tn_coleresetantidotes.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      "« Charles-Albert Cingria ? Un sujet rêvé pour les amateurs de qualificatifs rares, d'expressions recherchées, d'images cocasses. Capricant pour les uns, coruscant pour les autres ; <em>lutin insaisissable</em> et <em>papillon de bibliothèque</em>, selon Claudel ; <em>phosphorescence qui court</em>, renchérit Cocteau ; <em>ayant l'air d'un clown, ou d'un prêtre défroqué</em>, aux yeux de Henry Miller ; pratiquant <em>un style gras et onctueux avec quelque chose de monacal</em>, Paulhan dixit ; et je vous épargne les occurrences du fantasque, du vélocipédiste, du vagabond, <em>e che diavolo ne so io</em>. Maurrassien et troubadour ; érudit et pique-assiette ; Turc et Genevois ; raffiné et SDF. Tout ce qu'il faut, en somme, pour être un <em>cas </em>: et un <em>cas</em> littéraire, ce n'est jamais très loin du domaine des <em>curiosités</em> &mdash; d'où le constat que, hors d'un cercle plutôt étroit d'inconditionnels, eux-mêmes écrivains pour la plupart, on a volontiers tendance à ne pas le prendre au sérieux. Si on ajoute au tableau son goût du paradoxe et sa biographie atypique, on comprend que Cingria soit identifié au mieux à un original, au pire, à un ludion ou à une girouette. » (Extrait de la préface de Daniel Maggetti)<br/><br/>Son oeuvre touffue, dense, construite, forte, se présente sous la forme de brefs récits et de propos dont la cohésion est de plus en plus évidente. Après avoir été un marginal, Charles-Albert Cingria entre aujourd'hui dans la constellation des grands écrivains du XX<sup>e</sup> siècle. Le lecteur découvrira dans ce volume un choix de colères et de ravissements encore inconnus du grand public, qui illustrent les multiples facettes de sa paradoxale nature. (Maryke de Courten)"
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Correspondance avec Igor Strawinski <span class="tiny_date">&middot; 2001</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Correspondance avec Igor Strawinski</em>, édition Pierre-Olivier Walzer, Lausanne, L'Age d'Homme, (collection « Nouvelles correspondances de Charles-Albert Cingria » n°1), 2001, 89pp.</h2>
+      <img src="uploads/couvertures/tn_strawinski.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Pendant son séjour en Suisse, dans les années 1914-1920, Igor Strawinsky, qui était déjà l'auteur remarqué du <em>Sacre du printemps</em> et de <em>Petrouchka</em>, avait noué des relations amicales avec l'intelligentsia romande de l'époque, groupée sous l'égide des <em>Cahiers vaudois</em>, avec Ramuz en particulier avec qui il composera bientôt la fameuse <em>Histoire du soldat</em>. Mais il fut tout de suite attentif également à la présence, dans le groupe, du jeune musicologue Charles-Albert Cingria, qui nourrissait sur la musique des idées parallèles aux siennes. Il avait du plaisir à le retrouver, entre Morges et Vevey, et à discuter avec lui de la théorie, déjà développée dans un article de <em>La Voile latine</em> (« Essai de définition d'une musique libérée des moyens de la raison discursive »), selon laquelle est condamnable la musique illustration de sentiments, et seule défendable la musique non sentimentale visant à une « délectation supérieure ». Dès lors se noua entre les deux hommes une solide amitié qui dura autant que leur vie, et qui se traduisit par une correspondance, certes assez décousure, étant donné la vie fort agitée et vagabonde du musicien, mais toujours franche et pleine d'intérêt. En 1932, quelques passages du <em>Pétrarque</em> de Charles-Albert enchantèrent Strawinsky et valurent à leur auteur une grande citation élogieuse dans le second volume des <em>Chroniques de ma vie</em>. A Paris, Charles-Albert est l'invité de la plupart des premières de musicien, il est aussi son invité dans sa loge, à sa table, dans les divers refuges savoyards où l'amènent les maladies de sa femme et de sa fille. Et Charles-Albert sera encore de la première du <em>Rake's Progress</em>, à Venise, en septembre 1951.<br/>Rien de plus passionnant que les échanges amicaux entre un esprit aussi original que celui de Cingria avec l'un des plus grands créateurs de son époque.
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Erudition et liberté. L'Univers de Charles-Albert Cingria <span class="tiny_date">&middot; 2000</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Actes du colloque de l'Université de Lausanne [16 et 17 octobre 1997]  réunis par Maryke de Courten et Doris Jakubec, <em>Erudition et liberté. L'Univers de Charles-Albert Cingria</em>, Paris, Gallimard, ( « Cahiers de la NRF »), 2000, 502pp.</h2>
+      <img src="uploads/couvertures/tn_eruditionetliberte.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      "Le lecteur de l'an 2000 sera fasciné par Charles-Albert Cingria, par ses textes sans projets, sans points d'orgue, prolifiques dans leur désinvolture et leur fier inachèvement. Le <em>talking</em> de Cingria serait-il le style de l'avenir ? Où cohabitent sans s'opposer le bon sens et l'érudition, l'imperceptible vibration et la passion coruscante, un ludisme éberluant et une véhémente dénonciation. Sur le rythme joyeux propre à la jongleresse au milieu des neumes, Cingria livre ses observations « <em>d'homme humain </em>» (l'expression est empruntée par lui à la culture chinoise) dans une éblouissante polyphonie.<br/>Nous avons voulu, en réunissant professeurs et chercheurs de plusieurs générations et de formations diverses, entreprendre un parcours critique de l'univers entier de l'écrivain. C'est pourquoi nous ne leur avons donné aucune directive particulière et avons accepté le foisonnement et l'abondance.<br/><em>Erudition et liberté</em> abonde en éclairages divers et en observations nouvelles qui se composent, s'emboîtent ou se prolongent et commencent à faire émerger le vaste champ d'une vision dont les maîtres mots seraient universalité, mobilité, finesse des notations, succulence verbale. Insensiblement apparaissent la cohérence de Cingria, une remarquable force, qu'un prochain colloque tentera, nous l'espérons, de préciser. (Maryke de Courten)<br/><br/><em>Actes du premier colloque international organisé conjointement par le Centre de recherches sur les lettres romandes et l'Association des Amis de Charles-Albert Cingria (Université de Lausanne, 16-17 octobre 1997).</em>
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Florides helvètes de Charles-Albert Cingria <span class="tiny_date">&middot; 2011</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Alain Corbellari, Pierre-Marie Joris, <em>Florides helvètes de Charles-Albert Cingria</em>, Bienne, ACEL, (Gollion, Infolio), 2011, 109pp.</h2>
+      <img src="uploads/couvertures/tn_cippejoriscorbellari.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      <em>Florides helvètes</em> recueille les principaux textes que Cingria a consacrés à la Suisse. Un pays qui l'a vu naître, mais qu'il aime à refaçonner en le dépaysant. Le cosmopolitisme affiché de l'écrivain (il se dit « Constantinopolitain c'est-à-dire Italo-franc levantin »), l'acuité de sa perception, l'ivresse des impressions qu'il nous fait éprouver devant « simplement ce qui existe », sa drôlerie désarçonnante et son style sidérant, tout chez lui concourt à renouveler notre vision des choses et à nous transporter dans un monde nouveau. A la fois médiéval et ultra-moderne, Cingria est l'homme libre par excellence. Il ne nous fait pas seulement visiter la Suisse ; il nous entraîne dans un voyage à travers le temps et nous fait partager l'expérience d'un homme qui réinvente le monde en poète.<br/>Les auteurs, médiévistes, ont trouvé en Cingria un formidable stimulant, un auteur dont l'écriture est d'une modernité qui ne le cède en rien à la littérature la plus neuve.
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Florides helvètes et autres textes <span class="tiny_date">&middot; 1997</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Florides helvètes et autres textes</em>, Lausanne, L'Age d'Homme, (collection « Poche suisse » n° 24), 1997, 1983-1993, 197pp.</h2>
+      <img src="uploads/couvertures/tn_floridesetautrestextes.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Ce volume rassemble les écrits les plus importants de Charles-Albert Cingria consacrés à la Suisse. Que ces textes soient si nombreux est une espèce de paradoxe. Quoique né à Genève, C.-A. Cingria détestait qu'on fît de lui un écrivain prisonnier de frontières nationales. En 1910, dans la grande querelle qui mit fin à <em>La Voile latine</em>, la revue qui réunissait les espoirs de la nouvelle littérature romande, C.-A. Cingria et son frère Alexandre, fervents lecteurs de <em>L'Action française</em>, appartenaient au camp des Romains, universalistes, opposé à celui des Suisses (Robert de Traz, Gonzague de Reynold), qui luttaient pour la renaissance d'une culture helvétique. Un peu plus tard, toute idéologie oubliée, Charles-Albert savoure tout le plaisir d'exister en n'importe quel endroit du monde. Partout il exerce avec une passion amusée sa faculté de sentir. Alors, les hasards de sa vie le ramenant souvent en Suisse, pourquoi pas Lausanne, Berne, Genève, Fribourg, tous lieux chargés de pittoresque ou d'imprévu ? « Je ne puis vous dire ce que j'aime les rues, s'exclame-t-il. Dans toutes les villes, mais surtout celle-ci. » Celle-ci, c'est Genève ; mais aussi toute ville, toute campagne, tout pays réel ou rêvé ou un certain tonus de vie lui permet de se réconcilier avec son être dans le monde. Les circonstances firent que ce fut souvent le cas en Suisse, ainsi qu'en témoignent les textes majeurs ici réunis : <em>Impressions d'un passant à Lausanne</em>, « Ce pays qui est une vallée », <em>Musiques de Fribourg</em>, <em>Le Parcours du Haut-Rhône </em>et <em>Florides helvètes</em>.<br/><br/>Charles-Albert Cingria (1883-1954), né et mort à Genève, vécut en écrivain marginal, notamment à Paris où il était tenu pour leur égal par des écrivains comme Claudel, Cocteau, Jouhandeau, Tzara. Grâce à la protection de Ramuz, il collabora régulièrement à <em>Aujourd'hui</em>. Grâce à celle de Paulhan, il donna d'étincelantes chroniques à <em>La Nouvelle Revue française</em> qui firent sa réputation en France. Passionné de Haut Moyen Age, il a donné des livres d'une vivante érudition sur des thèmes difficiles : le rythme des neumes, la famille de la reine Berthe, les troubadours, la musique médiévale, l'influence de Notker le Bègue. Passionné de vie, il a écrit quelques petits livres d'impressions sur tous sujets (<em>Stalactites</em>, <em>Bois sec Bois vert</em>) d'une merveilleuse fantaisie.
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Géographie vraie <span class="tiny_date">&middot; 2003</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Géographie vraie</em>, postface de Jacques Réda, Fontfroide-le-Haut, Fata Morgana, 2003, 42pp.</h2>
+      <img src="uploads/couvertures/tn_geographievraie.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Découvrir un nouveau texte de Cingria, c'est faire, toujours, l'expérience de l'étonnement pur, à mille lieues du spectacle et des « pseudo-modernités » qu'il fustige en ces lignes, d'un étonnement dont le seul ressort est une vision singulière et puissante. Les sangliers « très mosaïque romaine » qui traversent ce texte, entre cent choses, tiennent dans le bestiaire cingriesque une place essentielle. Ils sont l'image de la force et de la sauvagerie, celle de cet « homme paléolithique » que l'auteur se plaisait à revendiquer. Dans sa postface à ce texte totalement inédit, Jacques Réda élucide certains points de ce riche rapport de Cingria au monde animal, et, conséquemment, à celui des hommes. (Contient aussi un portrait de l'auteur par Glieb Eristavi. Dessins de sangliers et postface par Jacques Réda. Notes de Jean-Christophe Curtet.)
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Impressions d'un passant à Lausanne <span class="tiny_date">&middot; 1966</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Impressions d'un passant à Lausanne</em>, préface de Jacques Chessex, Lausanne, L'Age d'Homme, (« La Merveilleuse collection »), 1966, 99pp.</h2>
+      <img src="uploads/couvertures/tn_impressionsdunpassantalausanne.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Henry-Louis Mermod a édité les <em>Impressions d'un passant à Lausanne</em> en 1932, dans la collection des cahiers d'<em>Aujourd'hui</em>. Douze exemplaires sur vieux Japon, quatre cents exemplaires sur vélin teinté, trois exemplaire sur Chine &mdash; en tout quatre cent quinze exemplaires maintenant introuvables. Au moment où nous ouvrons cette collection, il nous paraît naturel de nous souvenir de Mermod : faisant écrire, faisant paraître des livres « pour son plaisir », ce Barnabooth vaudois aura publié Ramuz, Larbaud, Claudel, Valéry, Ponge, Michaux... Mermod aimait la poésie. Rééditant les <em>Impressions</em> trente-quatre ans après lui, nous plaçons notre collection &mdash; qui publiera prochainement des jeunes auteurs, des poèmes inédits, des récits, des raretés &mdash; sous le double signe de la reconnaissance et de la recherche. (Extrait de la préface de Jacques Chessex.)
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> L'Ame antique <span class="tiny_date">&middot; 1997</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Pierre-Olivier Walzer, <em>L'Ame antique</em>, Lausanne, L'Age d'Homme, (collection « Vies de Charles-Albert Cingria » [3]), 1997, 185pp.</h2>
+      <img src="uploads/couvertures/tn_walzerameantique.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Pourquoi Vies ? Parce que la connaissance que nous avons de Charles-Albert Cingria comporte encore des lacunes si considérables qu'il ne nous a pas paru possible de consacrer à ce merveilleux écrivain et multiforme personnage &mdash; genevois, dalmate, dandy, voyageur, vagabond, cycliste, poète, historien, chartiste &mdash; une biographie pleine et équilibrée. En attendant que les chercheurs fassent les découvertes qui permettront d'embrasser sous tous ses aspects cette personnalité si riche et parfois si déroutante, on se contentera, dans cette suite de petits volumes, de faire le point sur certaines phases de son existence qu'une documentations nourrissante et originale permet de nous rendre suffisamment proches.<br/>br/><em>Pierre-Olivier Walzer fut titulaire de la chaire de littérature française à l'Université de Berne durant trente ans, pendant lesquels il collabora au</em> Journal de Genève <em>comme critique littéraire. Auteur d'ouvrages sur Toulet, Mallarmé, Valéry, éditeur des oeuvres de Cros, Corbière, Lautréamont, Nouveau dans la Bibliothèque de la Pléiade, directeur de l'</em>Anthologie jurassienne <em>et du</em> Dictionnaire des littératures suisses <em>publié pour le 700e anniversaire de la Confédération. Il dirige à L'Age d'Homme la collection « Poche suisse ».</em><br/><em>Président durant de nombreuses années des « Amis de Charles-Albert Cingria », il est aujourd'hui, avec Jean-Louis Kuffer, à la tête des </em>Petites Feuilles<em>, dont Cingria fut le premier « rédacteur en chef ».</em>
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> L'Hebdo littéraire <span class="tiny_date">&middot; 1999</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2><em>L'Hebdo littéraire</em>, Lausanne, (n° 6), 1999</h2>
+      <img src="uploads/couvertures/tn_hebdolitteraire.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      "C'est l'un de nos plus grands artistes, un génie. Et pourtant si méconnu. A-t-il seulement franchi la porte de nos écoles ? Longtemps, il a trainé l'image d'une espèce de toqué à bicyclette, « loufoque », enturbanné, inclassable. Une ascendance semi-levantine, dans nos esprits orthonormés à Greenwich, bien que sa famille ne vînt que de Raguse, ce qui n'est, au fond, pas si loin. Mais cette comète littéraire semblait jaillie d'un Orient compliqué, d'une Jérusalem enfouie sous les sables, d'une intemporelle « Antiquité », qui pouvait être hier aussi bien que demain. Raguse ? Syracuse, si ça vous arrange mieux : le chemin poétique est-il affaire de bornes géographiques ou de syllabes enchantées ? (Pascal Décaillet, extrait de l'éditorial.)<br/><br/>Contient des contributions de Pierre-André Stauffer, Jacques Chessex, Jean Ammann, Pascal Décaillet, Michel Audétat, Pierre-Dominique Bourgknecht et Pierre-Marie Joris."
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> La Civilisation de Saint-Gall <span class="tiny_date">&middot; 1929</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>La Civilisation de Saint-Gall</em>, Lausanne, Payot, (collection des « Cahiers romands » n° 5), 1929</h2>
+      <img src="uploads/couvertures/tn_civilisationsaintgall.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      A plus d'une reprise, M. Charles-Albert Cingria s'est occupé des séquences latines modulées au IX<sup>e</sup> siècle, par Notker, moine de Saint-Gall. Non seulement, il leur attribue toute une nouvelle poésie franque mais il juge qu'elles sont les ancêtres de la littérature de Ramuz et de Cendrars. Il n'est donc pas surprenant que, mélomane épris de la renaissance rythmique qui rayonna de Saint-Gall du VIII<sup>e</sup> au X<sup>e</sup> siècle, il lui consacre maintenant un livre où l'imagination divinatrice se joue à travers la science et le document. Artiste mais érudit, érudit mais artiste, tel nous apparaît l'auteur de La Civilisation de Saint-Gall, commentateur passionné du génie grégorien, homme dont la musique est la nourriture au moins autant que le voyage. (Jean Nicollier, <em>Gazette de Lausanne</em>, 20 octobre 1929, p. 1.)<br/><br/><br/>A lire le volume que M. Charles-Albert Cingria vient de publier, vous recevez l'impression d'une farouche originalité, impression à laquelle concourent diverses remarques suggérées par votre lecture : la première, que l'auteur possède une érudition inébranlable et d'une richesse inouïe ; la deuxième, qu'il écrit délicieusement ; la troisième, qu'il goûte parfois un solide plaisir à se moquer des gens ; la quatrième, qu'il sait parfaitement que le public ne lui en saura pas moins gré. J'arrête cette liste ; vous la continuerez fort bien sans moi. En total, les initiés rendront hommage à l'admirable documentation, à la science de M. Cingria ; et les non initiés, en se tenant un peu plus loin, flaireront la valeur de ce livre pour peu qu'ils aient le nez fin.<br/>br/>C'est là un ouvrage de paléographie musicale, écrit par un savant gourmand, spirituel, à l'enthousiasme vibrant, à la critique précise, sérieux sans être cuistre, farceur à ses heures. L'auteur nous montre, dans le couvent de Saint-Gall, le centre de l'activité musicale occidentale, du VIIIe au Xe siècle. A Saint-Gall, venant d'Irlande, arrivaient  de génération en génération des hommes admirablement zélés et cultivés, musiciens, peintres, poètes. Ainsi, de cette abbaye émana la grande renaissance rythmique qui donna le branle à la France, à l'Italie, à l'Angleterre, à l'Allemagne, et sans laquelle on ne saurait comprendre la musique et la poésie européenne. Cette vieille musique de la liturgie, dont Mozart disait qu'il aurait donné tout son oeuvre pour en avoir fait trois notes, M. Cingria se penche sure elle avec des gestes d'amoureux ; puis il nous conduit par la main, nous initiant à toutes les découvertes dans les tropaires et les graduels, aux séquences de Notker le Bègue, aux tropes de Tutilon. Si vous ne comprenez pas ce qu'il vous explique &mdash; avec cette candeur des érudits qui ne supportent jamais la somme que peut receler un regard interrogateur &mdash; et bien ! voyez le vivre ces neumes et ces rythmes, les respirer, leur insuffler sa vie propre. Le spectacle en vaut la peine ; vous aurez l'image du savant, de l'artiste qui se donne totalement à l'objet de ses admirations. Son émerveillement même vous émerveillera. Jusqu'au moment où, vous observant du coin de l'oeil, il vous fera donner dans un panneau que vous prenez pour une porte de sortie.<br/>Une bonne préface de M. Stelling Michaud précède ce petit livre fort bien présenté, comme tous ceux que publient les Cahiers romands et illustré de nombreuses planches hors texte, évocations naïves d'un passé intégralement dévoué aux intérêts supérieurs de la vie. (P. C., <em>Journal de Genève</em>, 7 septembre 1929, p. 2.)
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> La Fourmi rouge et autres textes <span class="tiny_date">&middot; 1995</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>La Fourmi rouge et autres textes</em>, Lausanne, L'Age d'Homme, (collection « Poche suisse » n° 1), 1995, 1978, 1987, 221pp.</h2>
+      <img src="uploads/couvertures/tn_fourmirouge.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Au fur et à mesure qu'elle se purifie des scories du temps, l'oeuvre de Charles-Albert Cingria se révèle plus vivante dans son nimbe d'éternité. On a dit le personnage légendaire que fut celui qu'on appelle familièrement Charles-Albert (1883-1954), ses facéties et ses esclandres, son entretien pittoresque et ses vagabondages, et les meilleurs esprits de ce temps ont célébré l'originalité et la fraîcheur lustrale de son art d'écrivain.<br/>Or il reste encore à découvrir l'unité et la profondeur d'une pensée réfractaire à tous les systèmes, mais tenue ensemble par une « incessante joie poétique » et une énergie spirituelle cristallisant dans une dorme qui a l'éclat, la consistance et la structure mystérieuse du diamant.<br/>Par où qu'on entre dans le <em>Labyrinthe harmonique</em> de son oeuvre, on est saisi par la même immédiate jubilation, qui tient à la manière de tout « infinitiser » de Charles-Albert, capable de s'émouvoir devant un « chat tout petit » au nez « tatoué de macadam » aussitôt après s'être livré à la méditation la plus profonde sur le sens de la vie. C'est que le poète ne cesse d'unifier l'être, par le truchement de son verbe de cristal.<br/><br/>L'on a dit que l'oeuvre de Ramuz suggérait l'idée de grandeur. Quant à celle de Charles-Albert Cingria, c'est au sceau du génie poétique qu'elle est marquée, qui, comme nous le rappelle Pierre-Olivier Walzer dans sa remarquable préface, a pour vertu première de nous réconcilier avec l'univers.
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> La Grande Ourse <span class="tiny_date">&middot; 2000</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>La Grande Ourse</em>, Paris, Gallimard, 2000, 90pp.</h2>
+      <img src="uploads/couvertures/tn_lagrandeourse.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Inédit, <em>La Grande Ourse</em> témoigne à la perfection de ce qui fut, beaucoup plus qu'un thème littéraire des écrits de Cingria, l'un des ressorts de sa vie vouée par les astres à un perpétuel besoin de partir et de repartir.<br/>C'est presque un récit de fiction pure (comme « <em>démantibulé</em> », pour reprendre un de ses mots favoris), genre assez rare illustré par son oeuvre si riche en imprévus. Autrement que dans ses chroniques, mais avec la même liberté, le même génie verbal, s'y donne libre cours par bonds, virages, caprices, coups de théâtre, un sens à la fois mystique, humoristique, pratique et sans doute autobiographique du merveilleux.
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> La Jongleresse <span class="tiny_date">&middot; 2006</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>La Jongleresse</em>, édition Daniel Maggetti, Genève, Héros-Limite, (Enregistrement sonore, 62 min 48 sec + livret 60 pp.), 2006</h2>
+      <img src="uploads/couvertures/tn_lajongleresse.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      « Tant pis pour ceux qui n'ont point de sens ni non plus d'oreille. Car il est très important d'avoir de l'oreille, non aux accents &mdash; qu'est-ce que cela peut faire que l'on parle ainsi ou ainsi &mdash; mais aux voix. Oui, aux voix quand s'élève un son et qu'on reconnaît qu'il est pur. Il faut beaucoup de temps pour en arriver là, mais j'y suis, je crois, et rien ne me ravit autant qu'une voix diastématique non tremblée &mdash; posée de par son origine humble, racée &mdash; qui émeut des places dans notre cerveau lié à notre chair et à nos tendons dans une capacité de reconnaître juste en vertu des nombres. »<br/><br/>Textes inédits, entretiens et lectures de l'auteur. Daniel Maggetti : « Les syllabes argentées ». Coffret comprenant un livret de 64 pages et un disque compact d'extraits des archives de la Radio Suisse Romande.
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> La Reine Berthe et sa famille <span class="tiny_date">&middot; 1947</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>La Reine Berthe et sa famille</em>, Genève, Trois Collines, (collection « Poétique de l'Histoire »), 1947</h2>
+      <img src="uploads/couvertures/tn_lareineberthe.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      M. Charles-Albert Cingria a une manière à lui de traiter l'histoire. C'en est d'ailleurs une excellente. Il la considère non pas seulement comme le récit de tout ce qui s'est passé, mais comme un élément de construction, de fécondation, pour les générations à venir. C'est-à-dire qu'à ses yeux l'histoire doit donner le goût de l'histoire à ceux qui la lisent, et par conséquent le goût de vivre aussi pleinement et largement que ceux dont on suit la vie. Source d'inspiration, de beauté confortante et de ferveur généreuse, telle il la voit. « Il n'y a que ce qui est beau qui soit vrai », dit Charles-Albert Cingria. Et il nous persuade que c'est vrai, ce qui est déjà bien beau.<br/>Le sujet qu'il a choisi, <em>La Reine Berthe et sa famille</em> était propre à unir d'heureuse manière les données historiques et les tableaux qu'inspirent les traditions et les légendes. Les premiers sont rares : quelques témoignages contemporains situant Berthe dans l'ancien royaume burgonde. D'autre part, c'était une fée que la reine fileuse, et sa fille Adélaïde, impératrice romaine du Saint-Empire, était une sainte. Et c'est bien pour cela qu'elles ont charmé Charles-Albert Cingria, en lui ouvrant un monde où se pouvaient donner libre cours sa fantaisie, sa ferveur, et aussi son attachement aux textes.<br/>Car vous ne trouverez pas plus strict observateur des documents que ce poète capricieux, vagabond dans l'âme et sans cesse émerveillé, que passionnent également des histoires d'enlèvement et les chapiteaux de Payerne, les cartes de géographie, les vases d'or et les tuniques peintes. Charles-Albert Cingria trouve du plaisir à transcrire, à classer, autant qu'à colorier ou à imaginer ; il se livre à son travail de bénédictin aussi joyeusement qu'à son invention verbale. Il recrée les événements et les personnages du passé dans un présent dont il désarticule les fatales règles, et prenant un point d'appui solide sur les passages dont il établit l'authenticité et la valeur avec une rare érudition, il bondit soudain dans les nuées.<br/>D'où une harmonie étrange, mais heureuse, entre les cadres de l'histoire et les boutades qui permettent de s'en évader, l'intégralité des textes et les variations qui en découlent. Cet historien est un poète pour lequel le temps n'existe pas. (P.C., <em>Journal de Genève</em>, 12 décembre 1947, p. 1.)
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> La Reine Berthe <span class="tiny_date">&middot; 1992</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>La Reine Berthe</em>, Lausanne, L'Age d'Homme, (collection « Poche Suisse » n° 115), 1992, 208pp.</h2>
+      <img src="uploads/couvertures/tn_lareineberthe1992.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Fille de Burkhard de Souabe, Berthe fut reine de 922 à 937, ayant épousé Rodolphe II, roi de la Bourgogne transjurane, lequel devint également roi de l'Italie franque, ce qui laisse supposer que sa femme le suivit à Pavie, « superbe antique ville », alors sa capitale. Mais il en fut délogé, comme il était d'usage, par Hugues, comte d'Arles et de Provence, qui se fit couronner à Pavie en 926 et qui, pour avoir la paix, abandonna à Rodolf ses terres de Provence et des Bouches-du-Rhône. D'où un accroissement prodigieux de la Bourgogne helvétique, dont Arles devenait la seconde capitale. A la mort de son mari, Berthe épousa d'ailleurs cet Hugues d'Italie, mais elle le quitta vers 940 pour retrouver avec délectation son Pays de Vaud et ses habitations rustiques.<br/>Dès lors commence sa vie mythique. « Ses moutons lui donnant de la laine. Elle file et tient cette quenouille qu'on lui voit sur les images. » Elle est devenue une sorte de bonne fée, protectrice des humbles, qui apparaît çà et là, de Soleure à Payerne, semant derrière elle les tours, les églises et les couvents.<br/>Charles-Albert Cingria est merveilleusement à son aise dans une histoire de ce genre où il s'agit d'exalter les pouvoirs d'une fée (Berthe) et les vertus d'une sainte (Adélaïde, la fille de Berthe, épouse d'Othon, premier des empereurs romains germaniques). Il fallait sa passion du Haut Moyen Age pour éclairer l'admirable fouillis des intrigues politico-familiales entre les rois et ducs romains germains bourguignons souabes et autres qui forment le tissu habituel de ce stupéfiant X<sup>e</sup> siècle. Naturellement, il a lu ce qu'il fallait lire, Liutprand, l'abbé Dey, Muret, Poupardin, Mais il résiste de toute la force de son imagination aux tentatives dépoétisantes des historiographes du XIX<sup>e</sup> siècle qui ne pensent qu'à jeter le discrédit sur les légendes et les traditions. Il faut au contraire profiter des marges obscures d'un sujet pour lui inventer des structures pittoresques et lui donner les couleurs vraies de la vie. C'est pourquoi, sous la plume de Cingria, ici comme dans son <em>Saint-Gall</em>, comme dans son <em>Pétrarque</em>, l'histoire devient une succulente chronique aux libres contrastes, aux développements inattendus entraînés par un généreux désir de conter, où il entre un peu de science, beaucoup de franche humeur, et une solide dose de poésie.
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> La Voile latine <span class="tiny_date">&middot; - 1907</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>La Voile latine</em>, (3e année, n° 4), mai-juin 1907</h2>
+      <img src="uploads/couvertures/tn_voilelatine.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Après avoir contribué au premier « essai de littérature romande » (<em>Les Pénates d'argile</em>, 1904), Cingria et son frère Alexandre participent à la fondation de <em>La Voile latine</em> (1904-1910). Le jeune auteur publie dans la revue son premier récit : « Lettre à Henri Spiess ». L'épistolaire (dont l'auteur fera l’une de ses principales veines d'écriture) n’est pas ici qu'une forme littéraire : la lettre était bien à l'origine une lettre ; elle fut publiée à l'insu de son auteur par ses compagnons de <em>La Voile latine</em>, car « nous ne devons pas nous priver de l'amusant quand il est de cette qualité » justifiera Ramuz.<br/>
+La revue s'est finie sur un échange de baffes. Elle donna néanmoins une claque salutaire à la littérature romande.
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> La Voix clémentine <span class="tiny_date">&middot; 1911</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>La Voix clémentine</em>, 1ère année, (n° 2), Avril 1911</h2>
+      <img src="uploads/couvertures/tn_voix_clementine.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      <em>La Voile latine</em> s’achève dans une dissidence : aux Feuillets qui réunissent les « Helvétistes », Charles-Albert oppose à lui seul ou presque <em>La Voix clémentine</em>, qui ne connaîtra que deux numéros. Sous le patronage du pape Clément VII dont le bourdon offert à Saint-Pierre de Genève figure en couverture de la revue, Cingria fait résonner la voix de bronze.
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Le Bey de Pergame, suivi d'une réédition du Canal exutoire  <span class="tiny_date">&middot; 1947</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Le Bey de Pergame, suivi d'une réédition du Canal exutoire </em>, Lausanne, Mermod, 1947</h2>
+      <img src="uploads/couvertures/tn_beydepergame.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      On sait aujourd’hui que Le Bey germa dans les marges de « La Grande Ourse », à la fin des années 1920. C’est en effet des premiers grands récits de l’auteur qu’il faut rapprocher l’histoire du Bey – la couleur orientale en plus.<br/>Progressant par contiguïté ou par inventaires – on y trouvera la plus célèbre liste de l’œuvre cingrienne : celle des dix-neuf petits-fils « d’une dame semi-troglodyte mais fière, détentrice de coquillages, de pianos et de fauteuils » –, le récit n’est pas un fil : un arbre généalogique plutôt, dont on suivrait quelques ramifications. Plus proche d’un long poème de Rimbaud que d’un petit roman, <em>Le Bey de Pergame</em> s’apparente même à un art poétique antiromanesque, déjouant, explicitement parfois, la facticité de l’anecdote et du suspens. « Je pourrais faire là-dessus des développements à l’infini, mais ils seraient faux. »
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Le Bitume est exquis <span class="tiny_date">&middot; 1984</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Jacques Réda, <em>Le Bitume est exquis</em>, Montpellier, Fata Morgana, 1984, 84pp.</h2>
+      <img src="uploads/couvertures/tn_bitumeexquis.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Rassemble les principaux articles que l'auteur a consacrés à Charles-Albert Cingria.
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Le Camp de César <span class="tiny_date">&middot; 1945</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Le Camp de César</em>, assorti de 4 lithographies de Géa Augsbourg et d’une postface de Robert Télin, Lausanne, Au Lys rouge, 1945</h2>
+      <img src="uploads/couvertures/tn_campdecesar.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Un Cingria classique, amateur de belles architectures antiques, ou imitées de l’antique, n’est pas exclusif d’un Cingria baroque, explorant les forêts et la vase des grenouilles. C’est le second surtout que présente <em>Le Camp de César</em>. L’auteur puise aux souvenirs de ses balades dans quelques recoins de l’Oise, alors qu’il rendait visite à son ami Aloÿs-Jean Bataillard autour de 1940. Placée sous le signe de la surprise, son exploration adopte la méthode du « Chat sauvage » : on ne trouve que ce qu’on ne cherche pas.
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Le Canal exutoire <span class="tiny_date">&middot; 1931</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Le Canal exutoire</em>, Lausanne, Mermod, 1931, 143pp.</h2>
+      <img src="uploads/couvertures/tn_lecanalexutoire1973.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Un condensé du récit façon Cingria. Voilà ce que pourrait exemplairement représenter <em>Le Canal exutoire</em>, "un des plus beaux textes" de l'écrivain, au dire de Nicolas Bouvier. Et en même temps un des plus déroutants, tant est grande sa singularité d'allure.
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Le Carnet du chat sauvage <span class="tiny_date">&middot; 2000</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Le Carnet du chat sauvage</em>, Fontfroide-le-Haut, Fata Morgana, 2000, 43pp.</h2>
+      <img src="uploads/couvertures/tn_carnetduchatsauvage.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      « Je pense qu'il faudrait redonner sa juste importance au chat. » On n'en finit pas de découvrir Cingria. En grand admirateur, Pierre Alechinsky a eu envie d'illustrer ce « carnet », bien entendu autobiographique, où c'est le Cingria vagabond qui transparaît dans la figure féline. Composé en « description ambulatoire », le récit se perd en digressions, surgit brusquement, ronronne placidement ou sort ses griffes, pour finalement ne plus avoir d'importance, tant c'est le charme du style qui s'impose, léger ou grave, sérieux ou badin. Inimitable. (Neuf illustrations en deux couleurs par Pierre Alechinsky.)
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Le Carnet du chat sauvage, suivi de Xénia et de Pendeloques alpestres <span class="tiny_date">&middot; 1992</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Le Carnet du chat sauvage</em>, suivi de <em>Xénia</em> et de <em>Pendeloques alpestres</em>, Paris, Le Nouveau Commerce, 1992, 63pp.</h2>
+      <img src="uploads/couvertures/tn_lecarnetduchatsauvage.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Né à Genève d'un père venu de Raguse et d'une mère polonaise, Charles-Albert Cingria est mort en 1954. Il appartient à la première moitié de ce siècle, le nôtre, même si, à la lire, il nous paraît contemporain.<br/>Ceux qui furent ses amis, de Max Jacob à Jean Paulhan, de Jean Cocteau à Igor Strawinsky, d'Erik Satie à A. Modigliani, se réjouissaient de l'entendre : son discours éblouissait. Lui, qui aimait l'écriture (dix volumes réunis par les soins de L'Age d'Homme à Lausanne en témoignent), aurait préféré être lu.<br/>Ce petit livre est un hommage, donc, rendu à cet écrivain &mdash; dit-on, suisse &mdash; de langue française, laquelle, à travers l'oeuvre de son auteur, deveint toute fraîche et déconcertante. Tout le contraire de ce qu'on lit de nos jours. (M. F.)
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Le Comte des formes <span class="tiny_date">&middot; 1939</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Le Comte des formes</em>, Société des Amis de C.-A. Cingria, Paris, Librairie des Trois Magots, 1939</h2>
+      <img src="uploads/couvertures/tn_lecomtedesformes.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Cingria réécrit et réédite L'Eau de la dixième milliaire, paru 7 ans auparavant chez Mermod. Le nouveau titre est ancien : l'auteur y songeait déjà en 1932. Sa révision prend une certaine ampleur. Il insère notamment, en guise de préambule, une longue référence à saint Jacques de Nisibe : la description cingrienne de la ville éternelle s'inscrit désormais sous le signe de la féroce exactitude de l'antique évêque historien.
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Le Novellino. Les Cent nouvelles antiques ou le livre du beau parler gentil <span class="tiny_date">&middot; 1955</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>traduit, présenté et enrichi de gloses par Charles-Albert Cingria, <em>Le Novellino. Les Cent nouvelles antiques ou le livre du beau parler gentil</em>, Paris, Club des Libraires de France, 1955</h2>
+      <img src="uploads/couvertures/tn_lenovellino.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Cette première traduction française du <em>Novellino</em> devait paraître aux Editions des Portes de France en 1946. La mort de Charles-Albert Cingria interrompit ce projet et c'est finalement aux Libraires Associés que revient l'honneur de publier l'édition originale d'un texte qui restera comme l'exceptionnelle rencontre d'un grand tempérament d'artiste et d'une verdeur populaire de haute tradition.<br/>Les premières éditions italiennes du <em>Novellino</em> ayant paru sans illustrations, nous avons suivi ce qui est déjà une tradition des Libraires Associés : accompagner un texte d'images du temps qui remettent le lecteur dans l'atmosphère, sans reproduire précisément tel ou tel épisode du récit.
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Le Novellino. Les Cent nouvelles antiques ou le livre du beau parler gentil <span class="tiny_date">&middot; 2004</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Le Novellino. Les Cent nouvelles antiques ou le livre du beau parler gentil</em>, Lausanne, L'Age d'Homme, (collection « Poche suisse » n° 211), 2004, 209pp.</h2>
+      <img src="uploads/couvertures/tn_novellino2004.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      La <em>Vita nuova</em> de Dante, c'est 1292. Le <em>Novellino</em> peut lui être antérieur d'une trentaine d'années. « Dugentesco » (mille-deux-centesque), qui est l'épithète d'évaluation consacrée par la critique italienne actuelle, est alors bien ce qu'il convient pour fixer l'âge de composition de ce capital monument de la pré-Renaissance. <br/>L'auteur est anonyme. Aucune des conjectures auxquelles on s'est livré n'a réussi à l'identifier. Ce n'est ni Francesco da Barberino, ni Brunetto Latini, ni Andrea Lancia, ni non plus Dante da Maiano. Il n'en demeure pas moins que c'est un écrit d'une robuste et belle fraîcheur, et si ce n'est pas, comme on l'a dit, un auteur qui parle, c'est &mdash; et c'en bien préférable &mdash; son siècle entier dans toute sa finesse dans sa vieille sagesse et sa force qui s'exprime par lui.
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Le Parcours du Haut-Rhône ou la Julienne et l'Ail sauvage <span class="tiny_date">&middot; 1944</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Le Parcours du Haut-Rhône ou la Julienne et l'Ail sauvage</em>, Textes et Croquis pris sur la Route par Charles-Albert Cingria et Paul Monnier, Fribourg, LUF/Egloff, 1944</h2>
+      <img src="uploads/couvertures/tn_leparcoursduhautrhone.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Moins baroque, plus incisif que d’autres itinéraires de l’auteur, <em>Le Parcours du Haut-Rhône</em> relate l’excursion de Cingria et du peintre Paul Monnier de Sierre au col du Simplon. Les deux cyclicistes observent le particulier et l’universel de la région, le Haut-Valais. Ce pays « de langue de <em>jo</em> (comme disait Dante, qui divisait l’univers connu en pays où pour affirmer l’on dit <em>oc</em>, ou <em>oil</em>, ou <em>si</em>, ou encore l’on dit <em>jo</em>) » alimente encore une réflexion sur la frontière des langues.<br/>La publication du livre sera pour l’écrivain une nouvelle occasion de fulminer contre son éditeur : « A ce livre, il ne comprenait rien – d’autant plus qu’il ne l’a pas lu – et les illustrations, qui en étaient l’idée première, lui paraissaient superfétatoires. »
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Le Persil <span class="tiny_date">&middot; 2011</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2><em>Le Persil</em>, Lausanne, journal littéraire, (n° spécial 48-49-50), 2011, 48pp.</h2>
+      <img src="uploads/couvertures/tn_persil.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      "A l'occasion du lancement, aux Editions de l'Age d'Homme, des nouvelles Oeuvres complètes du « fantasque amateur », le journal Le Persil a souhaité faire revivre l'écrivain, son style et son oeuvre, au travers des mots de ceux qui le connaissent le mieux : ses lecteurs ! Anecdotes, premiers éblouissements, témoignages, conseils de lectures, bréviaires, images, souvenirs, analyses ou simples évocations composent ce numéro.<br/>Pour donner corps à cette pérégrination en forme d'hommage, Le Persil, comme à son habitude, a ratissé large : spécialistes, professeurs, collectionneurs, écrivains, journalistes, cétoines, amateurs, bouquinistes, critiques, chemisiers de luxe...<br/>Contient des collaborations de Philippe Jaccottet, Pierre-Alain Tâche, Corinne Desarzens, Pierre Voélin, Jean-Louis Kuffer, François Debluë, Patrick Amstutz, Jean-Dominique Humbert, Claude Tabarini, Alain Corbellari, Bruno Ackermann, Alain Hervé, Isabelle Rüf, Anne Marie Jaton, Cyrille François, Nicolas Lambert, Laurence Chauvy, Agnès Dargent et Daniel Vuataz. Contient dix inédits de Cingria : « Chronique carapacée », « [Le Désert n'est pas infini...] », « [Un trois-mâts en perdition...] », « [Quelquefois on aime éperdument un livre...] », « Les Chats en vacance », « Chronique caniculaire », « Copyright by... », « Grimoire », « Nombres intersidéraux » et « La Femme qui chante ».<br/><br/><em>Le Persil</em> peut être commandé par courrier électronique à Lausanne, auprès de son directeur Marius Daniel Popescu (mdpecrivain@yahoo.fr)."
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Le Sabordage de La Voile latine <span class="tiny_date">&middot; 1993</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Pierre-Olivier Walzer, <em>Le Sabordage de </em>La Voile latine, Lausanne, L'Age d'Homme, (collection « Vies de Charles-Albert Cingria » [1]), 1993, 106pp.</h2>
+      <img src="uploads/couvertures/tn_generique.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Pourquoi Vies ? Parce que la connaissance que nous avons de Charles-Albert Cingria comporte encore des lacunes si considérables qu'il ne nous a pas paru possible de consacrer à ce merveilleux écrivain et multiforme personnage &mdash; genevois, dalmate, dandy, voyageur, vagabond, cycliste, poète, historien, chartiste &mdash; une biographie pleine et équilibrée. En attendant que les chercheurs fassent les découvertes qui permettront d'embrasser sous tous ses aspects cette personnalité si riche et parfois si déroutante, on se contentera, dans cette suite de petits volumes, de faire le point sur certaines phases de son existence qu'une documentations nourrissante et originale permet de nous rendre suffisamment proches.<br/>br/><em>Pierre-Olivier Walzer fut titulaire de la chaire de littérature française à l'Université de Berne durant trente ans, pendant lesquels il collabora au</em> Journal de Genève <em>comme critique littéraire. Auteur d'ouvrages sur Toulet, Mallarmé, Valéry, éditeur des oeuvres de Cros, Corbière, Lautréamont, Nouveau dans la Bibliothèque de la Pléiade, directeur de l'</em>Anthologie jurassienne <em>et du</em> Dictionnaire des littératures suisses <em>publié pour le 700e anniversaire de la Confédération. Il dirige à L'Age d'Homme la collection « Poche suisse ».</em><br/><em>Président durant de nombreuses années des « Amis de Charles-Albert Cingria », il est aujourd'hui, avec Jean-Louis Kuffer, à la tête des </em>Petites Feuilles<em>, dont Cingria fut le premier « rédacteur en chef ».</em>
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Le Seize juillet <span class="tiny_date">&middot; 1929</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Le Seize juillet</em>, Lausanne, Mermod, 1929</h2>
+      <img src="uploads/couvertures/tn_seizejuillet.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Au <em>Quinze juillet</em> paru dans une revue hollandaise en 1925, Cingria ajouta en janvier 1929 le récit d’une course nocturne à bicyclette qu’il publia chez Mermod en mars suivant, sous le titre Le Seize juillet. Parce que c’est la suite du Quinze ? Non assure l’éditeur, « parce que je lui disais que je fêtais des anniversaires familiaux les 13, 14 et 15 juillet ». « Rien le 16 ? lui demande Cingria. Ce sera le titre de ma plaquette. »<br/>Mécontent de ce texte, Cingria en fera paraître une autre mouture, plus proche de ses intentions, dans la nouvelle revue surréaliste <em>Bifur</em> : il s’intitule alors « Petit labyrinthe harmonique ».
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Les Autobiographies de Brunon Pomposo <span class="tiny_date">&middot; 1928</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Les Autobiographies de Brunon Pomposo</em>, Editions des Lettres de Lausanne, 1928, 99pp.</h2>
+      <img src="uploads/couvertures/tn_brunonpomposo1997.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      <em>Les Autobiographies de Brunon Pomposo</em> occupent une place de prédilection dans l'oeuvre de Charles-Albert Cingria, car ce texte, aussi mince soit-il constitue en fait, au terme d'une longue maturation, son premier récit d'envergure.<br/>On ne connaissait jusque-là de Cingria qu'une palette de textes éparpillés principalement dans <em>Les Pénates d'Argile</em>, <em>La Voile latine</em> ou encore <em>La Voix clémentine</em>, tous textes datés des premières années du siècle. Rien ne semble presser Charles-Albert Cingria d'écrire avant et après la Première Guerre mondiale. Il voyage, musarde à sa guise, cherche sa pente. Ce n'est qu'en 1927 qu'il sortira de cette léthargie avec un texte consacré à la peinture et, enfin, date inaugurale, 1928, car il n'arrêtera plus d'écrire, la parution des <em>Autobiographies</em> aux Editions des Lettres de Lausanne pour le compte des <em>Cahiers vaudois</em>.<br/>Certaines ressemblances entre Brunon et Charles-Albert indiquent que ces <em>Autobiographies</em> sont aussi une autobiographie. Avec les transpositions les plus fantaisistes dont ses lecteurs feront postérieurement leur régal. Tout est vrai et rien n'est vrai dans Cingria. On reconnaît les paysages favoris qui défileront dans son oeuvre : Genève, les Etats sardes, de Douvaine à Turin en passant par Aoste et la vraie Sardaigne, celle des récifs de Serpentera. Le charme des <em>Autobiographies</em> tient en grande part de retrouver dans ce premier récit tout ce qui constituera par la suite l'univers intimiste, et la saveur inimitable de Cingria. N'est-ce pas lui, en prélude à toute son oeuvre, qui confiait à son ami Adrien Bovy en 1903 : « Il n'y a guère que les paroles qui semblent d'abord inutiles qui comptent dans une oeuvre » ?
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Les Limbes <span class="tiny_date">&middot; 1930</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Les Limbes</em>, Orné de 9 pointes sèches de Jean Lurçat, Paris, Jeanne Bucher, 1930</h2>
+      <img src="uploads/couvertures/tn_limbes.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Selon certains, Cingria et Lurçat auraient fait ensemble le voyage des îles égéennes qui servent de cadre à la prose poétique des Limbes ; rien n'est moins sûr. Pour d'autres, il s'agirait d'une oeuvre de commande de l'éditrice et galeriste Jeann Bucher.
+Dans un explicite manuscrit écarté par l'auteur, celui-ci dévoile légèrement ses intentions : cette poésie narrative de l'étrangeté représente un état : « l'être aux Limbes ».
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Les Pénates d'argile  <span class="tiny_date">&middot; 1904</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Les Pénates d'argile</em> , Genève, Ch. Eggiman et Cie, 1904</h2>
+      <img src="uploads/couvertures/tn_penates.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Sous une couverture dessinée par son frère Alexandre et représentant les quatre jeunes auteurs à une table, Adalbert d'Aigues-Belles, alias Cingria, associe ses premiers vers publiés à ceux de son frère, de C. F. Ramuz et d'Adrien Bovy. L'ensemble, d'inspiration symboliste et marqué par des références antiques et florentines, est accueilli fraîchement par la critique. Le collectif n'en provoquera pas moins un élan littéraire nouveau que portera bientôt <em>La Voile latine</em>.    
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Les Prisons de Charles-Albert <span class="tiny_date">&middot; 1993</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Pierre-Olivier Walzer, <em>Les Prisons de Charles-Albert</em>, Lausanne, L'Age d'Homme, (collection « Vies de Charles-Albert Cingria » [2]), 1993, 100pp.</h2>
+      <img src="uploads/couvertures/tn_walzerprisons.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Pourquoi Vies ? Parce que la connaissance que nous avons de Charles-Albert Cingria comporte encore des lacunes si considérables qu'il ne nous a pas paru possible de consacrer à ce merveilleux écrivain et multiforme personnage &mdash; genevois, dalmate, dandy, voyageur, vagabond, cycliste, poète, historien, chartiste &mdash; une biographie pleine et équilibrée. En attendant que les chercheurs fassent les découvertes qui permettront d'embrasser sous tous ses aspects cette personnalité si riche et parfois si déroutante, on se contentera, dans cette suite de petits volumes, de faire le point sur certaines phases de son existence qu'une documentations nourrissante et originale permet de nous rendre suffisamment proches.<br/><br/><em>Pierre-Olivier Walzer fut titulaire de la chaire de littérature française à l'Université de Berne durant trente ans, pendant lesquels il collabora au</em> Journal de Genève <em>comme critique littéraire. Auteur d'ouvrages sur Toulet, Mallarmé, Valéry, éditeur des oeuvres de Cros, Corbière, Lautréamont, Nouveau dans la Bibliothèque de la Pléiade, directeur de l'</em>Anthologie jurassienne <em>et du</em> Dictionnaire des littératures suisses <em>publié pour le 700e anniversaire de la Confédération. Il dirige à L'Age d'Homme la collection « Poche suisse ».</em><br/><em>Président durant de nombreuses années des « Amis de Charles-Albert Cingria », il est aujourd'hui, avec Jean-Louis Kuffer, à la tête des </em>Petites Feuilles<em>, dont Cingria fut le premier « rédacteur en chef ».</em>
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Lettre au vérificateur des eaux. Chroniques <span class="tiny_date">&middot; 1995</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Lettre au vérificateur des eaux. Chroniques</em>, préface de Yves Scheller, Paris, La Différence, 1995, 189pp.</h2>
+      <img src="uploads/couvertures/tn_lettreauverificateurdeseaux.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Charles-Albert Cingria surgit en février 1883 dans une famille de récente bourgeoisie genevoise, arrivée de Dubrovnik (anciennement Raguse) et, en deçà, de Constantinople. Généreusement disposés envers les arts et l'imagination, extrêmement combustibles, les Cingria offrent un contraste éclatant avec la compacte bourgeoisie genevoise qui les traite en rastaquouères. Mais aux rigueurs du dandysme succèdent peu à peu celles de la dèche. Quand sa mère décède en 1913, Charles-Albert Cingria se fixe chichement à Paris, vend des objets, donne quelques cours rétribués au cachet. Son mode de transport ordinaire est une bicyclette qu'il porte jusqu'à son cinquième étage. On en fera ultérieurement l'accessoire principal des clichés répandus sur sa mémoire. Ce volume recueille quelques chroniques de ses musardises. Il parle de tout et de rien : de l'éternité et des chats, du bitume et de Dante. Bien qu'il ait été traité en égal par les plus grands, en dépit des efforts de Chessex, de Réda et de tant d'autres, empaillé par les journalistes, ignoré des universitaires, Cingria a longtemps été relégué. Il est pourtant outrageusement faux de faire de lui un marginal atypique, un exilé de l'histoire enfermé dans sa Lotharingie mythique. Car enfin tout ce dont il nous parle appartient au domaine séculier. Ce qu'il a vu, lui l'ami de Cocteau et de Dubuffet, est bien de ce temps et pleinement.
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Lettres à Henry-Louis Mermod <span class="tiny_date">&middot; 2001</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Lettres à Henry-Louis Mermod</em>, édition Marie-Thérèse Lathion et Jean-Christophe Curtet, Lausanne, L'Age d'Homme, (collection « Nouvelles correspondances de Charles-Albert Cingria » n° 2), 2001, 187pp.</h2>
+      <img src="uploads/couvertures/tn_mermod.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Henry-Louis Mermod s'est assuré le mérite devant la postérité d'avoir été un merveilleux éditeur, mécène et collectionneur, à une époque qui suivait l'épanouissement de la littérature romande grâce au groupe des <em>Cahiers vaudois</em>. Il fut en particulier l'éditeur de C. F. Ramuz dont il publia, par conviction et amitié, presque tous les titres à partir de 1927, et surtout la splendide &mdash; par le format, la couleur, la typographie, le papier &mdash; édition des <em>Oeuvres complètes</em>. Il s'intéressa également à Charles-Albert Cingria, tout en comprenant qu'il n'était pas possible d'en faire un écrivain grand public. Il le publia donc sous forme de plaquettes fort soignées, <em>Pendeloques alpestres</em>, <em>Le Seize Juillet</em>, <em>Le Canal exutoire</em>, <em>Impressions d'un passant à Lausanne</em>, <em>L'Eau de la dixième milliaire</em>, mais tirées à un nombre très restreint d'exemplaires. Ces diverses publications, et d'autres qui restèrent à l'état de projets, donnèrent lieu, entre l'éditeur et l'édité, durant vingt ans, à des tractations infinies dont on trouve heureusement l'écho dans les pittoresques lettres ici rassemblées. Pittoresques, mais souvent aussi réfléchies et pénétrantes quand Charles-Albert prend vis-à-vis de son éditeur la défense de son texte et de son écriture. Mermod se montre presque toujours grand seigneur, d'une bienveillance à toute épreuve, constamment disposé à pousser Charles-Albert à lui fournir des pages à publier ou à collectionner constamment ouvert et généreux. Charles-Albert de son côté tergiverse, promet, oublie de tenir, prend du retard, se répand en excuses ou en récriminations, cherche un difficile équilibre entre la mauvaise foi et la sincère gratitude, découvrant une fois de plus l'humeur et les humeurs, parfois aussi la conscience et le sérieux, que ses lecteurs, pour leur plus grand plaisir, ont appris à connaître et à admirer. (P.-O. Walzer)
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Musiques de Fribourg <span class="tiny_date">&middot; 1968</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Musiques de Fribourg</em>, Lausanne, L'Age d'Homme, (« La Merveilleuse collection »), 1968, 87pp.</h2>
+      <img src="uploads/couvertures/tn_musiquesdefribourg.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Ecrit en 1945, le livre le plus tendre, drôle et merveilleux sur une ville ici bien vivante. 
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Musiques de Fribourg <span class="tiny_date">&middot; 1945</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Musiques de Fribourg</em>, illustrations de Bernard Schorderet, Fribourg, Belles-Lettres, 1945</h2>
+      <img src="uploads/couvertures/tn_musiquesdefribourg1968.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Vers la fin de son séjour fribourgeois, en mars 1945, Cingria publie un article « Fribourg vu par un hôte » qui se termine ainsi : « Ainsi est Fribourg. Mais ces notes sont bien incomplètes. C’était un livre que je voulais faire. Je le ferai... mais, au nom du Ciel, pas tout de suite. » Le livre paraît à la fin de la même année, sur la commande du journaliste et publiciste Roger Nordmann, président de la Société de Belles-Lettres.
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Oeuvres complètes <span class="tiny_date">&middot; 2012</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Oeuvres complètes</em>, 2 volumes (Récits), Lausanne, L'Age d'Homme, (collection « Caryatides »), 2012, 2142pp.</h2>
+      <img src="uploads/couvertures/tn_oc1.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Conduite par une équipe internationale de chercheurs, la nouvelle édition des <em>Oeuvres complètes</em> de Charles-Albert Cingria a été réalisée dans le cadre du Centre de recherches sur les lettres romandes de l'Université de Lausanne, où est justement conservée la plus grande partie des manuscrits de l'illustre écrivain.<br/>Par sa rigueur, son exhaustivité, sa volonté d'aider le lecteur dans sa découverte, son souci constant de lisibilité, cette nouvelle édition est une réalisation qui répond aux critères scientifiques que l'on attend d'une entreprise de cette nature, tout en restant accessible à un public non spécialisé. Elle est donc à même de mieux faire connaître un des plus grands écrivains suisses du XX<sup>e</sup> siècle, dont elle permet de mesurer la qualité esthétique, la richesse des contenus et des sujets, ainsi que l'ampleur de l'écriture.
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Oeuvres complètes et Correspondance générale <span class="tiny_date">&middot; 1967-1981</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Oeuvres complètes</em> et <em>Correspondance générale</em>, Lausanne, L'Age d'Homme, (17 volumes), 1967-1981</h2>
+      <img src="uploads/couvertures/tn_walzerqoc1.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Treize ans après sa mort, 1967 aura été une année faste pour Cahrles-Albert Cingria. L'été dernier, Gilbert Guisan publiait, aux éditions de L'Age d'Homme, un choix de Vingt-cinq lettres à Adrien Bovy. Et voici que le même éditeur lausannois nous donne enfin ces Oeuvres complètes qu'on désespérait de voir paraître, et dont les deux premiers volumes (sur dix en tout) vont sortir incessamment. (Georges Anex, Journal de Genève, 25 novembre 1967, p. 15.) 
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Pendeloques alpestres <span class="tiny_date">&middot; 2001</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Pendeloques alpestres</em>, postface de Anne Marie Jaton, Carouge-Genève, Zoé, (collection « Minizoé » n° 51), 2001, 41pp.</h2>
+      <img src="uploads/couvertures/tn_pendeloquealpestre.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Dans ce texte libre et renversant, la montagne et la plaine, le réel et le fantastique, les inquiétantes hauteurs et la plaine étale, rassurante et stable, l'homme et le chien, le vivant et le mort se répondent, se complètent et échangent leurs voix. Monter et descendre représentent, dans l'oeuvre de Cingria (1883-1954), la fusion jubilatoire des contraires, l'extraordinaire équilibre de l'univers, tout ce qui sonne juste, tout ce qui est, comme la montagne, joyau du monde.
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Petites Feuilles <span class="tiny_date">&middot; 1997</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Petites Feuilles</em>, préface de Pierre-Olivier Walzer, Lausanne, L'Age d'Homme, (collection « Poche Suisse » n° 161), 1997, 61pp.</h2>
+      <img src="uploads/couvertures/tn_petitesfeuilles.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Certes les textes de Charles-Albert Cingria publiés dans les cinq numéros des <em>Petites Feuilles</em> ont été recueillis dans les <em>Oeuvres complètes</em>. Mais certaines contributions, non signées et non reprises, sont-elles peut-être également de lui. Sans compter que le contexte, l'entourage dans lesquels ces morceaux sont insérés contribuent à leur donner une couleur particulière, souhaitée par Cingria qui porte en l'occasion le titre mirifique de « Rédacteur en chef » &mdash; son ami, le dessinateur, et en l'occasion metteur en page, portant celui de « Directeur ». Il était donc justifié de reproduire une fois dans leur intégralité les cinq numéros historiques nés de cette amicale collaboration.<br/>Les mérites conjugués de ces deux vaillants journalistes, soutenus et aidés dans l'occasion par quelques collaborateurs de fortune, ont fait de ces cinq fascicules une oeuvre de haute fantaisie dont le charme n'est pas près d'être éventé.
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Pétrarque <span class="tiny_date">&middot; 1932</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Pétrarque</em>, Lausanne, Payot, (collection des « Cahiers romands » n° 8), 1932</h2>
+      <img src="uploads/couvertures/tn_petrarque.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      M. Charles-Albert Cingria donne d'abord à ses lecteurs une courte introduction historique et biographique. Il conte la naissance de Pétrarque à Arezzo, son départ avec sa famille pour Avignon où résident les papes, ses études faites sans enthousiasme à Montpellier et à Bologne, ses voyages, la rencontre de Laure. Les chapitres qui suivent sont consacrés à l'oeuvre du poète et à l'étude de son époque. M. Cingria distingue en Pétrarque deux poètes : le poète lyrique « rattaché encore à une école provençale » et le poète imitateur des anciens qui composa les églogues latines.<br/>L'auteur ne cache pas sa préférence pour le premier. Et fait valoir son point de vue avec esprit. (<em>Gazette de Lausanne</em>, 7 mars 1933, p. 4.)
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Pétrarque <span class="tiny_date">&middot; 2003</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Pétrarque</em>, notice de Christophe Calame, Lausanne, L'Age d'Homme, (collection « Poche suisse » n°203), 2003, 140pp.</h2>
+      <img src="uploads/couvertures/tn_petrarque2003.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Voici le texte qui enchanta Strawinsky et valut à C.-A. Cingria des pages élogieuses dans les mémoires du Maître... Poète chantant un autre poète, Cingria donne libre cours ici à son érudition, son amour des mots, s'immergeant avec délices dans une époque qu'il aima entre toutes. Parmi les innombrables articles, chroniques, notes et correspondances où fourmillent les allusions et les mentions du Moyen Age, trois « massifs » littéraires se détachent nettement, <em>La Reine Berthe</em> (« Poche suisse » n° 115) sur les origines mérovingiennes, <em>La Civilisation de Saint-Gall</em> (à paraître ultérieurement) sur la culture et la musique grégorienne, et enfin la monographie sur Pétrarque, dans les <em>Cahiers romands</em>, consacrée à la fin du Moyen Age, c'est-à-dire à une certaine imitation de l'Antiquité considérée par Cingria comme la véritable perte de la mesure romaine et de l'ampleur antique. Avec la Renaissance, c'est donc pour l'auteur très précisément la culture elle-même qui disparaît. Il ne fallait pas être moins que Cingria pour assumer le paradoxe.
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Portraits <span class="tiny_date">&middot; 1994</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Portraits</em>, préface de Maryke de Courten, Lausanne, L'Age d'Homme, (collection « Poche suisse » n° 135), 1994, 132pp.</h2>
+      <img src="uploads/couvertures/tn_portraits1994.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      "De tous les talents de Charles-Albert Cingria, l'un des plus singuliers est sans doute son art du portrait.<br/>Car s'il excelle à peindre un paysage, à détailler l'atmosphère d'une rue, à décrire une maison ou à conter n'importe quelle histoire pourvu qu'elle dépasse la plate réalité. Charles-Albert est avant tout portraitiste.<br/> Il procède comme un peintre. Il isole son sujet jusqu'à ce qu'il soit si vivant que le cadre se reconstitue autour de lui. Il le sculpte, le colore, et tout à coup Ramuz est là Strawinsky. Ansermet ou Modigliani refont surface.<br/><br/><br/>Tous les procédés sont bons. Charles-Albert simule la distraction. Il parle d'autre chose. Et tout à coup, il revient sur son sujet. Jamais auteur n'aura autant rusé. Avec les conventions, les habitudes, les répétitions. Tout doit être neuf, surprenant. Il cherche l'effet de surprise. Le choc. Et à chaque fois il réussit. Et chaque fois différemment.<br/>Bien entendu, il mélange tout. Il y a, parmi ses sujets traités &mdash; on parlerait d'eux comme d'une nature morte &mdash; une chanoinesse du Bas-Hainaut. Monsieur Pitt et Alfred Jarry. Son ami Erik Satie, probablement l'artiste qui lui ressembla le plus. Et puis, dans le désordre, les Parisiens de Montparnasse et les Suisses romands les plus terriens.<br/>Il fallait isoler ces portraits, leur donner toute leur saveur et leur relief. Le charme Cingria opère à l'état pur. Cela se termine par « Moi et mon frère ». Alexandre et Charles-Albert. « Je veux dire la différence qu'il y a entre moi et mon frère. Mais c'est un peu ésotérique, un peu thibétain cette distinction ». Toute cette galerie pourrait s'appeler moi et Ramuz, moi et Auberjonois, moi et Léautaud, moi et Max Jacob. Et, bien entendu, tout serait alors un peu thibétain !"
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Propos animaliers <span class="tiny_date">&middot; 2004</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Propos animaliers</em>, préface de Maryke de Courten, Lausanne, L'Age d'Homme, (collection « Poche suisse » n° 210), 2004, 176pp.</h2>
+      <img src="uploads/couvertures/tn_proposanimaliers.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Vous vous délecterez de ces arrêts sur image, de l'expression contrariée du chat ou de sa démarche délicate sur le gravier brûlant ; de la panique des vaches et de la malice des cygnes ; de la rage des serpents et du crépitement des crabes ; du ronflement des porcs-épics et du ricanement des boucs ; de la crispation d'un oiseau saisi de crainte ; de la remuante gaieté des saint-bernard roulant de grands yeux roses ; de la douleur des mules que l'on bastonne, du cafard des gorilles, de la furibonde armée de hautes chenilles processionnaires ; des anguilles embrouillées et sifflantes, des crapauds pythagoriciens ; de l'âne qui a une idée fixe derrière les oreilles, de l'ours qui embrasse sa bien-aimée avec tant de passion qu'elle en demeure inanimée ; du cheval manifestant par à-coups le sentiment lancinant d'être isolé de la conversation, et de l'assombrissement des bœufs lorsqu'ils comprennent qu'ils vont à l'abattoir... Chaque animal a sa spécificité, saisie par Cingria avec humour et respect. Il arrive qu'une connaissance ou un ami soit décrit par référence à l'animal qui le caractérise. <br/>Malgré l'attrait de ces évocations, nous sommes très éloignés d'un défilé pittoresque. Chez Cingria, les animaux signifient. De par leur aspect et leur comportement, chaque animal, aussi petit soit-il, témoigne d'une continuité millénaire dans un paysage qui ne l'est pas moins. Souvent, l'émotion est à son comble parce que la nature et les animaux, par leur simple « être là », font partie de cette grande séquence abécédaire qu'est le monde...
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Pycniques et leptosomes (sur C.-A. Cingria) <span class="tiny_date">&middot; 2005</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Pierre Bergounioux, <em>Pycniques et leptosomes (sur C.-A. Cingria)</em>, Fontfroide-le-Haut, Fata Morgana, 2005, 40pp.</h2>
+      <img src="uploads/couvertures/tn_pycniquesetleptosomes.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      <em>Une des particularités de Cingria, qui n'est pas la moindre, est d'agiter la question la plus vaste qui soit, celle de la réalité</em>. On conçoit facilement dès cet abord l'ampleur de la tâche que s'est assignée Pierre Bergounioux en s'attachant à saisir cet être infiniment mouvant, définitivement inclassable. Poète, philosophe, Cingria le fut tout à la fois, et sans jamais céder aux excès de l'une ou l'autre position. Fut-il un tiède pour autant? Quelques lignes de sa plume suffisent à le démentir.<br/>Le portrait qui nous est ici livré est à la mesure de cette complexité, s'attachant au texte pour le prolonger, saisissant la rêverie par un bout pour mieux en goûter la fuite légère. Pierre Bergounioux, au fil de deux courtes proses excelle, avec érudition parfois, toujours avec passion, à saisir l'essence de cet insaisissable que fut C.-A. Cingria.<br/>Ce volume fait écho au texte de Jacques Réda &mdash; qui fut l'initiateur de Bergounioux en la matière &mdash; <em>Le Bitume est exquis</em> que nous publiions il y a plus de trente ans, et aux textes de Cingria que nous avons eu le plaisir de publier depuis : <em>Le Carnet du chat sauvage</em> et <em>Géographie vraie</em>.
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Revue de Belles-Lettres <span class="tiny_date">&middot; 1966</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2><em>Revue de Belles-Lettres</em>, Lausanne, Genève, Neuchâtel, Fribourg, Société de Belles-Lettres, (n° 3), 1966</h2>
+      <img src="uploads/couvertures/tn_belleslettres.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Qui êtes-vous, Cingria ? Question absurde &mdash; car qui ne vous connaît ? N'êtes-vous pas pour chacun Charles-Albert &mdash; le seul écrivain de langue française que l'on appelle par son prénom &mdash; non point pour vous distinguer de votre frère, mais bien plutôt pour proclamer une sorte de familiarité privilégiée &mdash; ou pour en faire accroire ? Qui ne parle de vous comme s'il vous avait suivi dans vos pérégrinations, avait bu à votre table et reçu la confidence de ces histoires qui sont devenues légendes, vous y enferment, ont fait de vous un personnage ?<br/>Personnage, vous êtes-vous plu à le paraître, l'étiez-vous à votre indu ? Quelles furent chez vous la part du jeu et celle de l'innocence, celle de la provocation et celle de la fatalité, celle du réel et celle de l'imaginaire ? (Gilbert Guisan)<br/><br/>Avec des contributions de Jacques Chessex, Pierre-Alain Tâche, Bernard Christoff, Georges Borgeaud, Dick Aeschlimann, Pierre-Olivier Walzer, Roger Nordmann, Isabelle et Robert Melley-Cingria.
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Stalactites <span class="tiny_date">&middot; 1941</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Stalactites</em>, Lausanne, Guilde du Livre, (vol. 37), 1941</h2>
+      <img src="uploads/couvertures/tn_stalactites.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Le prestigieux fantaisiste Ch.-A. Cingria donne toute la mesure de son talent dans ce recueil de textes. De <em>Pendeloques alpestres</em> à « Graffiti » et à « Lou Sordel », l'auteur nous conduit mystérieusement par les méandres nostalgiques du macadam à la poésie et au fantastique des sommets et enfin à la fantaisie des troubadours. Les huit dessins de René Auberjonois qui illustrent ce volume en donnent un ensemble de grande valeur artistique et littéraire. (<em>Bulletin mensuel de la Guilde du Livre</em>, n° 10, octobre 1947, p. 2.)<br/><br/>La lecture des Stalactites de Ch.-A. Cingria me donne un plaisir si vif que je m'étonne de ne pas le voir éprouver par tout le monde. Je me pose la question : Pourquoi des êtres humains, bâtis à peu près comme moi, ne goûtent-ils pas la même jubilation à ces textes étonnants : <em>Pendeloques alpestres</em>, <em>Seize juillet</em>, « Recensement », « Lou Sordel », « Rue des Canettes », « Brumaire savoisien », « Graffiti » ? Est-ce peut-être, justement, parce qu'ils sont étonnants ? [...] Charles-Albert Cingria est un guide incomparable. Il ne prendra pas le plus court chemin pour vous mener le plus vite possible où vous appellent vos « affaires », soyez-en sûr. Mais il vous fera observer mille merveilles que vous côtoyez chaque jour sans les voir. [...] Surtout ne prenez pas Cingria pour un humoriste qui cherche des « mots piquants » à la façon de Jules Renard. Cingria est constamment ravi par la splendeur des choses les plus communes, dont l'habitude nous cache la signification et la beauté ; ce qu'il découvre à chaque pas, ce n'est pas une pitrerie, c'est... disons, le doigt du Créateur. Car, vous l'avez bien senti, Cingria pense en philosophe autant qu'en poète, mais il refuse de jamais disjoindre ces deux modes de contemplation. [...] Il existe assez de romans, assez de drames, d'intrigues et d'histoires. Quel autre que Cingria vous invite réellement à une promenade dans la vie et dans l'univers, avec tout ce qu'une promenade évoque de découverte, d'émerveillement et de radieuse fraîcheur ? (Elie Gagnebin, <em>Bulletin mensuel de la Guilde du Livre</em>, n° 11, novembre 1944, pp. 183-184.)
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Trois auteurs <span class="tiny_date">&middot; 1997</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Pierre Michon, <em>Trois auteurs</em>, Verdier, Lagrasse, 1997, 87pp.</h2>
+      <img src="uploads/couvertures/tn_michon.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      « On entre dans un mort comme dans un moulin. » Pour peut que ce mort soit un auteur, et qu'on se mêle soi-même d'écrire, alors c'est un moulin à vent avec lequel on doit découdre, ou passer son chemin. Le critique, qui accepte bravement le combat, est le Don Quichotte du texte, dont le moindre coup d'aile l'envoie au tapis. Je suis moins audacieux : dans l'ombre bienveillante de trois grands moulins, j'ai mis trois machines réduites, en miroir, en offrande. Voici ces petits moulins à vent. (Pierre Michon) <br/><br/>« La Danseuse », deuxième partie du livre, est consacrée à Charles-Albert Cingria (entre Balzac et Faulkner)."
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Vies parallèles de Blaise Cendrars et de Charles-Albert Cingria <span class="tiny_date">&middot; 2007</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Bernard Delvaille, <em>Vies parallèles de Blaise Cendrars et de Charles-Albert Cingria</em>, préface de Gérard-Julien Salvy, Paris, La Bibliothèque, 2007, 79pp.</h2>
+      <img src="uploads/couvertures/tn_viesparalleles.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      A travers les voyages, le latin médiéval, la musique, Bernard Delvaille trace le portrait de deux poètes prosateurs suisses, Cendrars, le plus connu, et Cingria, écrivain aimé des écrivains. Ils seront amis, puis séparés. Truffé de citations, ce double portrait ressemble à une tapisserie cousue de fil d'or, de brocard, dans laquelle l'attention s'enchante. Un amoureux de la langue tisse ses arabesques, émerveillé par deux complices.
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> Vingt-cinq lettres à Adrien Bovy (1902-1908) <span class="tiny_date">&middot; 1967</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>Charles-Albert Cingria, <em>Vingt-cinq lettres à Adrien Bovy (1902-1908)</em>, préface de Gilbert Guisan, Lausanne, L'Age d'Homme, (« La Merveilleuse collection »), 1967, 92pp.</h2>
+      <img src="uploads/couvertures/tn_adrienbovy.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      En 1901, date de la première lettre (connue) de Charles-Albert Cingria à Adrien Bovy, celui-ci a vingt et un ans, celui-là dix-huit. Trois ans de différence, c'est beaucoup à cet âge où la vingtième année est généralement barrière et non charnière. Pourquoi Charles-Albert écrit-il à l'ami de son frère Alexandre, de Genève à Genève, sinon, sans doute, pour se ménager auprès de lui une existence personnelle, un peu plus que cette présence qui lui est consentie quand se réunissent ses aînés ? Il ne tardera pas d'ailleurs à la voir reconnue ; et bientôt traité comme un égal, davantage, admiré quand interviendront des ambitions littéraires, il ne manquera pas de se rendre parfois insupportable. Mais nous n'en sommes encore pas là. (Extrait de la préface de Gilbert Guisan.)
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> « Couronne de Charles-Albert Cingria » <span class="tiny_date">&middot; 1955</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>« Couronne de Charles-Albert Cingria », Paris, <em>La Nouvelle Nouvelle Revue française</em>, (n° 27), mars 1955, 427-484pp.</h2>
+      <img src="uploads/couvertures/tn_nrf1955.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Avec des contributions de Paul Claudel, Igor Strawinsky, Jean Cocteau, Marcel Jouhandeau, André Pieyre de Mandiargues, François Michel, Etiemble, Jean Starobinski, Georges Borgeaud, Fernand Auberjonois, Constant Rey-Millet, Pierre Guiéguen, Jean Follain, Aloÿs-Jean Battaillard et Henri Noverraz. Contient aussi deux textes inédits de Charles-Albert Cingria (« Portrait de Paul Léautaud » et « Lettre à Adrien Bovy »).
+    </div>
+  </div>
+</div><div class="book_line">
+  <div class="toggler">
+    <div class="toggle_btn"> « Nouvelle couronne de Charles-Albert Cingria » <span class="tiny_date">&middot; 1993</span></div>
+  </div>
+  <div class="sub">
+    <div class="sub_td" style="float:left;">
+      <h2>« Nouvelle couronne de Charles-Albert Cingria », Paris, La Nouvelle Revue française, (n° 491), décembre 1993, 1-120pp.</h2>
+      <img src="uploads/couvertures/tn_nrf1993.jpg" alt="" class="align_left" alt="" style="height: 160px; float: left; margin: 0 1em 0.4em 0;" />
+      Avec des contributions de Pierre-Olivier Walzer, Jacques Chessex, Philippe Barthelet, Pierre Bergounioux, Richard Blin, Nicolas Bouvier, Gil Jouanard, Jean-Louis Kuffer, Yves Leclair, Pierre Michon, Dominique Pagnier, Claude-Pierre Pérez, Jacques Réda et Guy Goffette.
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+<div class="sevencol">
+<div id="books_menu">	
+<img src="img/accolade.png" alt="" style="float:left; height:100px; margin: 0 12px 0 0;"/>	
+<ul class="menu">
+  <li><a href="les-livres.html#" rel="" class="selected">1. Tous les livres</a></li><br/>
+  <li><a href="les-livres.html#" rel="1">2. Editions courantes</a></li>
+  <li><a href="les-livres.html#" rel="3">3. Editions originales</a></li>
+  <li><a href="les-livres.html#" rel="2">4. Livres sur l'auteur</a></li>
+</ul>
+</div>
+<ul class="item">
+
+  <li rel="3"><a href="les-livres.html#" title="books.php?book_id=76"><img src="uploads/couvertures/tn_leaudeladixiememilliaire.jpg"></a></li><li rel="3"><a href="les-livres.html#" title="books.php?book_id=81"><img src="uploads/couvertures/tn_esperanto.jpg"></a></li><li rel="3"><a href="les-livres.html#" title="books.php?book_id=29"><img src="uploads/couvertures/tn_anthologie1995.jpg"></a></li><li rel="1"><a href="les-livres.html#" title="books.php?book_id=1"><img src="uploads/couvertures/tn_boissecboisvert1983.jpg"></a></li><li rel="3"><a href="les-livres.html#" title="books.php?book_id=21"><img src="uploads/couvertures/tn_boissecboisvert.jpg"></a></li><li rel="2"><a href="les-livres.html#" title="books.php?book_id=33"><img src="uploads/couvertures/tn_cahiersbleus.jpg"></a></li><li rel="2"><a href="les-livres.html#" title="books.php?book_id=35"><img src="uploads/couvertures/tn_allianceculturelle.jpg"></a></li><li rel="2"><a href="les-livres.html#" title="books.php?book_id=66"><img src="uploads/couvertures/tn_bouvier.jpg"></a></li><li rel="2"><a href="les-livres.html#" title="books.php?book_id=70"><img src="uploads/couvertures/tn_chessexagedhomme.jpg"></a></li><li rel="2"><a href="les-livres.html#" title="books.php?book_id=69"><img src="uploads/couvertures/tn_jaton.jpg"></a></li><li rel="2"><a href="les-livres.html#" title="books.php?book_id=32"><img src="uploads/couvertures/tn_chessexseghers.jpg"></a></li><li rel="2"><a href="les-livres.html#" title="books.php?book_id=67"><img src="uploads/couvertures/tn_dossiersh.jpg"></a></li><li rel="2"><a href="les-livres.html#" title="books.php?book_id=64"><img src="uploads/couvertures/tn_redachiensetchat.jpg"></a></li><li rel="2"><a href="les-livres.html#" title="books.php?book_id=71"><img src="uploads/couvertures/tn_cippecollectif.jpg"></a></li><li rel="1"><a href="les-livres.html#" title="books.php?book_id=58"><img src="uploads/couvertures/tn_coleresetantidotes.jpg"></a></li><li rel="1"><a href="les-livres.html#" title="books.php?book_id=12"><img src="uploads/couvertures/tn_strawinski.jpg"></a></li><li rel="2"><a href="les-livres.html#" title="books.php?book_id=63"><img src="uploads/couvertures/tn_eruditionetliberte.jpg"></a></li><li rel="2"><a href="les-livres.html#" title="books.php?book_id=15"><img src="uploads/couvertures/tn_cippejoriscorbellari.jpg"></a></li><li rel="1"><a href="les-livres.html#" title="books.php?book_id=7"><img src="uploads/couvertures/tn_floridesetautrestextes.jpg"></a></li><li rel="1"><a href="les-livres.html#" title="books.php?book_id=14"><img src="uploads/couvertures/tn_geographievraie.jpg"></a></li><li rel="3"><a href="les-livres.html#" title="books.php?book_id=23"><img src="uploads/couvertures/tn_impressionsdunpassantalausanne.jpg"></a></li><li rel="2"><a href="les-livres.html#" title="books.php?book_id=62"><img src="uploads/couvertures/tn_walzerameantique.jpg"></a></li><li rel="2"><a href="les-livres.html#" title="books.php?book_id=40"><img src="uploads/couvertures/tn_hebdolitteraire.jpg"></a></li><li rel="3"><a href="les-livres.html#" title="books.php?book_id=17"><img src="uploads/couvertures/tn_civilisationsaintgall.jpg"></a></li><li rel="1"><a href="les-livres.html#" title="books.php?book_id=4"><img src="uploads/couvertures/tn_fourmirouge.jpg"></a></li><li rel="1"><a href="les-livres.html#" title="books.php?book_id=10"><img src="uploads/couvertures/tn_lagrandeourse.jpg"></a></li><li rel="1"><a href="les-livres.html#" title="books.php?book_id=57"><img src="uploads/couvertures/tn_lajongleresse.jpg"></a></li><li rel="3"><a href="les-livres.html#" title="books.php?book_id=20"><img src="uploads/couvertures/tn_lareineberthe.jpg"></a></li><li rel="1"><a href="les-livres.html#" title="books.php?book_id=2"><img src="uploads/couvertures/tn_lareineberthe1992.jpg"></a></li><li rel="3"><a href="les-livres.html#" title="books.php?book_id=78"><img src="uploads/couvertures/tn_voilelatine.jpg"></a></li><li rel="3"><a href="les-livres.html#" title="books.php?book_id=83"><img src="uploads/couvertures/tn_voix_clementine.jpg"></a></li><li rel="3"><a href="les-livres.html#" title="books.php?book_id=74"><img src="uploads/couvertures/tn_beydepergame.jpg"></a></li><li rel="2"><a href="les-livres.html#" title="books.php?book_id=34"><img src="uploads/couvertures/tn_bitumeexquis.jpg"></a></li><li rel="3"><a href="les-livres.html#" title="books.php?book_id=72"><img src="uploads/couvertures/tn_campdecesar.jpg"></a></li><li rel="3"><a href="les-livres.html#" title="books.php?book_id=26"><img src="uploads/couvertures/tn_lecanalexutoire1973.jpg"></a></li><li rel="1"><a href="les-livres.html#" title="books.php?book_id=9"><img src="uploads/couvertures/tn_carnetduchatsauvage.jpg"></a></li><li rel="3"><a href="les-livres.html#" title="books.php?book_id=28"><img src="uploads/couvertures/tn_lecarnetduchatsauvage.jpg"></a></li><li rel="3"><a href="les-livres.html#" title="books.php?book_id=79"><img src="uploads/couvertures/tn_lecomtedesformes.jpg"></a></li><li rel="3"><a href="les-livres.html#" title="books.php?book_id=22"><img src="uploads/couvertures/tn_lenovellino.jpg"></a></li><li rel="1"><a href="les-livres.html#" title="books.php?book_id=55"><img src="uploads/couvertures/tn_novellino2004.jpg"></a></li><li rel="3"><a href="les-livres.html#" title="books.php?book_id=77"><img src="uploads/couvertures/tn_leparcoursduhautrhone.jpg"></a></li><li rel="2"><a href="les-livres.html#" title="books.php?book_id=16"><img src="uploads/couvertures/tn_persil.jpg"></a></li><li rel="2"><a href="les-livres.html#" title="books.php?book_id=60"><img src="uploads/couvertures/tn_generique.jpg"></a></li><li rel="3"><a href="les-livres.html#" title="books.php?book_id=75"><img src="uploads/couvertures/tn_seizejuillet.jpg"></a></li><li rel="3"><a href="les-livres.html#" title="books.php?book_id=8"><img src="uploads/couvertures/tn_brunonpomposo1997.jpg"></a></li><li rel="3"><a href="les-livres.html#" title="books.php?book_id=82"><img src="uploads/couvertures/tn_limbes.jpg"></a></li><li rel="3"><a href="les-livres.html#" title="books.php?book_id=80"><img src="uploads/couvertures/tn_penates.jpg"></a></li><li rel="2"><a href="les-livres.html#" title="books.php?book_id=61"><img src="uploads/couvertures/tn_walzerprisons.jpg"></a></li><li rel="1"><a href="les-livres.html#" title="books.php?book_id=5"><img src="uploads/couvertures/tn_lettreauverificateurdeseaux.jpg"></a></li><li rel="1"><a href="les-livres.html#" title="books.php?book_id=13"><img src="uploads/couvertures/tn_mermod.jpg"></a></li><li rel="1"><a href="les-livres.html#" title="books.php?book_id=25"><img src="uploads/couvertures/tn_musiquesdefribourg.jpg"></a></li><li rel="3"><a href="les-livres.html#" title="books.php?book_id=73"><img src="uploads/couvertures/tn_musiquesdefribourg1968.jpg"></a></li><li rel="1"><a href="les-livres.html#" title="books.php?book_id=59"><img src="uploads/couvertures/tn_oc1.jpg"></a></li><li rel="3"><a href="les-livres.html#" title="books.php?book_id=27"><img src="uploads/couvertures/tn_walzerqoc1.jpg"></a></li><li rel="1"><a href="les-livres.html#" title="books.php?book_id=11"><img src="uploads/couvertures/tn_pendeloquealpestre.jpg"></a></li><li rel="1"><a href="les-livres.html#" title="books.php?book_id=6"><img src="uploads/couvertures/tn_petitesfeuilles.jpg"></a></li><li rel="3"><a href="les-livres.html#" title="books.php?book_id=18"><img src="uploads/couvertures/tn_petrarque.jpg"></a></li><li rel="1"><a href="les-livres.html#" title="books.php?book_id=54"><img src="uploads/couvertures/tn_petrarque2003.jpg"></a></li><li rel="1"><a href="les-livres.html#" title="books.php?book_id=3"><img src="uploads/couvertures/tn_portraits1994.jpg"></a></li><li rel="1"><a href="les-livres.html#" title="books.php?book_id=56"><img src="uploads/couvertures/tn_proposanimaliers.jpg"></a></li><li rel="2"><a href="les-livres.html#" title="books.php?book_id=65"><img src="uploads/couvertures/tn_pycniquesetleptosomes.jpg"></a></li><li rel="2"><a href="les-livres.html#" title="books.php?book_id=31"><img src="uploads/couvertures/tn_belleslettres.jpg"></a></li><li rel="3"><a href="les-livres.html#" title="books.php?book_id=19"><img src="uploads/couvertures/tn_stalactites.jpg"></a></li><li rel="2"><a href="les-livres.html#" title="books.php?book_id=39"><img src="uploads/couvertures/tn_michon.jpg"></a></li><li rel="2"><a href="les-livres.html#" title="books.php?book_id=68"><img src="uploads/couvertures/tn_viesparalleles.jpg"></a></li><li rel="3"><a href="les-livres.html#" title="books.php?book_id=24"><img src="uploads/couvertures/tn_adrienbovy.jpg"></a></li><li rel="2"><a href="les-livres.html#" title="books.php?book_id=30"><img src="uploads/couvertures/tn_nrf1955.jpg"></a></li><li rel="2"><a href="les-livres.html#" title="books.php?book_id=38"><img src="uploads/couvertures/tn_nrf1993.jpg"></a></li>
+
+</ul>
+</div>
+<script type="text/javascript">
+
+  $(document).ready(function() {
+
+
+    $('.book_line').last().css('border', 'none');
+
+
+
+    $('.menu li a').bind('click', function() {
+
+
+      $('.menu li a').removeClass('selected');
+      $(this).addClass('selected');
+
+      thisItem 	= $(this).attr('rel');
+
+
+
+
+        //var min_width = Math.min.apply( null,  $('.item li[rel='+thisItem+'] img').map(function(){ return $(this).width();}).get());
+                //var max_height = Math.min.apply( null,  $('.item li[rel='+thisItem+'] img').map(function(){ return $(this).height();}).get());
+
+
+           $('.item li').stop()
+                               .animate({'width' : 0,
+                                    'height' : 0,
+                                   'opacity' : 0,
+                                   'marginRight' : 0,
+                                   'marginLeft' : 0
+                                  }).css('display','none');
+
+
+        if(thisItem == '') {
+          $('.item li').stop()
+                              .animate({	'width' : '180px',
+                                    'height' : '180px',
+                                    'opacity' : 1,
+                                    'marginRight' : '2px',
+                                    'marginLeft' : '2px'
+                                    }).css('display','inline-block');
+        }
+        else {
+
+           $('.item li[rel='+thisItem+']').stop()
+                                .animate({	'width' : '180px',
+                                      'height' : '180px',
+                                      'opacity' : 1,
+                                      'marginRight' : '2px',
+                                      'marginLeft' : '2px'
+                                      }).css('display','inline-block');
+        }
+
+
+
+      return false;
+    })
+
+
+
+
+        $('.menu li a:eq(0)').trigger('click');
+
+
+    $('.item li img').animate({'opacity' : 1}).hover(function() {
+      $('.item li img').not(this).stop().animate({'opacity' : 0.5}, 240);
+    }, function() {
+      $('.item li img').not(this).stop().animate({'opacity' : 1}, 240);
+    });
+
+  });
+
+
+
+
+  // Create the tooltips only on document load
+  $(document).ready(function()
+  {
+
+     // Make sure to only match links to wikipedia with a rel tag
+     $('a[href*=ajax/][title]').each(function()
+     {
+        // We make use of the .each() loop to gain access to each element via the "this" keyword...
+
+
+     adjust = $(this).parent().height();
+
+  $(this).qtip(
+        {
+           content: {
+              // Set the text to an image HTML string with the correct src URL to the loading image you want to use
+              text: '<img class="throbber" src="img/ajax-loader.gif" alt="Chargement..." />',
+              ajax: {
+                 url: $(this).attr('title') // Use the rel attribute of each element for the url to load
+              },
+              title: {
+                 //text: $(this).attr('id'), // Give the tooltip a title using each elements text
+                 button: true
+              }
+           },
+      events: {
+            render: function(event, api) {
+               // Grab the overlay element
+               var elem = api.elements.overlay;
+            }
+         },
+           position: {
+              at: 'right center ', // Position the tooltip above the link
+              my: 'left center',
+              viewport: $(window), // Keep the tooltip on-screen at all times
+              effect: false, // Disable positioning animation,
+             adjust: {
+                   y: -70,
+
+                }
+
+
+           },
+
+
+
+           show: {
+              event: 'click',
+              solo: true, // Only show one tooltip at a time
+        modal: {
+                 on: true, // Make it modal (darken the rest of the page)...
+                 blur: true // ... but don't close the tooltip when clicked
+              }
+           },
+           hide: 'unfocus',
+           style: {
+              classes: 'ui-tooltip-wiki ui-tooltip-light ui-tooltip-shadow'
+           }
+        })
+     })
+
+     // Make sure it doesn't follow the link when we click it
+     .click(function(event) { event.preventDefault(); });
+  });
+
+
+
+
+
+
+
+</script>
+    </div>
+  </div>
+
+  <div class="container" style="margin: 0 0 -34px 0;">
+    <div class="row">
+      <div class="twelvecol last">
+        <div id="contribute"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <footer class="row grey">
+
+      <div class="padded_footer_item" style="float:left; width: 40%;">
+        <span style="color: #B2B8BA; font-family:'Raleway'; text-shadow: 0px 1px 1px #212222;">Association des Amis de<br />Charles-Albert Cingria</span>
+        <span style="font-size: 0.6em; clear:both; display: block; line-height: 0.9em; margin: 3px 0 0 0; ">rue Centrale 8<br />1804 Corsier-sur-Vevey &middot; Suisse</span>
+        <div id="signature" style="font-size: 0.4em; clear:both; display: block; line-height: 0.6em; margin: 38px 0 0 -4px; color: #B2B8BA; letter-spacing: 1px;">
+          <div id="signature_arrow"><img src="img/arrow_grey.png" alt="arrow" /></div>
+          <div id="signature_text" class="signature"><a href="https://www.societe-ecran.tv/" target="_blank">SOCIETE-ECRAN MEDIA</a></div>
+          <div class="signature" style="color:#272729; float:left; margin: 0 0 0 4px;">2011-2013</div>
+        </div>
+        <div id="signature2" style="font-size: 0.4em; clear:both; display: block; line-height: 0.6em; margin: 38px 0 0 -4px; color: #B2B8BA; letter-spacing: 1px;">
+          <div id="signature_arrow2"><img src="img/arrow_grey.png" alt="arrow" /></div>
+          <div id="signature_text2" class="signature"><a href="https://raksha.ch/" target="_blank">Raksha.ch</a></div>
+          <div class="signature" style="color:#272729; float:left; margin: 0 0 0 4px;">
+            2023          </div>
+        </div>
+      </div>
+      <div style="float:left; width: 230px; margin: 52px 0 0 0; ">
+        <span id="hidden_contact" style="display: block; color: #B2B8BA; text-align: left; letter-spacing: 2px; font-size: 12px; font-family:'Lucida Grande',sans-serif;">Si vous souhaitez partager des documents autour de Cingria,
+          vous pouvez prendre contact avec <a href="mailto:info@cingria.ch" class="pink_link_sans">nous</a> ici .</span>
+      </div>
+      <div id="footer_right">
+                  <a href="articles/histoire-de-la-litterature-en-suisse-romande-cingria.pdf">
+            <div id="articles" style="display: block; color: #B2B8BA; padding: 0 0 0 80px; margin: 52px 0 0 0; text-align: left; letter-spacing: 2px; font-size: 0.82352941176471em; font-family:'Lucida Grande',sans-serif;">
+              <span id="fading_button">
+                <h3><span>Pour aller plus loin</span></h3>
+                Maryke de Courten, <em>Charles-Albert Cingria</em>, dans Roger Francillon (dir.), Histoire de la littérature en Suisse romande, t.II, Lausanne, Payot, 1997, pp.449-471
+              </span>
+            </div>
+          </a>
+                <div id="to_top" style="margin: -12px 0 0 0; clear: both; display:block; width: 300px; text-align: right; float:right; color: #B2B8BA; letter-spacing: 2px; font-size: 0.64705882352941em; font-family:'Lucida Grande',sans-serif;">
+          VERS LE SOMMET<img src="img/to_top.png" alt="Sommet de page" style="float:right; margin: 3px 0 0 7px" />
+        </div>
+      </div>
+    </footer>
+  </div>
+
+    <script type="text/javascript" charset="utf-8">
+    $(window).load(function() {
+
+      $('#masonry').masonry({
+        singleMode: true,
+        itemSelector: '.masonry_item'
+      });
+
+    });
+
+    $(document).ready(function() {
+      $(".masonry_item img").fullsize({
+        shadow: true,
+        forceTitleBar: false
+      });
+
+      $('#to_top, #signature_text').fadeTo(0, 0.5);
+      $('#signature_arrow').fadeTo(0, 0);
+      $('#to_top, #signature_text2').fadeTo(0, 0.5);
+      $('#signature_arrow2').fadeTo(0, 0);
+
+      $('#to_top').mouseover(function() {
+        $(this).stop().fadeTo(100, 1);
+      }).mouseout(function() {
+        $(this).stop().fadeTo(500, 0.5);
+      });
+
+      $('#signature_text').hover(
+        function() {
+          $(this).stop().fadeTo(100, 1).animate({
+            marginLeft: '6px'
+          }, 80, function() {
+            $('#signature_arrow').fadeTo(100, 1)
+          });
+        },
+        function() {
+          $(this).stop().fadeTo(500, 0.5).animate({
+            marginLeft: '0'
+          }, 120, function() {
+            $('#signature_arrow').fadeTo(100, 0);
+          });
+        }
+      );
+
+      $('#signature_text2').hover(
+        function() {
+          $(this).stop().fadeTo(100, 1).animate({
+            marginLeft: '6px'
+          }, 80, function() {
+            $('#signature_arrow2').fadeTo(100, 1)
+          });
+        },
+        function() {
+          $(this).stop().fadeTo(500, 0.5).animate({
+            marginLeft: '0'
+          }, 120, function() {
+            $('#signature_arrow2').fadeTo(100, 0);
+          });
+        }
+      );
+
+      var list_items = $('#main_oc').find('li');
+      $.each(list_items, function(key) {
+        key = key + 1;
+        $(this).prepend('<img src="img/icons/'&#32;+&#32;key&#32;+&#32;'.png.html" alt="' + key + '" />');
+      });
+
+
+      $('#hidden_contact').hide();
+      $('#contribute').toggle(function() {
+        $('#hidden_contact').fadeIn('300');
+      }, function() {
+        $('#hidden_contact').hide();
+      });
+
+
+      $('.book').hover(function() {
+        $(this).children('.book_title').delay(120).stop().fadeIn();
+      }, function() {
+        $(this).children('.book_title').delay(120).stop().fadeOut();
+      });
+
+      $('#bio').find('p:nth-child(2)').hide();
+
+      $('#show_more').click(function() {
+
+        $('#bio').find('p:nth-child(2)').slideToggle('fast');
+        text = $(this).text() == 'lire la suite de la notice' ? 'réduire la notice' : 'lire la suite de la notice';
+        $(this).text(text);
+      });
+
+      $('#contact_info').hide();
+      $('#contact').click(function() {
+
+        $('#contact_info').slideToggle('fast');
+        return false;
+
+      });
+
+      $('#to_top').click(function() {
+        $('html, body').animate({
+          scrollTop: 0
+        }, 'slow');
+      });
+
+      $('blockquote').quovolver(500, 18000);
+
+    });
+
+    $(window).load(function() {
+      setInterval(function() {
+        $('#slides_main :nth-child(1)').next().show().end().fadeOut(1200).appendTo('#slides_main');
+      }, 12000);
+      setInterval(function() {
+        $('#slides_main_right :nth-child(1)').next().show().end().fadeOut(1200).appendTo('#slides_main_right');
+      }, 10000);
+    });
+
+    $('<div id="slides_main"><img src="slides/slide_05.jpg" alt="" class="firstslide" /><img src="slides/slide_03.jpg" alt="" /><img src="slides/slide_01.jpg" alt="" /><img src="slides/slide_04.jpg" alt="" /><img src="slides/slide_02.jpg" alt="" /></div>').insertAfter('#main_text p:first-child');
+    $('<div id="slides_main_right"><img src="slides/slide_11.jpg" alt="" class="firstslide" /><img src="slides/slide_13.jpg" alt="" /><img src="slides/slide_08.jpg" alt="" /><img src="slides/slide_09.jpg" alt="" /><img src="slides/slide_07.jpg" alt="" /><img src="slides/slide_14.jpg" alt="" /><img src="slides/slide_12.jpg" alt="" /><img src="slides/slide_06.jpg" alt="" /><img src="slides/slide_10.jpg" alt="" /></div>').insertAfter('#main_text p:nth-child(4)');
+
+    $(function() {
+      $("#order_box").jScroll();
+    });
+
+
+    $('.sub').hide();
+    $('.toggler').click(function() {
+      $(this).next('.sub').toggle();
+      $(this).find('.toggle_btn').toggleClass('plus');
+
+      if ($(this).find('.toggle_btn').hasClass('plus')) {
+
+        $.scrollTo($(this).next('.sub'), 1400, {
+          easing: "easeInOutExpo"
+        });
+
+      }
+
+    });
+
+
+    $('.close_sub').click(function() {
+
+      $.scrollTo($(this).parent().parent().parent(), 1400, {
+        easing: "easeInOutExpo"
+      });
+
+
+    });
+
+    // Once the video is ready
+    _V_("example_video_1").ready(function() {
+
+      var myPlayer = this; // Store the video object
+      var aspectRatio = 9 / 16; // Make up an aspect ratio
+
+      function resizeVideoJS() {
+        // Get the parent element's actual width
+        var width = document.getElementById(myPlayer.id).parentElement.offsetWidth;
+        // Set width to fill parent element, Set height
+        myPlayer.width(width).height(width * aspectRatio);
+      }
+
+      resizeVideoJS(); // Initialize the function
+      window.onresize = resizeVideoJS; // Call the function on resize
+    });
+  </script>
+</body>
+
+</html>

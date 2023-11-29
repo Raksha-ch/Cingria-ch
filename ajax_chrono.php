@@ -2,11 +2,7 @@
 include 'inc/ajax_inc.php';
 include 'controllers/controller.public.php';
 $chronology    =  $crud->select('', 'chronology', '*',  '', '', 'chronology_year ASC', '', '', '');
-?>
 
-
-
-<?php
 if ($_GET['type'] == 1) {
 ?>
 
@@ -65,17 +61,16 @@ if ($_GET['type'] == 1) {
 
       </ul>
    </div>
-<?php;
-} ?>
-<?php if ($_GET['type'] == 2) {
+<?php
+} 
+if ($_GET['type'] == 2) {
    foreach ($chronology as $k => $v) {
       print '<div id="full_chrono">
-        <div style="float:left; display: block; clear: both; margin: 0 1em 0 0;"><h1><span>' . $v['chronology_year'] . '</span></h1></div>
-
-    <div style="float:left; 1066px;">
-    <div style="float:left; width:750px; margin: 0 42px 0 0; text-align: justify;">' . ($v['chronology_description']);
-
-
+               <div style="float:left; display: block; clear: both; margin: 0 1em 0 0;">
+                 <h1><span>' . $v['chronology_year'] . '</span></h1>
+               </div>
+               <div style="float:left; 1066px;">
+                 <div style="float:left; width:750px; margin: 0 42px 0 0; text-align: justify;">' . ($v['chronology_description']);
 
       $join      = " LEFT JOIN upload_file ON upload_file.upload_file_id = books.upload_file_id ";
       $where     = " book_id = " . $v['book_id_1'];
@@ -104,7 +99,6 @@ if ($_GET['type'] == 1) {
    print '</div>';
 } ?>
 
-
 <script type="text/javascript" charset="utf-8">
    $(function() {
       $().timelinr({
@@ -129,7 +123,7 @@ if ($_GET['type'] == 1) {
             $(this).qtip({
                content: {
                   // Set the text to an image HTML string with the correct src URL to the loading image you want to use
-                  text: '<img class="throbber" src="img/ajax-loader.gif" alt="Chargement..." />',
+                  text: '<img class="throbber" src="img/ajax-loader.gif" alt="Chargement…" />',
                   ajax: {
                      url: $(this).attr('title') // Use the rel attribute of each element for the url to load
                   },
@@ -153,11 +147,7 @@ if ($_GET['type'] == 1) {
                      y: -70,
 
                   }
-
-
                },
-
-
 
                show: {
                   event: 'click',

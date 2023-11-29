@@ -44,35 +44,35 @@
   <div class="container">
     <div class="row">
       <div id="logo" class="fourcol">
-        <p><a href="accueil.html"><img src="img/logo_site_2.gif" alt="Charles-Albert Cingria" /></a></p>
+        <p><a href="accueil"><img src="img/logo_site_2.gif" alt="Charles-Albert Cingria" /></a></p>
       </div>
       <div class="eightcol last">
         <nav>
           <ul>
             <li>
-              <a href="accueil.html" >Accueil</a>            </li>
+              <a href="accueil" >Accueil</a>            </li>
             <li>&middot;</li>
             <li>
-              <a href="association.html" >L'Association</a>            </li>
+              <a href="association" >L'Association</a>            </li>
             <li>&middot;</li>
             <li>
-              <a href="premiere-edition-des-oeuvres-completes.html" >Les Œuvres complètes</a>            </li>
+              <a href="premiere-edition-des-oeuvres-completes" >Les Œuvres complètes</a>            </li>
             <li>&middot;</li>
             <li>
-              <a href="chronologie.html" >Chronologie</a>            </li>
+              <a href="chronologie" >Chronologie</a>            </li>
           </ul>
           <ul>
             <li>
-              <a href="les-livres.html" >Les livres</a>            </li>
+              <a href="les-livres" >Les livres</a>            </li>
             <li>&middot;</li>
             <li>
-              <a href="les-fonds.html"  class="active" >Les Fonds</a>            </li>
+              <a href="les-fonds"  class="active" >Les Fonds</a>            </li>
                           <li>&middot;</li>
               <li>
-                <a href="les-petites-feuilles.html" >les Petites Feuilles</a>              </li>
+                <a href="les-petites-feuilles" >les Petites Feuilles</a>              </li>
               <li>&middot;</li>
               <li>
-                <a href="cingria-dans-la-litterature-romande.html" >Pour aller plus loin</a>              </li>
+                <a href="cingria-dans-la-litterature-romande" >Pour aller plus loin</a>              </li>
                       </ul>
         </nav>
       </div>
@@ -131,7 +131,7 @@
   <br /><br />Walzer y a rassemblé un bel ensemble de correspondances et manuscrits, qui va de ce qui est probablement la plus ancienne pièce de Cingria, « A la fille du Payien », aux manuscrit et épreuves du Novellino, titre qui paraîtra en édition posthume en 1955, en passant par un exemplaire des Autobiographies de Brunon Pomposo enrichi de corrections et ajouts de la main de Cingria.<br /><br />On y trouve les grands manuscrits du Pétrarque, du Camp de César, des Florides helvètes (dont Walzer fut l'éditeur aux Portes de France), mais aussi les petits textes polémiques qui fustigent le monde éditorial en 1944 (« Auteurs et éditeurs », « Tarifs de misère ») ainsi que l'amusante participation de Cingria aux publicités de Radio-Luxembourg (« Indicatif Philips »), le répertoire d'adresses utilisé par Charles-Albert dans lequel il notait à la volée des titres qui intriguent encore et, les manuscrits de quelques textes isolés  : « A propos de la séparation de l'église et de l'état », « La Leçon de la Villa d'Este » ou « La Folle Chevauchée ».
   Bibliophile, Walzer a collectionné pratiquement tous les titres de Cingria (jusqu'au rarissime Espéranto) en édition originale sur grand papier, ainsi que de nombreux numéros de ces revues réputées introuvables, dans lesquelles Cingria aimait à disperser ses titres.<br /><br />
   Si Walzer à bien évidemment conservé les lettres que lui adressaient Cingria, il leur a adjoint, dans sa collection, les missives de Cingria reçues par des amis intimes, citons Abdul Wahab ou Pierre Jaquet, ainsi que des pièces isolées adressées à Cocteau, Gagnebin ou Pierre Minet.<br /><br />
-  Un important second pan des archives Walzer témoigne de la réception des écrits de Cingria pour laquelle il aura tant œuvré. On y trouve aussi bien les travaux préparatoires de la première édition des <a href="oeuvres_completes.html" class="inline_link"><span>Œuvres complètes</span></a> et de la correspondance générale, que la documentation de L'Association des Amis de Charles-Albert Cingria alors qu'il la présidait ou les maquettes des <a href="https://cingria.sites.raksha.ch/petites_feuilles" class="inline_link"><span>Petites Feuilles</span></a> pour les numéros qu'il préparait avec Jean-Louis Kuffer. Mais aussi la documentation et la préparation des très nombreux articles, monographies, conférences, soirées ou expositions que Walzer consacra à Cingria et qui, à présent, forme une excellente source pour la recherche.
+  Un important second pan des archives Walzer témoigne de la réception des écrits de Cingria pour laquelle il aura tant œuvré. On y trouve aussi bien les travaux préparatoires de la première édition des <a href="oeuvres_completes" class="inline_link"><span>Œuvres complètes</span></a> et de la correspondance générale, que la documentation de L'Association des Amis de Charles-Albert Cingria alors qu'il la présidait ou les maquettes des <a href="https://cingria.sites.raksha.ch/petites_feuilles" class="inline_link"><span>Petites Feuilles</span></a> pour les numéros qu'il préparait avec Jean-Louis Kuffer. Mais aussi la documentation et la préparation des très nombreux articles, monographies, conférences, soirées ou expositions que Walzer consacra à Cingria et qui, à présent, forme une excellente source pour la recherche.
 
 </div>
 
@@ -285,7 +285,7 @@
       var list_items = $('#main_oc').find('li');
       $.each(list_items, function(key) {
         key = key + 1;
-        $(this).prepend('<img src="img/icons/'&#32;+&#32;key&#32;+&#32;'.png.html" alt="' + key + '" />');
+        $(this).prepend('<img src="img/icons/'&#32;+&#32;key&#32;+&#32;'.png" alt="' + key + '" />');
       });
 
 
@@ -339,8 +339,8 @@
       }, 10000);
     });
 
-    $('<div id="slides_main"><img src="slides/slide_03.jpg" alt="" class="firstslide" /><img src="slides/slide_05.jpg" alt="" /><img src="slides/slide_02.jpg" alt="" /><img src="slides/slide_01.jpg" alt="" /><img src="slides/slide_04.jpg" alt="" /></div>').insertAfter('#main_text p:first-child');
-    $('<div id="slides_main_right"><img src="slides/slide_09.jpg" alt="" class="firstslide" /><img src="slides/slide_06.jpg" alt="" /><img src="slides/slide_10.jpg" alt="" /><img src="slides/slide_08.jpg" alt="" /><img src="slides/slide_14.jpg" alt="" /><img src="slides/slide_07.jpg" alt="" /><img src="slides/slide_13.jpg" alt="" /><img src="slides/slide_11.jpg" alt="" /><img src="slides/slide_12.jpg" alt="" /></div>').insertAfter('#main_text p:nth-child(4)');
+    $('<div id="slides_main"><img src="slides/slide_03.jpg" alt="" class="firstslide" /><img src="slides/slide_01.jpg" alt="" /><img src="slides/slide_02.jpg" alt="" /><img src="slides/slide_05.jpg" alt="" /><img src="slides/slide_04.jpg" alt="" /></div>').insertAfter('#main_text p:first-child');
+    $('<div id="slides_main_right"><img src="slides/slide_08.jpg" alt="" class="firstslide" /><img src="slides/slide_13.jpg" alt="" /><img src="slides/slide_11.jpg" alt="" /><img src="slides/slide_14.jpg" alt="" /><img src="slides/slide_12.jpg" alt="" /><img src="slides/slide_06.jpg" alt="" /><img src="slides/slide_10.jpg" alt="" /><img src="slides/slide_07.jpg" alt="" /><img src="slides/slide_09.jpg" alt="" /></div>').insertAfter('#main_text p:nth-child(4)');
 
     $(function() {
       $("#order_box").jScroll();

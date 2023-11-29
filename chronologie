@@ -3,7 +3,7 @@
 <html lang="fr">
 
 <head>
-  <title>Association des Amis de Charles-Albert Cingria &middot; Accueil & Présentation du site</title>
+  <title>Association des Amis de Charles-Albert Cingria &middot; Chronologie</title>
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta charset="utf-8" />
@@ -44,35 +44,35 @@
   <div class="container">
     <div class="row">
       <div id="logo" class="fourcol">
-        <p><a href="accueil.html"><img src="img/logo_site_2.gif" alt="Charles-Albert Cingria" /></a></p>
+        <p><a href="accueil"><img src="img/logo_site_2.gif" alt="Charles-Albert Cingria" /></a></p>
       </div>
       <div class="eightcol last">
         <nav>
           <ul>
             <li>
-              <a href="accueil.html" >Accueil</a>            </li>
+              <a href="accueil" >Accueil</a>            </li>
             <li>&middot;</li>
             <li>
-              <a href="association.html" >L'Association</a>            </li>
+              <a href="association" >L'Association</a>            </li>
             <li>&middot;</li>
             <li>
-              <a href="premiere-edition-des-oeuvres-completes.html" >Les Œuvres complètes</a>            </li>
+              <a href="premiere-edition-des-oeuvres-completes" >Les Œuvres complètes</a>            </li>
             <li>&middot;</li>
             <li>
-              <a href="chronologie.html" >Chronologie</a>            </li>
+              <a href="chronologie"  class="active" >Chronologie</a>            </li>
           </ul>
           <ul>
             <li>
-              <a href="les-livres.html" >Les livres</a>            </li>
+              <a href="les-livres" >Les livres</a>            </li>
             <li>&middot;</li>
             <li>
-              <a href="les-fonds.html" >Les Fonds</a>            </li>
+              <a href="les-fonds" >Les Fonds</a>            </li>
                           <li>&middot;</li>
               <li>
-                <a href="les-petites-feuilles.html" >les Petites Feuilles</a>              </li>
+                <a href="les-petites-feuilles" >les Petites Feuilles</a>              </li>
               <li>&middot;</li>
               <li>
-                <a href="cingria-dans-la-litterature-romande.html" >Pour aller plus loin</a>              </li>
+                <a href="cingria-dans-la-litterature-romande" >Pour aller plus loin</a>              </li>
                       </ul>
         </nav>
       </div>
@@ -81,7 +81,143 @@
 
   <div class="container">
     <div class="row">
-          </div>
+      <style type="text/css" media="screen">
+  ul {
+    margin: 0;
+    text-align: left;
+  }
+
+  ul.menu {
+    margin-left: .5em;
+    margin-bottom: 1em;
+  }
+
+  ul.menu li {
+    list-style-type: none;
+    display: inline-block;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px #f3f5da;
+    padding: 2px 15px;
+  }
+
+    .selected {  /*
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      background: #acac75;
+      -webkit-box-shadow: 1px 1px 0px #8c8c5d;    */
+    }
+
+    a { color: #4D4D4D; text-decoration: none; }
+    .selected a, .selected a:visited {
+       /* text-shadow: 1px 1px 0px #8c8c60;   */
+      color: #e00071;
+
+    }
+
+  ul.item li {
+    list-style-type: none;
+    display: block;
+    float: left;
+    margin: 1px 2px;
+    text-align: center;
+    cursor: pointer;
+
+  }
+
+  .ui-tooltip-content em { font-size: 1em;}
+
+  .ui-tooltip-wiki{
+     max-width: 520px;
+  }
+
+     .ui-tooltip-wiki .ui-tooltip-content{
+        padding: 1.8em;
+          font-size: 1.41176470588235em;
+        line-height: 1.4em;
+     }
+
+     .ui-tooltip-wiki h1{
+        margin: 0 0 7px;
+
+        font-size: 1.5em;
+        line-height: 1em;
+     }
+
+     .ui-tooltip-wiki img{ padding: 0 10px 0 0; }
+
+     .ui-tooltip-wiki p{ margin-bottom: 9px; }
+     .ui-tooltip-wiki .note{ margin-bottom: 0; font-style: italic; color: #888; }
+
+
+    .sub_td { background-color: #EFEFEF; padding: 1em; -moz-border-radius: 2px;
+    border-radius: 2px;}
+    .sub_td h2 { font-size: 1em; text-align:left; margin: 0 0 1em 0;}
+    .sub { float:left; clear:both; margin: 1em 0;}
+    .toggle_btn { float:left; clear: both; padding: 0 0 0 24px;	 background-image: url('img/icons/btn_open_close.png'); background-repeat: no-repeat; background-position: 0 3px; cursor: pointer;}
+    .plus { background-position: 0 -297px;}
+
+    .toggler {cursor: pointer;}
+
+    .book_line { border-bottom: 1px dotted #CCC; width: 100%; float: left; padding-bottom: 12px; margin-bottom: 12px; display:block;}
+     .ui-tooltip-content em { color: #4d4d4d; font-style: italic;}
+    .ui-tooltip-content h2 em { color: #e00071; font-style: italic; }
+
+    #tabs {float: left; display: block; margin: -2em 0 3em 0; font-family: arial; font-size: 0.82352941176471em;}
+    #tabs a { color: #CCC;}
+    #tabs a.selected_tab {color: #595959; font-style: italic;}
+     .pink { color: #e00071;}
+  </style>
+	
+<div id="main" class="twelvecol">
+  <h1><span><span>Chronologie</span></span></h1>
+   <div id="tabs">
+
+    <a href="ajax_chrono_yearly" id="first_page" class="selected_tab">Chronologie par année</a> &middot;
+    <a href="ajax_chrono_full">Chronologie complète</a>
+
+  </div>
+  <div id="chrono_div"></div> <!-- Updated via Ajax-->
+
+
+</div>
+
+
+<script type="text/javascript">
+
+
+    var containerId = '#chrono_div';
+    var tabsId = '#tabs';
+
+    function loadTab(tabObj){
+
+        $.get(tabObj.attr('href'), function(data) {
+
+      $(containerId).html(data);
+
+      });
+
+
+    }
+
+
+   $(document).ready(function() {
+
+     $(tabsId + ' a').click(function() {
+        $('#tabs').find('a').removeClass('selected_tab')
+        $(this).addClass('selected_tab');
+        loadTab($(this));				
+            return false;
+       });
+
+        loadTab($('#first_page'));
+
+
+   });
+
+
+</script>
+    </div>
   </div>
 
   <div class="container" style="margin: 0 0 -34px 0;">
@@ -194,7 +330,7 @@
       var list_items = $('#main_oc').find('li');
       $.each(list_items, function(key) {
         key = key + 1;
-        $(this).prepend('<img src="img/icons/'&#32;+&#32;key&#32;+&#32;'.png.html" alt="' + key + '" />');
+        $(this).prepend('<img src="img/icons/'&#32;+&#32;key&#32;+&#32;'.png" alt="' + key + '" />');
       });
 
 
@@ -248,8 +384,8 @@
       }, 10000);
     });
 
-    $('<div id="slides_main"><img src="slides/slide_05.jpg" alt="" class="firstslide" /><img src="slides/slide_01.jpg" alt="" /><img src="slides/slide_02.jpg" alt="" /><img src="slides/slide_03.jpg" alt="" /><img src="slides/slide_04.jpg" alt="" /></div>').insertAfter('#main_text p:first-child');
-    $('<div id="slides_main_right"><img src="slides/slide_06.jpg" alt="" class="firstslide" /><img src="slides/slide_13.jpg" alt="" /><img src="slides/slide_12.jpg" alt="" /><img src="slides/slide_08.jpg" alt="" /><img src="slides/slide_14.jpg" alt="" /><img src="slides/slide_09.jpg" alt="" /><img src="slides/slide_07.jpg" alt="" /><img src="slides/slide_10.jpg" alt="" /><img src="slides/slide_11.jpg" alt="" /></div>').insertAfter('#main_text p:nth-child(4)');
+    $('<div id="slides_main"><img src="slides/slide_03.jpg" alt="" class="firstslide" /><img src="slides/slide_02.jpg" alt="" /><img src="slides/slide_05.jpg" alt="" /><img src="slides/slide_01.jpg" alt="" /><img src="slides/slide_04.jpg" alt="" /></div>').insertAfter('#main_text p:first-child');
+    $('<div id="slides_main_right"><img src="slides/slide_10.jpg" alt="" class="firstslide" /><img src="slides/slide_07.jpg" alt="" /><img src="slides/slide_11.jpg" alt="" /><img src="slides/slide_13.jpg" alt="" /><img src="slides/slide_06.jpg" alt="" /><img src="slides/slide_12.jpg" alt="" /><img src="slides/slide_14.jpg" alt="" /><img src="slides/slide_08.jpg" alt="" /><img src="slides/slide_09.jpg" alt="" /></div>').insertAfter('#main_text p:nth-child(4)');
 
     $(function() {
       $("#order_box").jScroll();

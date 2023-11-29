@@ -44,35 +44,35 @@
   <div class="container">
     <div class="row">
       <div id="logo" class="fourcol">
-        <p><a href="accueil.html"><img src="img/logo_site_2.gif" alt="Charles-Albert Cingria" /></a></p>
+        <p><a href="accueil"><img src="img/logo_site_2.gif" alt="Charles-Albert Cingria" /></a></p>
       </div>
       <div class="eightcol last">
         <nav>
           <ul>
             <li>
-              <a href="accueil.html"  class="active" >Accueil</a>            </li>
+              <a href="accueil"  class="active" >Accueil</a>            </li>
             <li>&middot;</li>
             <li>
-              <a href="association.html" >L'Association</a>            </li>
+              <a href="association" >L'Association</a>            </li>
             <li>&middot;</li>
             <li>
-              <a href="premiere-edition-des-oeuvres-completes.html" >Les Œuvres complètes</a>            </li>
+              <a href="premiere-edition-des-oeuvres-completes" >Les Œuvres complètes</a>            </li>
             <li>&middot;</li>
             <li>
-              <a href="chronologie.html" >Chronologie</a>            </li>
+              <a href="chronologie" >Chronologie</a>            </li>
           </ul>
           <ul>
             <li>
-              <a href="les-livres.html" >Les livres</a>            </li>
+              <a href="les-livres" >Les livres</a>            </li>
             <li>&middot;</li>
             <li>
-              <a href="les-fonds.html" >Les Fonds</a>            </li>
+              <a href="les-fonds" >Les Fonds</a>            </li>
                           <li>&middot;</li>
               <li>
-                <a href="les-petites-feuilles.html" >les Petites Feuilles</a>              </li>
+                <a href="les-petites-feuilles" >les Petites Feuilles</a>              </li>
               <li>&middot;</li>
               <li>
-                <a href="cingria-dans-la-litterature-romande.html" >Pour aller plus loin</a>              </li>
+                <a href="cingria-dans-la-litterature-romande" >Pour aller plus loin</a>              </li>
                       </ul>
         </nav>
       </div>
@@ -127,7 +127,7 @@ D’une drôlerie si variée – ironique ou scabreuse – qu’elle fait oublie
      <p><br />
        <span class="pseudo_pink_link">Pour citer cette page :</span><br />
        <em>Charles-Albert Cingria</em>. (2 mars 2012). L'Association des Amis de Charles-Albert Cingria. Page consultée le
-       29       novembre       2023 à 09:37 à partir de <a href="accueil.html">cingria.sites.raksha.ch/accueil</a>
+       29       novembre       2023 à 09:43 à partir de <a href="accueil">cingria.sites.raksha.ch/accueil</a>
      </p>
    </div>
 
@@ -304,7 +304,7 @@ N. B. Cingria ne fait rien quand on ne le force pas avec énergie à travailler.
       var list_items = $('#main_oc').find('li');
       $.each(list_items, function(key) {
         key = key + 1;
-        $(this).prepend('<img src="img/icons/'&#32;+&#32;key&#32;+&#32;'.png.html" alt="' + key + '" />');
+        $(this).prepend('<img src="img/icons/'&#32;+&#32;key&#32;+&#32;'.png" alt="' + key + '" />');
       });
 
 
@@ -358,8 +358,8 @@ N. B. Cingria ne fait rien quand on ne le force pas avec énergie à travailler.
       }, 10000);
     });
 
-    $('<div id="slides_main"><img src="slides/slide_03.jpg" alt="" class="firstslide" /><img src="slides/slide_02.jpg" alt="" /><img src="slides/slide_05.jpg" alt="" /><img src="slides/slide_01.jpg" alt="" /><img src="slides/slide_04.jpg" alt="" /></div>').insertAfter('#main_text p:first-child');
-    $('<div id="slides_main_right"><img src="slides/slide_06.jpg" alt="" class="firstslide" /><img src="slides/slide_11.jpg" alt="" /><img src="slides/slide_07.jpg" alt="" /><img src="slides/slide_14.jpg" alt="" /><img src="slides/slide_12.jpg" alt="" /><img src="slides/slide_10.jpg" alt="" /><img src="slides/slide_09.jpg" alt="" /><img src="slides/slide_08.jpg" alt="" /><img src="slides/slide_13.jpg" alt="" /></div>').insertAfter('#main_text p:nth-child(4)');
+    $('<div id="slides_main"><img src="slides/slide_04.jpg" alt="" class="firstslide" /><img src="slides/slide_01.jpg" alt="" /><img src="slides/slide_05.jpg" alt="" /><img src="slides/slide_03.jpg" alt="" /><img src="slides/slide_02.jpg" alt="" /></div>').insertAfter('#main_text p:first-child');
+    $('<div id="slides_main_right"><img src="slides/slide_11.jpg" alt="" class="firstslide" /><img src="slides/slide_09.jpg" alt="" /><img src="slides/slide_08.jpg" alt="" /><img src="slides/slide_14.jpg" alt="" /><img src="slides/slide_06.jpg" alt="" /><img src="slides/slide_13.jpg" alt="" /><img src="slides/slide_12.jpg" alt="" /><img src="slides/slide_07.jpg" alt="" /><img src="slides/slide_10.jpg" alt="" /></div>').insertAfter('#main_text p:nth-child(4)');
 
     $(function() {
       $("#order_box").jScroll();

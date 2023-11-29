@@ -44,35 +44,35 @@
   <div class="container">
     <div class="row">
       <div id="logo" class="fourcol">
-        <p><a href="accueil.html"><img src="img/logo_site_2.gif" alt="Charles-Albert Cingria" /></a></p>
+        <p><a href="accueil"><img src="img/logo_site_2.gif" alt="Charles-Albert Cingria" /></a></p>
       </div>
       <div class="eightcol last">
         <nav>
           <ul>
             <li>
-              <a href="accueil.html" >Accueil</a>            </li>
+              <a href="accueil" >Accueil</a>            </li>
             <li>&middot;</li>
             <li>
-              <a href="association.html"  class="active" >L'Association</a>            </li>
+              <a href="association"  class="active" >L'Association</a>            </li>
             <li>&middot;</li>
             <li>
-              <a href="premiere-edition-des-oeuvres-completes.html" >Les Œuvres complètes</a>            </li>
+              <a href="premiere-edition-des-oeuvres-completes" >Les Œuvres complètes</a>            </li>
             <li>&middot;</li>
             <li>
-              <a href="chronologie.html" >Chronologie</a>            </li>
+              <a href="chronologie" >Chronologie</a>            </li>
           </ul>
           <ul>
             <li>
-              <a href="les-livres.html" >Les livres</a>            </li>
+              <a href="les-livres" >Les livres</a>            </li>
             <li>&middot;</li>
             <li>
-              <a href="les-fonds.html" >Les Fonds</a>            </li>
+              <a href="les-fonds" >Les Fonds</a>            </li>
                           <li>&middot;</li>
               <li>
-                <a href="les-petites-feuilles.html" >les Petites Feuilles</a>              </li>
+                <a href="les-petites-feuilles" >les Petites Feuilles</a>              </li>
               <li>&middot;</li>
               <li>
-                <a href="cingria-dans-la-litterature-romande.html" >Pour aller plus loin</a>              </li>
+                <a href="cingria-dans-la-litterature-romande" >Pour aller plus loin</a>              </li>
                       </ul>
         </nav>
       </div>
@@ -95,7 +95,7 @@
     <p>Son premier comité était constitué du neveu de l’auteur Albert Cingria (président), de sa nièce Isabelle Melley (secrétaire) et du professeur Pierre-Olivier Walzer (vice-président). Ce noyau d’origine comprenait aussi Jacques Chessex, Georges Anex, Jean-Luc Seylaz, Henry-Louis Mermod, Aloyse Margot et Gisèle Peyron, laquelle s’était déjà attelée à la recherche  et la transcription d’une grande partie de la production de Cingria, éparpillée dans une centaine de revues et journaux.
 </p>
 <p>
-Entre 1967 et 1969, les dix premiers volumes des <a href="premiere-edition-des-oeuvres-completes.html" class="inline_link"><span>Œuvres complètes</span></a> paraissent à l’enseigne des <a href="https://www.lagedhomme.com/" onclick="window.open(this.href, '_blank'); return false;" class="inline_link"><span>Editions de l'Age d'Homme</span></a>, fondées l’année précédente par Vladimir Dimitrijevic. Isabelle Melley et Pierre-Olivier Walzer, devenu président de l’Association en 1968 (poste qu’il occupera plus de vingt ans), prennent une part majeure à cette publication. En 1981, une partie de la correspondance de Cingria est réunie en cinq volumes, enrichis de deux derniers volumes, l’un d’inédits et l’autre consacré à la bibliographie et à l’index général. Au total, ce sont dix-sept volumes sous reliure ocre doré, qui constituent les premières <em>Œuvres complètes</em> de l’auteur.
+Entre 1967 et 1969, les dix premiers volumes des <a href="premiere-edition-des-oeuvres-completes" class="inline_link"><span>Œuvres complètes</span></a> paraissent à l’enseigne des <a href="https://www.lagedhomme.com/" onclick="window.open(this.href, '_blank'); return false;" class="inline_link"><span>Editions de l'Age d'Homme</span></a>, fondées l’année précédente par Vladimir Dimitrijevic. Isabelle Melley et Pierre-Olivier Walzer, devenu président de l’Association en 1968 (poste qu’il occupera plus de vingt ans), prennent une part majeure à cette publication. En 1981, une partie de la correspondance de Cingria est réunie en cinq volumes, enrichis de deux derniers volumes, l’un d’inédits et l’autre consacré à la bibliographie et à l’index général. Au total, ce sont dix-sept volumes sous reliure ocre doré, qui constituent les premières <em>Œuvres complètes</em> de l’auteur.
 </p>
 <p>
 Au printemps 1983, l’Association organise l’exposition du centenaire de la naissance de Cingria, qui se tient à la Bibliothèque nationale suisse et s’exporte au printemps suivant à la Bibliothèque nationale de Paris. Les catalogues illustrés publiés à cette occasion témoignent de la richesse de la documentation réunie alors – où se signalent en particulier les portraits classiques d’Alexandre, le frère de l’écrivain, de René Auberjonois, de Théodore Strawinsky, de Modigliani et de Jean Dubuffet.
@@ -159,7 +159,7 @@ Le projet de l’édition critique des <em>Œuvres complètes</em> est lancé le
     Devenez membre de l’Association et soyez régulièrement informé(e) de ses activités. Vous recevrez également les
     Petites Feuilles chez vous.
     <br /><br />
-    <a href="association.html#" id="contact" class="pink_link_min_height">Lien de contact</a>
+    <a href="association#" id="contact" class="pink_link_min_height">Lien de contact</a>
     <span id="contact_info">
       <a href="mailto:info@cingria.ch" class="pink_link">info@cingria.ch</a>
     </span>
@@ -278,7 +278,7 @@ Le projet de l’édition critique des <em>Œuvres complètes</em> est lancé le
       var list_items = $('#main_oc').find('li');
       $.each(list_items, function(key) {
         key = key + 1;
-        $(this).prepend('<img src="img/icons/'&#32;+&#32;key&#32;+&#32;'.png.html" alt="' + key + '" />');
+        $(this).prepend('<img src="img/icons/'&#32;+&#32;key&#32;+&#32;'.png" alt="' + key + '" />');
       });
 
 
@@ -332,8 +332,8 @@ Le projet de l’édition critique des <em>Œuvres complètes</em> est lancé le
       }, 10000);
     });
 
-    $('<div id="slides_main"><img src="slides/slide_04.jpg" alt="" class="firstslide" /><img src="slides/slide_02.jpg" alt="" /><img src="slides/slide_05.jpg" alt="" /><img src="slides/slide_03.jpg" alt="" /><img src="slides/slide_01.jpg" alt="" /></div>').insertAfter('#main_text p:first-child');
-    $('<div id="slides_main_right"><img src="slides/slide_08.jpg" alt="" class="firstslide" /><img src="slides/slide_12.jpg" alt="" /><img src="slides/slide_10.jpg" alt="" /><img src="slides/slide_14.jpg" alt="" /><img src="slides/slide_06.jpg" alt="" /><img src="slides/slide_07.jpg" alt="" /><img src="slides/slide_11.jpg" alt="" /><img src="slides/slide_09.jpg" alt="" /><img src="slides/slide_13.jpg" alt="" /></div>').insertAfter('#main_text p:nth-child(4)');
+    $('<div id="slides_main"><img src="slides/slide_05.jpg" alt="" class="firstslide" /><img src="slides/slide_03.jpg" alt="" /><img src="slides/slide_04.jpg" alt="" /><img src="slides/slide_01.jpg" alt="" /><img src="slides/slide_02.jpg" alt="" /></div>').insertAfter('#main_text p:first-child');
+    $('<div id="slides_main_right"><img src="slides/slide_08.jpg" alt="" class="firstslide" /><img src="slides/slide_13.jpg" alt="" /><img src="slides/slide_09.jpg" alt="" /><img src="slides/slide_10.jpg" alt="" /><img src="slides/slide_07.jpg" alt="" /><img src="slides/slide_06.jpg" alt="" /><img src="slides/slide_14.jpg" alt="" /><img src="slides/slide_12.jpg" alt="" /><img src="slides/slide_11.jpg" alt="" /></div>').insertAfter('#main_text p:nth-child(4)');
 
     $(function() {
       $("#order_box").jScroll();

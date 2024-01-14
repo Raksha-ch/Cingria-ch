@@ -104,6 +104,13 @@ $(document).ready(function () {
 
     $('blockquote').quovolver(500, 18000);
 
+    $('#datetime_now_fr').text(
+        new Intl.DateTimeFormat('fr-CH', {
+              dateStyle: 'full',
+              timeStyle: 'short',
+              timeZone: 'Europe/Zurich'
+            }).format(new Date())
+    );
 });
 
 $(window).load(function () {

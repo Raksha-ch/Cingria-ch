@@ -1,0 +1,9 @@
+---
+Publish to pages:
+  rules:
+    - if: "$CI_COMMIT_BRANCH == 'static'"
+  image: busybox:latest
+  script:
+    - mkdir public
+    - cp -r `ls -A | grep -vE ^public$ | grep -ve ^.git$` public/
+  pages: true
